@@ -1,0 +1,39 @@
+John Paul Ashenfelter Dot Files
+
+These are config files to set up a system the way I like it. Originally a lot was copied from Ryan Bates .dotfiles on github, but there have been substantial adjustments made over the past couple years.
+
+
+Installation
+
+  svn co http://ashenfelterj@transitionpoint.com/svn/tpoint/.dotfiles
+  cd ~/.dotfiles
+  rake install
+
+
+Environment
+
+MacOSX using the default bash shell
+
+Features
+
+* Shortcuts to common directories in client, server, work directories
+  c client_name_<tab>
+
+* Tab completion is also added to git, rake and cap commands:
+
+  rake db:mi<tab>
+  cap de<tab>
+  git co feature<tab>
+
+To speed things up, the results are cached in local .rake_tasks~ and 
+.cap_tasks~. It is smart enough to expire the cache automatically in 
+most cases, but you can simply remove the files to flush the cache.
+
+* custom prompt using rvm and git to display details
+* common rails aliases
+* common mysql aliases for macports
+* ssh keys for syncing between machines
+* ssl config file
+* svn config files
+* defaults for ack, autotest, irb, rails, gem, and git
+

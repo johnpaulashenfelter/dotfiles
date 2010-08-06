@@ -1,0 +1,19 @@
+Host hi.prod
+HostName www.himalayaninstitute.org
+User deployer
+
+Host hi.stage
+HostName 205.153.117.87
+User deployer
+
+Host builder.ew
+HostName 74.207.230.57
+User root
+
+Host greenling.prod
+HostName www.greenling.com
+User deployer
+
+Host kwnews
+HostName customers.kwnews.com
+User rails
