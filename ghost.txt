@@ -1,0 +1,13 @@
+admin.kwnews.local 127.0.0.1
+aha.local 127.0.0.1
+assets.local 127.0.0.1
+cases.local 127.0.0.1
+customers.kwnews.local 127.0.0.1
+fw1.local 127.0.0.1
+kids.kwnews.local 127.0.0.1
+okm.local 127.0.0.1
+ors.kwnews.local 127.0.0.1
+subscribers.kwnews.local 127.0.0.1
+test.local 127.0.0.1
+tpoint.kids.kwnews.local 127.0.0.1
+tpoint.ors.kwnews.local 127.0.0.1

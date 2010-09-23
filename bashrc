@@ -35,7 +35,7 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$B[\$(~/.rvm/bin/rvm-prompt)]$Y\u@\h$W:$EMY\w$EMW\$(__git_ps1)${NONE} $ "
+  PS1="$R[\$(~/.rvm/bin/rvm-prompt)]$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)${NONE} $ "
 }
 
 bash_prompt
@@ -51,9 +51,6 @@ alias cf="/Applications/JRun4/bin/cf-multi-startup"
 alias mysql="mysql5"
 alias mysqladmin="mysqladmin5"
 alias mysqldump="mysqldump5"
-
-alias mysqlstart='sudo /opt/local/bin/mysqld_safe5 &'
-alias mysqlstop='/opt/local/bin/mysqladmin5 -u root -p shutdown'
 
 # Apache
 alias hosts='sudo mate /private/etc/hosts'
@@ -71,7 +68,7 @@ bind "set completion-ignore-case on" # note: bind used instead of sticking these
 bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
 
-export CDPATH=.:~:~/work:~/entryway:~/server:~/clients #does for the cd built-in what PATH does for executables. 
+export CDPATH=.:~:~/work:~/entryway:~/clients:~/server:~/foss #does for the cd built-in what PATH does for executables. 
 
 # Java
 #export JAVA_HOME=/usr
@@ -80,14 +77,17 @@ export CDPATH=.:~:~/work:~/entryway:~/server:~/clients #does for the cd built-in
 
 # Postgres
 export PGDATA=/opt/local/var/db/postgresql84/defaultdb
-#export PGOPTIONS='-c client_min_messages=WARNING'
-#su postgres -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb start'
-#sudo su postgres -c '/opt/local/lib/postgresql84/bin/pg_ctl -D /opt/local/var/db/postgresql84/defaultdb stop'
 
 # Subversion & Diff ------------------------------------------------
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
 export SVN_EDITOR='${EDITOR}'
 alias svn?='svn st | grep ?'
-# from http://codesnippets.joyent.com/posts/show/1605
-# Need to figure out how to escape the backtick
-#alias svnrm="for d in `svn st | grep ^! | awk '{print $2}'`; do svn rm $d; done;"
+
+# Add the following to your ~/.bashrc or ~/.zshrc
+hitch() {
+  command hitch "$@"
+  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+}
+alias unhitch='hitch -u'
+# Uncomment to persist pair info between terminal instances
+# hitch

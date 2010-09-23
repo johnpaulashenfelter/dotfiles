@@ -5,9 +5,9 @@
 # require 'autotest/rcov'
 # require 'autotest/restart'
 # require 'autotest/timestamp'
-#require 'redgreen/autotest'
-require 'autotest/growl'
-#require 'autotest/fsevent'
+# require 'redgreen/autotest'
+# require 'autotest/growl'
+# require 'autotest/fsevent'
 
 # Autotest::AutoUpdate.sleep_time = o
 # Autotest::AutoUpdate.update_cmd = o

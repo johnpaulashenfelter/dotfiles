@@ -3,7 +3,7 @@
 	email = johnpaul@entryway.net
 [alias]
   co = checkout
-  st = status
+  st = status -s
   put = push origin HEAD
   ci = commit
   br = branch
