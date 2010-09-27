@@ -37,7 +37,7 @@ alias cuke='cucumber'
 alias geml="gem list | grep ^[A-Za-z]"
 alias gemo="gem outdated"
 alias r='rails'
-
+alias sg='script/generate'
 function sc {
   if [ -e script/rails ]; then
     rails console $1
@@ -50,13 +50,6 @@ function ss {
     rails server $1
   else
     script/server $1
-  fi
-}
-function sg {
-  if [ -e script/rails ]; then
-    rails generate $1
-  else
-    script/generate $1
   fi
 }
 
