@@ -37,6 +37,7 @@ alias cuke='cucumber'
 alias geml="gem list | grep ^[A-Za-z]"
 alias gemo="gem outdated"
 alias r='rails'
+alias rg='rails generate'
 alias sg='script/generate'
 
 function sc {
@@ -68,16 +69,16 @@ alias topc='top -o cpu'
 alias systail='tail -f /var/log/system.log'
 alias df='df -h'
 alias space="du -shc * .[^.]*"
+alias rsync="rsync -avz"
 
 # Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
 
 # changing directory to code project
-function c { cd ~/clients/$1; }
 function p { cd ~/projects/$1; }
-function e { cd ~/entryway/$1; }
 function w { cd ~/work/$1; }
 function f { cd ~/foss/$1; }
+function c { cd ~/clients/$1; }
 
 # misc
 alias reload='. ~/.bash_profile'
