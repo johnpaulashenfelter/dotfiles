@@ -83,11 +83,12 @@ function c { cd ~/clients/$1; }
 # misc
 alias reload='. ~/.bash_profile'
 
-#source ~/.bash/completions
-source ~/.bash/completion_scripts/git_completion
-complete -C ~/.bash/completion_scripts/rake_completion -o default rake
-complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
-complete -C ~/.bash/completion_scripts/rvm-completion.rb -o default rvm
+export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
+export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
+export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.3-57419/jars"
+
+
 #source ~/.bash/paths
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
@@ -107,9 +108,16 @@ if [ -d /opt/local ]; then
 	export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/apache2/bin:/opt/local/lib/postgresql84/bin:$PATH
 fi
 
-if [ -f /opt/local/etc/bash_completion ]; then
-    . /opt/local/etc/bash_completion
+# Macports
+# if [ -f /opt/local/etc/bash_completion ]; then
+#     . /opt/local/etc/bash_completion
+# fi
+
+# Homebrews
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
 fi
+
 
 if [ -d /usr/local/share/npm/bin ]; then
 	export PATH=/usr/local/share/npm/bin:$PATH
@@ -120,5 +128,10 @@ if [ -d /usr/local/bin ]; then
 fi
   
 if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; fi
+[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 	
 export RUBYLIB="/usr/local/lib:$RUBYLIB"
+#source ~/.bash/completions
+source ~/.bash/completion_scripts/git_completion
+complete -C ~/.bash/completion_scripts/rake_completion -o default rake
+complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap

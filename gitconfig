@@ -38,3 +38,7 @@
 	token = ec96131711d34decfea9c883786071d1
 [branch]
 	autosetupmerge = true
+[rerere]
+	enabled = 1
+[heroku]
+	account = tpoint

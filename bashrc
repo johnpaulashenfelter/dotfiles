@@ -68,7 +68,7 @@ bind "set completion-ignore-case on" # note: bind used instead of sticking these
 bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
 
-export CDPATH=.:~:~/work:~/entryway:~/clients:~/server:~/foss #does for the cd built-in what PATH does for executables. 
+export CDPATH=.:~:~/work:~/projects:~/clients:~/server:~/foss #does for the cd built-in what PATH does for executables. 
 
 # Java
 #export JAVA_HOME=/usr
@@ -82,12 +82,3 @@ export PGDATA=/opt/local/var/db/postgresql84/defaultdb
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
 export SVN_EDITOR='${EDITOR}'
 alias svn?='svn st | grep ?'
-
-# Add the following to your ~/.bashrc or ~/.zshrc
-hitch() {
-  command hitch "$@"
-  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-}
-alias unhitch='hitch -u'
-# Uncomment to persist pair info between terminal instances
-# hitch
