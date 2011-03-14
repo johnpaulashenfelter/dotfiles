@@ -38,23 +38,6 @@ alias geml="gem list | grep ^[A-Za-z]"
 alias gemo="gem outdated"
 alias r='rails'
 alias rg='rails generate'
-alias sg='script/generate'
-
-function sc {
-  if [ -e script/rails ]; then
-    rails console $1
-  else
-    script/console $1
-  fi
-}
-function ss {
-  if [ -e script/rails ]; then
-    rails server $1
-  else
-    script/server $1
-  fi
-}
-
 alias t="terminitor"
 # commands starting with % for pasting from web
 alias %=' '
@@ -104,20 +87,10 @@ if [ -d ~/bin ]; then
 	export PATH=~/bin:$PATH  # add your bin folder to the path, if you have it.  It's a good place to add all your scripts
 fi
 
-if [ -d /opt/local ]; then
-	export PATH=/opt/local/bin:/opt/local/sbin:/opt/local/apache2/bin:/opt/local/lib/postgresql84/bin:$PATH
-fi
-
-# Macports
-# if [ -f /opt/local/etc/bash_completion ]; then
-#     . /opt/local/etc/bash_completion
-# fi
-
 # Homebrews
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
-
 
 if [ -d /usr/local/share/npm/bin ]; then
 	export PATH=/usr/local/share/npm/bin:$PATH

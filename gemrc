@@ -5,6 +5,7 @@
 :update_sources: true
 :install: --no-rdoc --no-ri
 :update: --no-rdoc --no-ri
+gem: --no-ri --no-rdoc
 :sources: 
 - http://rubygems.org
 - http://gems.github.com

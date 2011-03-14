@@ -41,21 +41,16 @@ bash_prompt() {
 bash_prompt
 unset bash_prompt
 
+function heftiest {
+  for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
+}
+
+function routes {
+ rake routes | sed -e "1d" -e "s,^[^/]*,,g" | awk '{print $1}' | sort | uniq 
+}
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
-# aliases for JRun/CF
-alias cf="/Applications/JRun4/bin/cf-multi-startup"
-
-# MySQL from macports
-alias mysql="mysql5"
-alias mysqladmin="mysqladmin5"
-alias mysqldump="mysqldump5"
-
-# Apache
-alias hosts='sudo mate /private/etc/hosts'
-alias vhosts='sudo mate /opt/local/apache2/conf/vhosts'
-alias apachelog="tail -f /opt/local/apache2/logs/error_log"
 
 # Misc -------------------------------------------------------------
 export HISTCONTROL=ignoredups
@@ -74,9 +69,6 @@ export CDPATH=.:~:~/work:~/projects:~/clients:~/server:~/foss #does for the cd b
 #export JAVA_HOME=/usr
 #export ANT_HOME=/usr/share/ant
 #export GRAILS_HOME=/opt/local/share/java/grails
-
-# Postgres
-export PGDATA=/opt/local/var/db/postgresql84/defaultdb
 
 # Subversion & Diff ------------------------------------------------
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
