@@ -1,2 +1,6 @@
 ssl
-ssh
+sshsubversion/auth/svn.simple
+subversion/auth/svn.ssl.client-passphrase
+subversion/auth/svn.ssl.server
+subversion/auth/svn.username
+subversion/auth/svn.simple/
