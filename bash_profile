@@ -27,9 +27,7 @@ alias gs='git status -sb'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 # rails
-alias at='autotest -rails'
 alias tlog='tail -f log/development.log'
-alias scaffold='ruby script/generate nifty_scaffold'
 alias migrate='rake db:migrate db:test:clone'
 alias rst='touch tmp/restart.txt' #passenger restart
 alias wip='rake cucumber:wip'
@@ -39,6 +37,8 @@ alias gemo="gem outdated"
 alias r='rails'
 alias rg='rails generate'
 alias t="terminitor"
+alias a='autotest'
+alias af='AUTOFEATURE=true autotest'
 # commands starting with % for pasting from web
 alias %=' '
 
@@ -69,13 +69,11 @@ alias reload='. ~/.bash_profile'
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.3-57419/jars"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
 
-
-#source ~/.bash/paths
+export NODE_PATH='/usr/local/lib/node'
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-#source ~/.bash/config
 export EDITOR="mate -w"
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
