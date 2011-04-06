@@ -4,3 +4,5 @@
 --follow
 --group
 --all
+--type-set=bin=.pdf
+--nobin
