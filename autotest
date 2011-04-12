@@ -20,5 +20,5 @@
 # Autotest::RCov.options = o
 
 Autotest.add_hook :initialize do |at|
-  %w{.svn .hg .git vendor log}.each {|exception| at.add_exception(exception)}
+  %w{.svn .hg .git vendor log rerun.txt Gemfile.lock}.each {|exception| at.add_exception(exception)}
 end
