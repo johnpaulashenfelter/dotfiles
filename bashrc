@@ -74,3 +74,5 @@ export CDPATH=.:~:~/work:~/projects:~/clients:~/server:~/foss #does for the cd b
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
 export SVN_EDITOR='${EDITOR}'
 alias svn?='svn st | grep ?'
+source /Users/johnpaul/.lightning/functions.sh
+
