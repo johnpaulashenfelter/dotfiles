@@ -10,6 +10,9 @@ doc/app
 *~
 .DS_Store
 
+tmp
+log
+
 .svn
 .idea
 .eclipse
