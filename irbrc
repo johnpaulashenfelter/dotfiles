@@ -1,16 +1,10 @@
 #!/usr/bin/ruby
 
 require 'rubygems'
-require 'irbtools'
-# from http://toolmantim.com/article/2007/2/6/system_wide_script_console_logging
-# script_console_running = ENV.include?('RAILS_ENV') && IRB.conf[:LOAD_MODULES] && IRB.conf[:LOAD_MODULES].include?('console_with_helpers')
-# rails_running = ENV.include?('RAILS_ENV') && !(IRB.conf[:LOAD_MODULES] && IRB.conf[:LOAD_MODULES].include?('console_with_helpers'))
-# irb_standalone_running = !script_console_running && !rails_running
-# 
-# if script_console_running
-#   require 'logger'
-#   Object.const_set(:RAILS_DEFAULT_LOGGER, Logger.new(STDOUT))
-# end
+require 'hirb'
+Hirb.enable
+
+#require 'irbtools'
 
 # Include tab-completion in irb
 #require 'irb/completion'
@@ -36,8 +30,6 @@ require 'irbtools'
 
 #require 'bond'
 #Bond.start
-#require 'hirb'
-#Hirb.enable
 
 class Object
  # list methods which aren't in superclass
@@ -58,4 +50,44 @@ def ep
   eval(paste)
 end
 
-load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+railsrc_path = File.expand_path('~/.railsrc')
+if ( ENV['RAILS_ENV'] || defined? Rails ) && File.exist?( railsrc_path )
+  begin
+    load railsrc_path
+  # rescue Exception
+  #   warn "Could not load: #{ railsrc_path }" # because of $!.message
+  end
+end
+#load File.dirname(__FILE__) + '/.railsrc' if $0 == 'irb' && ENV['RAILS_ENV']
+
+begin # Utility methods
+  def pm(obj, *options) # Print methods
+    methods = obj.methods
+    methods -= Object.methods unless options.include? :more
+    filter = options.select {|opt| opt.kind_of? Regexp}.first
+    methods = methods.select {|name| name =~ filter} if filter
+
+    data = methods.sort.collect do |name|
+      method = obj.method(name)
+      if method.arity == 0
+        args = "()"
+      elsif method.arity > 0
+        n = method.arity
+        args = "(#{(1..n).collect {|i| "arg#{i}"}.join(", ")})"
+      elsif method.arity < 0
+        n = -method.arity
+        args = "(#{(1..n).collect {|i| "arg#{i}"}.join(", ")}, ...)"
+      end
+      klass = $1 if method.inspect =~ /Method: (.*?)#/
+      [name, args, klass]
+    end
+    max_name = data.collect {|item| item[0].size}.max
+    max_args = data.collect {|item| item[1].size}.max
+    data.each do |item| 
+      print "#{ANSI_LGRAY}#{item[0].rjust(max_name)}#{ANSI_RESET}"
+      print "#{ANSI_BLUE}#{item[1].ljust(max_args)}#{ANSI_RESET}"
+      print "#{ANSI_RED}#{item[2]}#{ANSI_RESET}\n"
+    end
+    data.size
+  end
+end
