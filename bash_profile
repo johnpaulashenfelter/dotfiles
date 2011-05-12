@@ -103,6 +103,8 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; f
 	
 export RUBYLIB="/usr/local/lib:$RUBYLIB"
 #source ~/.bash/completions
-source ~/.bash/completion_scripts/git_completion
+#source ~/.bash/completion_scripts/git_completion
+source /usr/local/Cellar/git/1.7.5.1/etc/bash_completion.d/git-completion.bash
+source /usr/local/etc/bash_completion.d/npm
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
