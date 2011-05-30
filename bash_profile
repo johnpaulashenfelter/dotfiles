@@ -1,5 +1,6 @@
 # cd
 alias ..='cd ..'
+function -() { cd -; }
 
 # ls
 alias ls="ls -F"
@@ -10,7 +11,6 @@ alias l='ls -aFhlG'
 #alias l="ls -lAh"
 alias ..='cd ..'
 alias ...='cd ../..'
-function -() { cd -; }
 alias c='clear'
 alias p='pwd'
 alias ma='mate .'
@@ -29,7 +29,7 @@ alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 # rails
 alias tlog='tail -f log/development.log'
 alias migrate='rake db:migrate db:test:clone'
-alias rst='touch tmp/restart.txt' #passenger restart
+alias rst='touch tmp/restart.txt' #passenger/pow restart
 alias wip='rake cucumber:wip'
 alias cuke='cucumber'
 alias geml="gem list | grep ^[A-Za-z]"
@@ -71,7 +71,7 @@ export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
 
-export NODE_PATH='/usr/local/lib/node'
+export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export EDITOR="mate -w"
@@ -104,7 +104,7 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; f
 export RUBYLIB="/usr/local/lib:$RUBYLIB"
 #source ~/.bash/completions
 #source ~/.bash/completion_scripts/git_completion
-source /usr/local/Cellar/git/1.7.5.1/etc/bash_completion.d/git-completion.bash
+source /usr/local/Cellar/git/1.7.5.3/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/npm
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
