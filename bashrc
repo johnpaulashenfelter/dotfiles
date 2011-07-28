@@ -45,9 +45,6 @@ function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
 
-function routes {
- rake routes | sed -e "1d" -e "s,^[^/]*,,g" | awk '{print $1}' | sort | uniq 
-}
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
@@ -66,13 +63,7 @@ bind "set show-all-if-ambiguous On" # show list automatically, without double ta
 export CDPATH=.:~:~/work:~/projects:~/clients:~/server:~/foss #does for the cd built-in what PATH does for executables. 
 
 # Java
-#export JAVA_HOME=/usr
-#export ANT_HOME=/usr/share/ant
-#export GRAILS_HOME=/opt/local/share/java/grails
 
 # Subversion & Diff ------------------------------------------------
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
 export SVN_EDITOR='${EDITOR}'
-alias svn?='svn st | grep ?'
-source /Users/johnpaul/.lightning/functions.sh
-
