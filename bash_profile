@@ -12,7 +12,6 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias c='clear'
 alias p='pwd'
-alias ma='mate .'
 
 # git
 alias gl='git pull'
