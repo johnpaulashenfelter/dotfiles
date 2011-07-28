@@ -8,7 +8,6 @@ alias ll="ls -l"
 alias la='ls -A'
 alias lx='ls -CF'
 alias l='ls -aFhlG'
-#alias l="ls -lAh"
 alias ..='cd ..'
 alias ...='cd ../..'
 alias c='clear'
@@ -36,11 +35,10 @@ alias geml="gem list | grep ^[A-Za-z]"
 alias gemo="gem outdated"
 alias r='rails'
 alias rg='rails generate'
-alias t="terminitor"
-alias a='autotest'
-alias af='AUTOFEATURE=true autotest'
-# commands starting with % for pasting from web
-alias %=' '
+
+alias t='terminitor'
+alias h='heroku'
+alias g='guard'
 
 # Misc
 alias f='find . -iname'
@@ -70,6 +68,8 @@ export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
 export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
+export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.3-45758/jars"
+export AWS_RDS_HOME="/usr/local/Cellar/rds-command-line-tools/1.3.003/jars"
 
 export NODE_PATH='/usr/local/lib/node_modules'
 export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
