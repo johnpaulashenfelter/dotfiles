@@ -1,0 +1,44 @@
+Host kwnews
+HostName apps.kwnews.com
+User rails
+
+Host cprverify
+HostName cprverify.scitent.com
+User rails
+
+Host angel
+HostName angel.transitionpoint.com
+User ashenfelterj
+
+Host buffy
+HostName buffy.transitionpoint.com
+User admin
+
+Host cordy
+HostName cordy.transitionpoint.com
+User ashenfelterj
+
+Host doyle
+HostName doyle.transitionpoint.com
+User ashenfelterj
+
+Host heroku.tpoint
+HostName heroku.com
+IdentityFile ~/.ssh/id_rsa
+IdentitiesOnly yes
+
+Host ss
+HostName transitionpt.strongspace.com
+User transitionpt
+
+Host ss-tpoint
+HostName tpoint.strongspace.com
+User tpoint
+
+Host ss-transitionpoint
+HostName transitionpoint.strongspace.com
+User transitionpoint
+
+Host artsready
+HostName 50.19.225.94
+User johnpaul
