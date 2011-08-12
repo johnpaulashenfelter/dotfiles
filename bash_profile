@@ -14,6 +14,7 @@ alias c='clear'
 alias p='pwd'
 
 # git
+alias g="git"
 alias gl='git pull'
 alias gp='git push'
 alias gd='git diff'
@@ -25,23 +26,44 @@ alias gs='git status -sb'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 
 # rails
-alias tlog='tail -f log/development.log'
-alias migrate='rake db:migrate db:test:clone'
-alias rst='touch tmp/restart.txt' #passenger/pow restart
-alias wip='rake cucumber:wip'
-alias cuke='cucumber'
-alias geml="gem list | grep ^[A-Za-z]"
-alias gemo="gem outdated"
 alias r='rails'
 alias rg='rails generate'
 
+alias s="bundle exec rspec"
+alias b="bundle"
+alias be="bundle exec"
+
+alias migrate="rake db:migrate db:test:prepare"
+alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
+alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
+alias rst='touch tmp/restart.txt' #passenger/pow restart
+
+alias wip='rake cucumber:wip'
+alias cuc="bundle exec cucumber"
+alias cuke='cucumber'
+
+alias geml="gem list | grep ^[A-Za-z]"
+alias gemo="gem outdated"
+
+
 alias t='terminitor'
 alias h='heroku'
-alias g='guard'
+
+# thoughbot/dotfiles
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+
+
+
+
 
 # Misc
+alias tlf="tail -f"
+alias tlog='tail -f log/development.log'
+
 alias f='find . -iname'
-alias g='grep -i'  # Case insensitive grep
 alias m='more'
 alias p="ps xa | grep " 
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
