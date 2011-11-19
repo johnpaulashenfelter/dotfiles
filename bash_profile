@@ -55,10 +55,6 @@ alias h='heroku'
 # alias -g L='| wc -l'
 # alias -g ONE="| awk '{ print \$1}'"
 
-
-
-
-
 # Misc
 alias tlf="tail -f"
 alias tlog='tail -f log/development.log'
@@ -123,8 +119,6 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; f
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 	
 export RUBYLIB="/usr/local/lib:$RUBYLIB"
-#source ~/.bash/completions
-#source ~/.bash/completion_scripts/git_completion
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/npm
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
