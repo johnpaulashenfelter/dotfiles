@@ -1,5 +1,6 @@
 # cd
 alias ..='cd ..'
+alias ...='cd ../..'
 function -() { cd -; }
 
 # ls
@@ -8,8 +9,6 @@ alias ll="ls -l"
 alias la='ls -A'
 alias lx='ls -CF'
 alias l='ls -aFhlG'
-alias ..='cd ..'
-alias ...='cd ../..'
 alias c='clear'
 alias p='pwd'
 
@@ -24,6 +23,7 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status -sb'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
+alias gci="git pull --rebase && rake && git push"
 
 # rails
 alias r='rails'
@@ -32,22 +32,28 @@ alias rg='rails generate'
 alias s="bundle exec rspec"
 alias b="bundle"
 alias be="bundle exec"
+alias bake="bundle exec rake"
 
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
 alias rst='touch tmp/restart.txt' #passenger/pow restart
 
+
 alias wip='rake cucumber:wip'
 alias cuc="bundle exec cucumber"
 alias cuke='cucumber'
 
+alias gi="gem install"
+alias giv="gem install -v"
 alias geml="gem list | grep ^[A-Za-z]"
 alias gemo="gem outdated"
 
 
 alias t='terminitor'
 alias h='heroku'
+alias staging='heroku run console --remote staging'
+alias production='heroku run console --remote production'
 
 # thoughbot/dotfiles
 # alias -g G='| grep'
