@@ -42,3 +42,8 @@
 	enabled = 1
 [heroku]
 	account = tpoint
+# from thoughtbot dotfiles
+[push]
+  default = tracking
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s	
