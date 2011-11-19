@@ -63,7 +63,7 @@ bind "set completion-ignore-case on" # note: bind used instead of sticking these
 bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
 
-export CDPATH=.:~:~/work:~/projects:~/clients:~/server:~/foss #does for the cd built-in what PATH does for executables. 
+export CDPATH=.:~:~/work/ttt:~/projects:~/work:~/foss:~/foss-contrib #does for the cd built-in what PATH does for executables. 
 
 # Java
 
