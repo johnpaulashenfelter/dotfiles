@@ -9,10 +9,9 @@ doc/app
 *.swp
 *~
 .DS_Store
-
 tmp
 log
-
 .svn
 .idea
 .eclipse
+Termfile
