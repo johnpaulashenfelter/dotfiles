@@ -39,7 +39,6 @@ alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump 
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
 alias rst='touch tmp/restart.txt' #passenger/pow restart
 
-
 alias wip='rake cucumber:wip'
 alias cuc="bundle exec cucumber"
 alias cuke='cucumber'
@@ -126,6 +125,5 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; f
 	
 export RUBYLIB="/usr/local/lib:$RUBYLIB"
 source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/npm
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
