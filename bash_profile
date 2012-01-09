@@ -61,6 +61,8 @@ alias h='heroku'
 alias staging='heroku run console --remote staging'
 alias production='heroku run console --remote production'
 
+alias mvim='rvm default do /usr/local/bin/mvim $@'
+
 # thoughbot/dotfiles
 # alias -g G='| grep'
 # alias -g M='| less'
