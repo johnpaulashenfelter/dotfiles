@@ -39,7 +39,6 @@ alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump 
 alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
 alias rst='touch tmp/restart.txt' #passenger/pow restart
 
-
 alias wip='rake cucumber:wip'
 alias cuc="bundle exec cucumber"
 alias cuke='cucumber'
@@ -49,11 +48,20 @@ alias giv="gem install -v"
 alias geml="gem list | grep ^[A-Za-z]"
 alias gemo="gem outdated"
 
+# REE
+
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=100000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=50000000
+export RUBY_HEAP_FREE_MIN=50000
 
 alias t='terminitor'
 alias h='heroku'
 alias staging='heroku run console --remote staging'
 alias production='heroku run console --remote production'
+
+alias mvim='rvm default do /usr/local/bin/mvim $@'
 
 # thoughbot/dotfiles
 # alias -g G='| grep'
@@ -90,7 +98,7 @@ alias reload='. ~/.bash_profile'
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/cert-*.pem)"
-export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.4.2.2/jars"
+export EC2_HOME="/usr/local/Cellar/ec2-api-tools/1.5.2.3/jars"
 export EC2_AMITOOL_HOME="/usr/local/Cellar/ec2-ami-tools/1.3-45758/jars"
 export AWS_RDS_HOME="/usr/local/Cellar/rds-command-line-tools/1.3.003/jars"
 
@@ -133,7 +141,9 @@ if [[ -s "$HOME/.rvm/scripts/rvm" ]]  ; then source "$HOME/.rvm/scripts/rvm" ; f
 	
 export RUBYLIB="/usr/local/lib:$RUBYLIB"
 source /usr/local/etc/bash_completion.d/git-completion.bash
-source /usr/local/etc/bash_completion.d/npm
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
+<<<<<<< HEAD
 [[ -s "/Users/johnpaul/.rvm/scripts/rvm" ]] && source "/Users/johnpaul/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+=======
+>>>>>>> 0e471ab1367576c5cd990419cdee00365a31bd37
