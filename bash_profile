@@ -100,6 +100,13 @@ export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export EDITOR="mate -w"
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 
+# For ruby (1.9.3) performance release
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_HEAP_FREE_MIN=500000
+
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
@@ -129,3 +136,4 @@ source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/npm
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
+[[ -s "/Users/johnpaul/.rvm/scripts/rvm" ]] && source "/Users/johnpaul/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
