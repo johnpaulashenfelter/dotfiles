@@ -143,7 +143,4 @@ export RUBYLIB="/usr/local/lib:$RUBYLIB"
 source /usr/local/etc/bash_completion.d/git-completion.bash
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
-<<<<<<< HEAD
 [[ -s "/Users/johnpaul/.rvm/scripts/rvm" ]] && source "/Users/johnpaul/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-=======
->>>>>>> 0e471ab1367576c5cd990419cdee00365a31bd37
