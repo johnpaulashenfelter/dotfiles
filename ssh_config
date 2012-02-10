@@ -42,3 +42,19 @@ User transitionpoint
 Host artsready
 HostName 50.19.225.94
 User johnpaul
+
+Host proxima.p10lab
+HostName 10.0.2.4
+User johnpaul
+
+Host ci.p10lab
+HostName 10.0.2.201
+User root
+
+Host pear
+NostName 184.106.165.120
+User deploy
+
+Host pear-analyzer
+HostName 173.203.100.181
+User root
