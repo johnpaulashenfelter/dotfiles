@@ -71,3 +71,4 @@ export CDPATH=.:~:~/work/p10:~/projects:~/work:~/foss:~/foss-contrib #does for t
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
 export SVN_EDITOR='${EDITOR}'
 set -o vi
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
