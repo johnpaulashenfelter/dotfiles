@@ -1,6 +1,6 @@
 [user]
-	name = John Paul Ashenfelter
-	email = johnpaul@transitionpoint.com
+  name = John Paul Ashenfelter
+  email = johnpaul@transitionpoint.com
 [alias]
   co = checkout
   st = status -s
