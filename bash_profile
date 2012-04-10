@@ -1,47 +1,30 @@
-# cd
-alias ..='cd ..'
-alias ...='cd ../..'
-function -() { cd -; }
-
-# ls
-alias ls="ls -F"
-alias ll="ls -l"
-alias la='ls -A'
-alias lx='ls -CF'
-alias l='ls -aFhlG'
 alias c='clear'
 alias p='pwd'
 
-# git
+# Easier navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# Always colorize ls
+alias ls="ls -GF" # colorize and indicate type/executable
+
+# List all files colorized in long format, including dot files with filesize suffixes
+alias la="ls -ahl"
+
+# shortcuts
 alias g="git"
-alias gl='git pull'
-alias gp='git push'
-alias gd='git diff'
-alias gc='git commit'
-alias gca='git commit -a'
-alias gco='git checkout'
-alias gb='git branch'
-alias gs='git status -sb'
-alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias gci="git pull --rebase && rake && git push"
+alias mvim='rvm default do /usr/local/bin/mvim $@'
 
-# rails
+# dev shortcuts
 alias r='rails'
-alias rg='rails generate'
-
-alias s="bundle exec rspec"
-alias b="bundle"
 alias be="bundle exec"
-alias bake="bundle exec rake"
 
 alias migrate="rake db:migrate db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
-alias remongrate="rake mongoid:migrate && rake mongoid:migrate:redo"
 alias rst='touch tmp/restart.txt' #passenger/pow restart
 
 alias wip='rake cucumber:wip'
-alias cuc="bundle exec cucumber"
-alias cuke='cucumber'
+alias cuke="bundle exec cucumber"
 
 alias gi="gem install"
 alias giv="gem install -v"
@@ -53,17 +36,10 @@ alias h='heroku'
 alias staging='heroku run console --remote staging'
 alias production='heroku run console --remote production'
 
-alias mvim='rvm default do /usr/local/bin/mvim $@'
-
-# thoughbot/dotfiles
-# alias -g G='| grep'
-# alias -g M='| less'
-# alias -g L='| wc -l'
-# alias -g ONE="| awk '{ print \$1}'"
+alias tlog='tail -f log/development.log'
 
 # Misc
 alias tlf="tail -f"
-alias tlog='tail -f log/development.log'
 
 alias f='find . -iname'
 alias m='more'
@@ -74,6 +50,28 @@ alias systail='tail -f /var/log/system.log'
 alias df='df -h'
 alias space="du -shc * .[^.]*"
 alias rsync="rsync -avz"
+
+# Enhanced WHOIS lookups
+alias whois="whois -h whois-servers.net"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache"
+
+# View HTTP traffic
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
+alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
+
+# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+[ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
+
+# Add tab completion for `defaults read|write NSGlobalDomain`
+# You could just use `-g` instead, but I like being explicit
+complete -W "NSGlobalDomain" defaults
+
 
 # Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
