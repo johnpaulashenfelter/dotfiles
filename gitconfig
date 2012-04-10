@@ -5,12 +5,16 @@
   co = checkout
   st = status -s
   put = push origin HEAD
+  ca = commit -a
   ci = commit
   br = branch
   df = diff
+  l = log --pretty=oneline -n 20 --graph
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  # Undo a `git push`
+  undopush = push -f origin HEAD^:master
 [color]
   ui = auto
   # diff = auto
@@ -36,6 +40,11 @@
 [github]
 	user = johnpaulashenfelter
 	token = ec96131711d34decfea9c883786071d1
+[merge]
+	# Include summaries of merged commits in newly created merge commit messages
+	log = true
+[push]
+  default = tracking
 [branch]
 	autosetupmerge = true
 [rerere]
@@ -43,8 +52,6 @@
 [heroku]
 	account = tpoint
 # from thoughtbot dotfiles
-[push]
-  default = tracking
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s	
 [difftool "sourcetree"]
@@ -53,3 +60,10 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+[url "git://github.com/"]
+	insteadOf = "github:"
