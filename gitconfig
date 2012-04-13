@@ -42,7 +42,7 @@
 	token = ec96131711d34decfea9c883786071d1
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+	# log = true
 [push]
   default = tracking
 [branch]
