@@ -51,6 +51,9 @@ alias df='df -h'
 alias space="du -shc * .[^.]*"
 alias rsync="rsync -avz"
 
+# Update Textmate submodules
+alias textup='cd ~/Library/Application\ Support/TextMate/;git submodule foreach git pull origin master'
+
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
