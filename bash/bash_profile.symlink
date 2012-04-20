@@ -75,6 +75,8 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
+alias clean_term_logs='sudo rm -rf /private/var/log/asl/*.asl'
+alias textup='cd ~/Library/Application\ Support/TextMate/;cd ~/Library/Application\ Support/TextMate/;git submodule foreach git pull origin master'
 
 # Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
