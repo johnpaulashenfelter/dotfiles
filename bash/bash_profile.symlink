@@ -127,6 +127,10 @@ if [ -d /usr/local/share/npm/bin ]; then
 	export PATH=/usr/local/share/npm/bin:$PATH
 fi
 
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
+fi
+
 if [ -d /usr/local/bin ]; then
 	export PATH=/usr/local/bin:$PATH
 fi
