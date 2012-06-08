@@ -63,10 +63,6 @@ bind "set completion-ignore-case on" # note: bind used instead of sticking these
 bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
 
-export CDPATH=.:~:~/work/p10:~/projects:~/work:~/foss:~/foss-contrib #does for the cd built-in what PATH does for executables. 
-
-# Java
-
 # Subversion & Diff ------------------------------------------------
 export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
 export SVN_EDITOR='${EDITOR}'
