@@ -19,7 +19,7 @@ alias mvim='rvm default do /usr/local/bin/mvim $@'
 alias r='rails'
 alias be="bundle exec"
 
-alias migrate="rake db:migrate db:test:prepare"
+alias migrate="rake db:migrate && rake db:test:prepare"
 alias remigrate="rake db:migrate && rake db:migrate:redo && rake db:schema:dump db:test:prepare"
 alias rst='touch tmp/restart.txt' #passenger/pow restart
 
