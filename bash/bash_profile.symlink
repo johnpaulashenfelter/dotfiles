@@ -126,6 +126,7 @@ fi
 
 if [ -d /usr/local/share/npm/bin ]; then
 	export PATH=/usr/local/share/npm/bin:$PATH
+	source /usr/local/node/lib/node_modules/npm/lib/utils/completion.sh
 fi
 
 if [ -f `brew --prefix`/etc/autojump ]; then
@@ -141,12 +142,3 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 source /usr/local/etc/bash_completion.d/git-completion.bash
 complete -C ~/.bash/completion_scripts/rake_completion -o default rake
 complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
-
-# {{{
-# Node Completion - Auto-generated, do not touch.
-shopt -s progcomp
-for f in $(command ls ~/.node-completion); do
-  f="$HOME/.node-completion/$f"
-  test -f "$f" && . "$f"
-done
-# }}}
