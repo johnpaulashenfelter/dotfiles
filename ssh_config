@@ -1,60 +1,79 @@
 Host kwnews
-HostName apps.kwnews.com
-User rails
+  HostName apps.kwnews.com
+  User rails
 
 Host cprverify
-HostName cprverify.scitent.com
-User rails
+  HostName cprverify.scitent.com
+  User rails
 
 Host angel
-HostName angel.transitionpoint.com
-User ashenfelterj
+  HostName angel.transitionpoint.com
+  User ashenfelterj
 
 Host buffy
-HostName buffy.transitionpoint.com
-User admin
+  HostName buffy.transitionpoint.com
+  User admin
 
 Host cordy
-HostName cordy.transitionpoint.com
-User ashenfelterj
+  HostName cordy.transitionpoint.com
+  User ashenfelterj
 
 Host doyle
-HostName doyle.transitionpoint.com
-User ashenfelterj
+  HostName doyle.transitionpoint.com
+  User ashenfelterj
 
 Host heroku.tpoint
-HostName heroku.com
-IdentityFile ~/.ssh/id_rsa
-IdentitiesOnly yes
+  HostName heroku.com
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
 
 Host ss
-HostName transitionpt.strongspace.com
-User transitionpt
+  HostName transitionpt.strongspace.com
+  User transitionpt
 
 Host ss-tpoint
-HostName tpoint.strongspace.com
-User tpoint
+  HostName tpoint.strongspace.com
+  User tpoint
 
 Host ss-transitionpoint
-HostName transitionpoint.strongspace.com
-User transitionpoint
-
-Host artsready
-HostName 50.19.225.94
-User johnpaul
-
-Host proxima.p10lab
-HostName 10.0.2.4
-User johnpaul
-
-Host ci.p10lab
-HostName 10.0.2.201
-User root
+  HostName transitionpoint.strongspace.com
+  User transitionpoint
 
 Host pear
-NostName 184.106.165.120
-User deploy
+  HostName 184.106.165.120
+  User deploy
 
 Host pear-analyzer
-HostName 173.203.100.181
-User root
+  HostName 173.203.100.181
+  User root
+
+Host ga-riak
+  HostName ec2-204-236-223-193.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile "~/.ec2/ga/ga.pem"
+
+Host ga-app1
+  HostName ec2-23-22-59-251.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile "~/.ec2/ga/ga.pem"
+
+Host ga-app2
+  HostName ec2-50-16-119-177.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile "~/.ec2/ga/ga.pem"
+
+Host ga-admissions
+  HostName ec2-23-22-98-39.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile "~/.ec2/ga/ga.pem"
+  ForwardAgent yes
+
+Host ga-cms
+  HostName ec2-23-21-28-201.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile "~/.ec2/ga/ga.pem"
+
+Host ga-rob
+  HostName ec2-23-20-106-117.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile "~/.ec2/ga/ga.pem"
