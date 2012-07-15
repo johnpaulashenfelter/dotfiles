@@ -10,6 +10,8 @@ alias ls="ls -GF" # colorize and indicate type/executable
 
 # List all files colorized in long format, including dot files with filesize suffixes
 alias la="ls -ahl"
+alias l="clear && pwd && ls -FGl"
+alias u="cd .. && l"
 
 # shortcuts
 alias g="git"
