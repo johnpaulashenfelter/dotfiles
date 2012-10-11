@@ -15,7 +15,6 @@ alias u="cd .. && l"
 
 # shortcuts
 alias g="git"
-alias mvim='rvm default do /usr/local/bin/mvim $@'
 
 # dev shortcuts
 alias r='rails'
