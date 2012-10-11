@@ -1,17 +1,27 @@
+# Rails
+.rbenv-version
+.rvmrc
+
 .bundle
 db/*.sqlite3*
-log/*.log
-*.log
-tmp/**/*
-tmp/*
+log
+log/*.log # dupe?
+*.log # dupe?
+tmp 
+tmp/* # dupe?
+tmp/**/* # dupe?
 doc/api
 doc/app
-*.swp
-*~
-.DS_Store
-tmp
-log
+
+# Development tools
 .svn
 .idea
 .eclipse
+*.sublime-project
+*.sublime-workspace
 Termfile
+
+# Mac
+.DS_Store
+*.swp
+*~
