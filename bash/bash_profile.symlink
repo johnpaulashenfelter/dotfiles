@@ -60,7 +60,7 @@ alias whois="whois -h whois-servers.net"
 
 # Flush Directory Service cache
 # alias flush="dscacheutil -flushcache" # OSX 10.5 - 10.6
-sudo killall -HUP mDNSResponder # OSX 10.7 - 10.8
+alias flush="sudo killall -HUP mDNSResponder" # OSX 10.7 - 10.8
 
 # View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
