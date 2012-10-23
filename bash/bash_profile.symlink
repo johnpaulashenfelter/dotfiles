@@ -77,6 +77,8 @@ export LANG="en_US"
 # You could just use `-g` instead, but I like being explicit
 complete -W "NSGlobalDomain" defaults
 
+# Brew autocompletion
+source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
 alias clean_term_logs='sudo rm -rf /private/var/log/asl/*.asl'
 
