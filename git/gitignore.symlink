@@ -1,6 +1,7 @@
 # Rails
 .rbenv-version
 .rvmrc
+.powrc
 
 .bundle
 db/*.sqlite3*
