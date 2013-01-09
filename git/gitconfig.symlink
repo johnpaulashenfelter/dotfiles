@@ -15,6 +15,7 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
+	nm = branch --no-merged
 [color]
   ui = auto
   # diff = auto
