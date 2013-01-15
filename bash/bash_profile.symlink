@@ -1,5 +1,4 @@
 alias c='clear'
-alias p='pwd'
 
 # Easier navigation
 alias ..='cd ..'
