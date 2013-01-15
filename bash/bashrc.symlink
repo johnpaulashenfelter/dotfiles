@@ -42,10 +42,6 @@ bash_prompt() {
 bash_prompt
 unset bash_prompt
 
-function heftiest {
-  for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
-}
-
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
@@ -61,9 +57,6 @@ bind "set completion-ignore-case on" # note: bind used instead of sticking these
 bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
 
-# Subversion & Diff ------------------------------------------------
-export SV_USER='jashenfelter'  # Change this to your username that you normally use on subversion (only if it is different from your logged in name)
-export SVN_EDITOR='${EDITOR}'
 set -o vi
 
 ### Added by the Heroku Toolbelt

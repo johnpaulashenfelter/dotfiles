@@ -32,6 +32,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # RVM
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
+# Quickly find the big files in a rails app
+function heftiest {
+  for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
+}
+
 # Misc
 alias tlf="tail -f"
 
