@@ -15,7 +15,7 @@ alias la="ls -ahl"
 alias l="clear && pwd && ls -FGl"
 alias u="cd .. && l"
 
-# dev shortcuts
+# Rails development
 alias be="bundle exec"
 
 alias migrate="rake db:migrate && rake db:test:prepare"
@@ -25,6 +25,12 @@ alias wip="rake cucumber:wip"
 alias cuke="bundle exec cucumber"
 
 alias tlog="tail -f log/development.log"
+
+# RBENV
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# RVM
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 # Misc
 alias tlf="tail -f"
@@ -113,12 +119,6 @@ if [ -d /usr/local/bin ]; then
 	export PATH=/usr/local/bin:$PATH
 fi
   
-# RBENV
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# RVM
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 ## Autocompletion
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
