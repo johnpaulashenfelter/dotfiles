@@ -1,3 +1,5 @@
+IdentityFile ~/.ssh/id_rsa.pub
+
 Host kwnews
   HostName apps.kwnews.com
   User rails
@@ -50,30 +52,28 @@ Host pear-analyzer
 Host ga-riak
   HostName ec2-204-236-223-193.compute-1.amazonaws.com
   User ubuntu
-  IdentityFile "~/.ec2/ga/ga.pem"
 
 Host ga-app1
   HostName ec2-23-22-59-251.compute-1.amazonaws.com
   User ubuntu
-  IdentityFile "~/.ec2/ga/ga.pem"
 
 Host ga-app2
   HostName ec2-50-16-119-177.compute-1.amazonaws.com
   User ubuntu
-  IdentityFile "~/.ec2/ga/ga.pem"
 
 Host ga-admissions
   HostName ec2-23-22-98-39.compute-1.amazonaws.com
   User ubuntu
-  IdentityFile "~/.ec2/ga/ga.pem"
   ForwardAgent yes
 
 Host ga-cms
   HostName ec2-23-21-28-201.compute-1.amazonaws.com
   User ubuntu
-  IdentityFile "~/.ec2/ga/ga.pem"
 
-Host ga-rob
-  HostName ec2-23-20-106-117.compute-1.amazonaws.com
+Host ga-ci ci.generalassemb.ly
+  HostName ec2-50-16-84-110.compute-1.amazonaws.com
   User ubuntu
-  IdentityFile "~/.ec2/ga/ga.pem"
+
+Host pairlite
+  HostName www7.pairlite.com
+  User pl1814
