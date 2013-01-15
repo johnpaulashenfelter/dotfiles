@@ -68,13 +68,6 @@ complete -W "NSGlobalDomain" defaults
 # Brew autocompletion
 source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
 
-# changing directory to code project
-function p { cd ~/projects/$1; }
-function w { cd ~/work/$1; }
-function f { cd ~/foss/$1; }
-function c { cd ~/clients/$1; }
-
-
 export JAVA_HOME="/System/Library/Frameworks/JavaVM.framework/Home"
 export EC2_PRIVATE_KEY="$(/bin/ls $HOME/.ec2/ga/pk-*.pem)"
 export EC2_CERT="$(/bin/ls $HOME/.ec2/ga/cert-*.pem)"
