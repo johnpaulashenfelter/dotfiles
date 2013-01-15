@@ -42,9 +42,6 @@ bash_prompt() {
 bash_prompt
 unset bash_prompt
 
-#http://collectiveidea.com/blog/archives/2011/08/02/command-line-feedback-from-rvm-and-git/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+collectiveidea+%28Collective+Idea+Blog%29
-#export PS1="\[\033[01;34m\]\$(~/.rvm/bin/rvm-prompt) \[\033[01;32m\]\w\[\033[00;33m\]\$(__git_ps1 \" (%s)\") \[\033[01;36m\]\$\[\033[00m\] "
-
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
