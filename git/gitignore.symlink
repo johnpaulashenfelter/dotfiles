@@ -1,9 +1,14 @@
-# Rails
+# Ruby/Rails tools
 .ruby-version
 .rbenv-version
 .rvmrc
+
 .powrc
 
+zeus.json
+custom_plan.rb
+
+# Rails apps
 .bundle
 db/*.sqlite3*
 log
@@ -21,9 +26,11 @@ doc/app
 .eclipse
 *.sublime-project
 *.sublime-workspace
+*.swp
+*~
+
 Termfile
 
 # Mac
 .DS_Store
-*.swp
-*~
+
