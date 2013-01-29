@@ -16,6 +16,7 @@
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
 	nm = branch --no-merged
+	ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
 [color]
   ui = auto
   # diff = auto
