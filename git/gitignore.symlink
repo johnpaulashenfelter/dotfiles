@@ -1,24 +1,20 @@
-# Ruby/Rails tools
+# Ruby tools
 .ruby-version
 .rbenv-version
 .rvmrc
 
+# Pow
 .powrc
 
+# Zeus
 zeus.json
 custom_plan.rb
 
-# Rails apps
-.bundle
-db/*.sqlite3*
-log
-log/*.log # dupe?
-*.log # dupe?
-tmp 
-tmp/* # dupe?
-tmp/**/* # dupe?
-doc/api
-doc/app
+# Rails app defaults
+/.bundle
+/db/*.sqlite3*
+/log/*.log
+/tmp# log
 
 # Development tools
 .svn
@@ -29,8 +25,7 @@ doc/app
 *.swp
 *~
 
-Termfile
+Termfile # terminitor
 
 # Mac
 .DS_Store
-
