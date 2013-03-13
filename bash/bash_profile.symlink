@@ -26,6 +26,9 @@ alias cuke="bundle exec cucumber"
 
 alias tlog="tail -f log/development.log"
 
+# https://coderwall.com/p/vyl8zg
+alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
+
 # RBENV
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
