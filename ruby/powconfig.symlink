@@ -1,3 +1,4 @@
 export POW_DOMAINS=dev,test,local
 export POW_TIMEOUT=300
 export POW_WORKERS=3
+export NEWRELIC_DISPATCHER=pow
