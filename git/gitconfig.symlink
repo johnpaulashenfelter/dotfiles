@@ -37,7 +37,7 @@
   untracked = cyan	
 [core]
 	excludesfile = /Users/johnpaul/.gitignore
-	editor = mate -w
+	editor = subl -w
 	autocrlf = input
 [github]
 	user = johnpaulashenfelter
@@ -48,7 +48,8 @@
 [push]
   default = tracking
 [branch]
-	autosetupmerge = true
+  # setup remote AND local branches for tracking
+	autosetupmerge = always 
 [rerere]
 	enabled = 1
 [heroku]

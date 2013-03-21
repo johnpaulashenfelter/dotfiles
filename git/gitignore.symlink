@@ -15,6 +15,7 @@ custom_plan.rb
 /db/*.sqlite3*
 /log/*.log
 /tmp# log
+/vendor/bundle
 
 # Development tools
 .svn
