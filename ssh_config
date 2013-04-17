@@ -4,25 +4,10 @@ Host kwnews
   HostName apps.kwnews.com
   User rails
 
-Host cprverify
-  HostName cprverify.scitent.com
-  User rails
-
-Host angel
-  HostName angel.transitionpoint.com
-  User ashenfelterj
-
-Host buffy
-  HostName buffy.transitionpoint.com
-  User admin
-
-Host cordy
-  HostName cordy.transitionpoint.com
-  User ashenfelterj
-
-Host doyle
-  HostName doyle.transitionpoint.com
-  User ashenfelterj
+Host kwnews-next
+  HostName 166.78.108.39
+  User root
+#  Password 6JbBwJQt55Fe
 
 Host heroku.tpoint
   HostName heroku.com
@@ -49,16 +34,20 @@ Host pear-analyzer
   HostName 173.203.100.181
   User root
 
-Host ga-riak
-  HostName ec2-204-236-223-193.compute-1.amazonaws.com
-  User ubuntu
-
-Host ga-app1
-  HostName ec2-23-22-59-251.compute-1.amazonaws.com
+Host ga-app1          
+  HostName app1.generalassemb.ly
   User ubuntu
 
 Host ga-app2
-  HostName ec2-50-16-119-177.compute-1.amazonaws.com
+  HostName app2.generalassemb.ly
+  User ubuntu
+
+Host ga-app3
+  HostName app3.generalassemb.ly
+  User ubuntu
+
+Host ga-app4          
+  HostName app4.generalassemb.ly
   User ubuntu
 
 Host ga-admissions
@@ -66,14 +55,19 @@ Host ga-admissions
   User ubuntu
   ForwardAgent yes
 
-Host ga-cms
-  HostName ec2-23-21-28-201.compute-1.amazonaws.com
-  User ubuntu
-
-Host ga-ci ci.generalassemb.ly
+Host ga-ci ga-dp ci.generalassemb.ly dp.generalassemb.ly 
   HostName ec2-50-16-84-110.compute-1.amazonaws.com
   User ubuntu
 
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
+
+Host cvilleit-ep
+  HostName ruby-test.gol33t.us
+  User root
+
+Host ga-marketing
+  HostName ec2-107-20-104-96.compute-1.amazonaws.com
+  User ubuntu
+  IdentityFile /Users/johnpaul/.ssh/ga.pem
