@@ -98,7 +98,7 @@ export RUBY_FREE_MIN=200000
 # export RUBY_GC_MALLOC_LIMIT=1000000000
 # export RUBY_FREE_MIN=500000
 # export RUBY_HEAP_MIN_SLOTS=40000
-  
+
 ## PATHS
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export NODE_PATH="/usr/local/lib/node_modules"
@@ -133,7 +133,9 @@ if [ -d /usr/local/bin ]; then
 	export PATH=/usr/local/bin:$PATH
 fi
 
-export PATH="./bin:/usr/local/sbin:$PATH"
+# Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
+# Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
+export PATH=".git/safe/../../bin:$PATH"
 
 ## Autocompletion
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
