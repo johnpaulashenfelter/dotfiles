@@ -1,4 +1,4 @@
 export POW_DOMAINS=dev,test,local
 export POW_TIMEOUT=300
-export POW_WORKERS=3
-export NEWRELIC_DISPATCHER=pow
+export POW_WORKERS=1 # fixes pow statistics gathering for NewRelic http://andre.arko.net/2011/11/12/use-newrelic-rpm-developer-mode-with-pow/
+export NEWRELIC_DISPATCHER=pow # ditto above
