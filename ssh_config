@@ -1,4 +1,4 @@
-IdentityFile ~/.ssh/id_rsa.pub
+#IdentityFile ~/.ssh/id_rsa.pub
 
 Host kwnews
   HostName apps.kwnews.com
@@ -34,40 +34,10 @@ Host pear-analyzer
   HostName 173.203.100.181
   User root
 
-Host ga-app1          
-  HostName app1.generalassemb.ly
-  User ubuntu
-
-Host ga-app2
-  HostName app2.generalassemb.ly
-  User ubuntu
-
-Host ga-app3
-  HostName app3.generalassemb.ly
-  User ubuntu
-
-Host ga-app4          
-  HostName app4.generalassemb.ly
-  User ubuntu
-
-Host ga-admissions
-  HostName ec2-23-22-98-39.compute-1.amazonaws.com
-  User ubuntu
-  ForwardAgent yes
-
-Host ga-ci ga-dp ci.generalassemb.ly dp.generalassemb.ly 
-  HostName ec2-50-16-84-110.compute-1.amazonaws.com
-  User ubuntu
-
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
 
-Host cvilleit-ep
-  HostName ruby-test.gol33t.us
-  User root
-
-Host ga-marketing
-  HostName ec2-107-20-104-96.compute-1.amazonaws.com
-  User ubuntu
-  IdentityFile /Users/johnpaul/.ssh/ga.pem
+Host web1 web2 web3 web4 worker
+  HostName %h.teamtreehouse.com
+  User treehouse
