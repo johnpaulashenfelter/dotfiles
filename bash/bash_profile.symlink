@@ -6,6 +6,14 @@ alias ...="cd ../.."
 
 alias c="clear"
 alias e="subl -n ." #quick edit of current dir with sublime
+
+# from http://viget.com/extend/level-up-your-shell-game
+alias s.="subl ."
+alias editcommit="git commit --amend -m"
+alias psgrep="ps aux | grep"
+alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.html'
+alias h?="history | grep"
+
 alias reload=". ~/.bash_profile"
 
 alias ls="ls -GF" # always colorize and indicate type/executable
