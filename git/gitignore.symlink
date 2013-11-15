@@ -5,6 +5,7 @@
 
 # Pow
 .powrc
+.powenv
 
 # Zeus
 zeus.json
@@ -25,8 +26,6 @@ custom_plan.rb
 *.sublime-workspace
 *.swp
 *~
-
-Termfile # terminitor
 
 # Mac
 .DS_Store
