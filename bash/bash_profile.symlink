@@ -80,7 +80,7 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 alias clean_term_logs="sudo rm -rf /private/var/log/asl/*.asl"
 
 ## Options
-
+export HISTFILESIZE=5000
 export EDITOR="subl -n -w"
 
 # Prefer US English and use UTF-8
