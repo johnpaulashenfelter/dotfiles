@@ -147,6 +147,3 @@ complete -W "NSGlobalDomain" defaults
 
 # Brew autocompletion
 source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
-
-complete -C ~/.bash/completion_scripts/rake_completion -o default rake
-complete -C ~/.bash/completion_scripts/capistrano_completion -o default cap
