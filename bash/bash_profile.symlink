@@ -8,7 +8,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 alias c="clear"
-alias e="subl -n ." #quick edit of current dir with sublime
+alias e="subl"
 
 # from http://viget.com/extend/level-up-your-shell-game
 alias s.="subl ."
@@ -102,6 +102,7 @@ export RUBY_HEAP_MIN_SLOTS=800000
 export RUBY_FREE_MIN=600000
 # export LD_PRELOAD=/usr/lib/libtcmalloc_minimal.so
 
+export GOPATH="/Users/johnpaul/.go"
 ## PATHS
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 export NODE_PATH="/usr/local/lib/node_modules"
