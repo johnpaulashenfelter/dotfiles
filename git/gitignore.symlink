@@ -18,10 +18,6 @@ custom_plan.rb
 /tmp# log
 /vendor/bundle
 
-# Front-end tools
-node_modules
-bower_components
-
 # Development tools
 .svn
 .idea
