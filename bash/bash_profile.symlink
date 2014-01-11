@@ -105,7 +105,7 @@ export RUBY_FREE_MIN=600000
 export GOPATH="/Users/johnpaul/.go"
 ## PATHS
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-export NODE_PATH="/usr/local/lib/node_modules"
+export NODE_PATH="/usr/local/share/npm/lib/node_modules"
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
