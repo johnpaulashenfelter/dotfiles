@@ -8,8 +8,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 
 alias c="clear"
-alias e="subl"
-
+alias number="rm -rf"
 # from http://viget.com/extend/level-up-your-shell-game
 alias s.="subl ."
 alias editcommit="git commit --amend -m"
