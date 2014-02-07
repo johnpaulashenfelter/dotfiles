@@ -2,20 +2,41 @@
   name = John Paul Ashenfelter
   email = johnpaul@transitionpoint.com
 [alias]
-  co = checkout
-  st = status -s
-  put = push origin HEAD
-  ca = commit -a
+  cp = cherry-pick
+  cl = clone
   ci = commit
-  br = branch
-  df = diff
+  co = checkout
+  st = status -sb
+  nm = branch --no-merged
+  put = push origin HEAD
+
+  # stash shortcuts
+  sl = stash list
+  sa = stash apply
+  ss = stash save
+
+  # diff
+  diff = diff --word-diff
+  ds = diff --staged      # git ds - diff your staged changes == review before committing.
+  dc = diff --cached
+
+  # log formats
   l = log --pretty=oneline -n 20 --graph
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+  daylog = log --since '1 day ago' --oneline --author <johnpaul@transitionpoint.com>  # I know what you did yesterday - great for follow-ups
+    lh = log --graph
+  la = !git lh --date-order --all 2> /dev/null
+  lb = log --graph --simplify-by-decoration
+  lba = !git lb --all
+  h = !git --no-pager log --graph -n 15
+  a = !git --no-pager la -n 15
+
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
-	nm = branch --no-merged
+
+  # Kaleidoscope reviewing
 	ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
 [color]
   ui = auto
@@ -49,7 +70,7 @@
   default = tracking
 [branch]
   # setup remote AND local branches for tracking
-	autosetupmerge = always 
+#	autosetupmerge = always 
 [rerere]
 	enabled = 1
 [heroku]
