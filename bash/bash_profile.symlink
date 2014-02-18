@@ -97,11 +97,21 @@ export JAVA_HOME="$(/usr/libexec/java_home)"
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
 
 # http://samsaffron.com/archive/2013/05/03/eliminating-my-trivial-inconveniences
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
-export RUBY_HEAP_MIN_SLOTS=800000
-export RUBY_FREE_MIN=600000
+# export RUBY_GC_MALLOC_LIMIT=1000000000
+# export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
+# Ruby pre 2.1
+# export RUBY_HEAP_MIN_SLOTS=800000
+# export RUBY_FREE_MIN=600000
+# Ruby 2.1
+# export RUBY_GC_HEAP_INIT_SLOTS
+# export RUBY_GC_HEAP_FREE_SLOTS
 # export LD_PRELOAD=/usr/lib/libtcmalloc_minimal.so
+
+# More also here: http://tmm1.net/ruby21-rgengc/
+# export RUBY_GC_HEAP_INIT_SLOTS=600000
+# export RUBY_GC_HEAP_FREE_SLOTS=600000
+# export RUBY_GC_HEAP_GROWTH_FACTOR=1.25
+# export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
 
 export GOPATH="/Users/johnpaul/.go"
 ## PATHS
