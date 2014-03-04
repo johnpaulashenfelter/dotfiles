@@ -1,5 +1,3 @@
-# generate with:
-# brew leaves | sed 's/^/install /' > Brewfile
 install ab
 install ansible
 install apr-util
@@ -8,6 +6,7 @@ install autoconf-archive
 install autojump
 install bash-completion
 install boost
+install brew-cask
 install cloc
 install coreutils
 install couchdb
@@ -16,7 +15,6 @@ install curl
 install dart
 install datomic
 install elixir
-install fftw
 install gfortran
 install ghostscript
 install git
@@ -34,6 +32,7 @@ install hub
 install imagemagick
 install influxdb
 install jasper
+install julia
 install leiningen
 install little-cms
 install llvm
@@ -45,7 +44,6 @@ install mysql
 install neo4j
 install nginx
 install node
-install open-mpi
 install optipng
 install passenger
 install percona-toolkit
