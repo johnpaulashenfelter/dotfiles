@@ -1,78 +1,80 @@
-ab
-ansible
-apr-util
-asciidoc
-autoconf-archive
-autojump
-bash-completion
-boost
-cloc
-coreutils
-couchdb
-ctags
-curl
-dart
-datomic
-elixir
-fftw
-gfortran
-ghostscript
-git
-git-extras
-git-flow
-glpk
-gnu-sed
-gnu-typist
-google-perftools
-graphviz
-haskell-platform
-help2man
-hiredis
-hub
-imagemagick
-influxdb
-jasper
-leiningen
-little-cms
-llvm
-macvim
-memcached
-mercurial
-mongodb
-mysql
-neo4j
-nginx
-node
-open-mpi
-optipng
-passenger
-percona-toolkit
-pgtune
-phantomjs
-pidof
-postgresql
-python
-qt
-r
-rbenv-gem-rehash
-reattach-to-user-namespace
-redis
-resty
-riak
-ruby-build
-rust
-s3cmd
-sbt
-scala
-siege
-sloccount
-socat
-swig
-tbb
-the_silver_searcher
-tig
-tmate
-tmux
-v8
-wget
-xmlto
+# generate with:
+# brew leaves | sed 's/^/install /' > Brewfile
+install ab
+install ansible
+install apr-util
+install asciidoc
+install autoconf-archive
+install autojump
+install bash-completion
+install boost
+install cloc
+install coreutils
+install couchdb
+install ctags
+install curl
+install dart
+install datomic
+install elixir
+install fftw
+install gfortran
+install ghostscript
+install git
+install git-extras
+install git-flow
+install glpk
+install gnu-sed
+install gnu-typist
+install google-perftools
+install graphviz
+install haskell-platform
+install help2man
+install hiredis
+install hub
+install imagemagick
+install influxdb
+install jasper
+install leiningen
+install little-cms
+install llvm
+install macvim
+install memcached
+install mercurial
+install mongodb
+install mysql
+install neo4j
+install nginx
+install node
+install open-mpi
+install optipng
+install passenger
+install percona-toolkit
+install pgtune
+install phantomjs
+install pidof
+install postgresql
+install python
+install qt
+install r
+install rbenv-gem-rehash
+install reattach-to-user-namespace
+install redis
+install resty
+install riak
+install ruby-build
+install rust
+install s3cmd
+install sbt
+install scala
+install siege
+install sloccount
+install socat
+install swig
+install tbb
+install the_silver_searcher
+install tig
+install tmate
+install tmux
+install v8
+install wget
+install xmlto
