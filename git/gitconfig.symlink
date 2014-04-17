@@ -25,13 +25,15 @@
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-  daylog = log --since '1 day ago' --oneline --author <johnpaul@transitionpoint.com>  # I know what you did yesterday - great for follow-ups
     lh = log --graph
   la = !git lh --date-order --all 2> /dev/null
   lb = log --graph --simplify-by-decoration
   lba = !git lb --all
   h = !git --no-pager log --graph -n 15
   a = !git --no-pager la -n 15
+
+  daylog = log --since '1 day ago' --oneline --author <johnpaul@transitionpoint.com>  # I know what you did yesterday - great for follow-ups
+  logme = log --author <johnpaul@transitionpoint.com> --pretty=format:\"%cd  %h  %s\" --date=short
 
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
