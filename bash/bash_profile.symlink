@@ -1,10 +1,5 @@
 ## Aliases
 
-# Treehouse
-alias th-console="ssh -t deploy@199.182.122.36 -p 50100 \"ssh -t 10.84.0.104 'cd ~/rails_apps/treehouse/current/ && bundle exec rails console production'\""
-
-alias th-rake="ssh -t deploy@199.182.122.36 -p 50100 \"ssh -t rake01 'cd ~/rails_apps/treehouse/current/ && bundle exec rails console data'\""
-
 # Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
