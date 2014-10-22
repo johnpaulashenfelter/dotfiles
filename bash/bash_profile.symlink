@@ -39,7 +39,11 @@ alias tlog="tail -f log/development.log"
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 
 # RBENV
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+if which rbenv > /dev/null
+  then
+    eval "$(rbenv init -)"
+    export PATH="./bin:$PATH"
+fi
 
 # RVM
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
