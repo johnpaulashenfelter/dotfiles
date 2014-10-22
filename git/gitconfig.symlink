@@ -93,3 +93,6 @@
 	pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
 	insteadOf = "github:"
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
