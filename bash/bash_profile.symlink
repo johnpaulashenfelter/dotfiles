@@ -106,7 +106,7 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 # Homebrew EC2 tools
-export JAVA_HOME="$(/usr/libexec/java_home)"
+# export JAVA_HOME="$(/usr/libexec/java_home)"
 
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
 
