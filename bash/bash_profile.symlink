@@ -23,7 +23,7 @@ alias l="clear && pwd && ls -FGl"
 alias u="cd .. && l"
 
 # Rails development
-alias be="bundle exec"
+alias b="bundle exec"
 
 alias migrate="rake db:migrate && rake db:test:prepare"
 alias rst="touch tmp/restart.txt" #passenger/pow restart
