@@ -1,78 +1,71 @@
-install ab
-install ansible
-install apr-util
-install asciidoc
-install autoconf-archive
-install autojump
-install bash-completion
-install boost
-install brew-cask
-install cloc
-install coreutils
-install couchdb
-install ctags
-install curl
-install dart
-install datomic
-install elixir
-install gfortran
-install ghostscript
-install git
-install git-extras
-install git-flow
-install glpk
-install gnu-sed
-install gnu-typist
-install google-perftools
-install graphviz
-install haskell-platform
-install help2man
-install hiredis
-install hub
-install imagemagick
-install influxdb
-install jasper
-install julia
-install leiningen
-install little-cms
-install llvm
-install macvim
-install memcached
-install mercurial
-install mongodb
-install mysql
-install neo4j
-install nginx
-install node
-install optipng
-install passenger
-install percona-toolkit
-install pgtune
-install phantomjs
-install pidof
-install postgresql
-install python
-install qt
-install r
-install rbenv-gem-rehash
-install reattach-to-user-namespace
-install redis
-install resty
-install riak
-install ruby-build
-install rust
-install s3cmd
-install sbt
-install scala
-install siege
-install sloccount
-install socat
-install swig
-install tbb
-install the_silver_searcher
-install tig
-install tmate
-install tmux
-install v8
-install wget
-install xmlto
+ansible
+atk
+autojump
+bash-completion
+boot2docker
+brew-cask
+chuck
+cloc
+couchdb
+ctags
+curl
+dart
+datomic
+dock
+elixir
+exercism
+extempore
+gh
+git
+git-extras
+glibmm
+gnu-typist
+google-perftools
+graphicsmagick
+graphviz
+harfbuzz
+hicolor-icon-theme
+highlight
+hiredis
+hub
+hugo
+imagemagick
+influxdb
+jasper
+jq
+lame
+leiningen
+lynx
+macvim
+memcached
+mercurial
+mongodb
+mysql
+namebench
+neo4j
+nginx
+node
+optipng
+percona-toolkit
+pgtune
+phantomjs
+postgresql
+pyenv
+python
+r
+rbenv-gem-rehash
+reattach-to-user-namespace
+redis
+resty
+riak
+ruby-build
+rust
+s3cmd
+sbt
+scala
+sloccount
+the_silver_searcher
+tmate
+tmux
+v8
+wget
