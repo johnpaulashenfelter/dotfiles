@@ -127,10 +127,10 @@ export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
 # export RUBY_GC_HEAP_GROWTH_FACTOR=1.25
 # export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
 
-export GOPATH="/Users/johnpaul/.go"
 ## PATHS
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export GOPATH="/Users/johnpaul/.go"
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
+export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
@@ -141,6 +141,8 @@ if [ -d ~/bin ]; then
 fi
 
 # Homebrews
+alias brupdate='brew update && brew outdated'
+
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
 fi
