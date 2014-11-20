@@ -38,6 +38,11 @@ alias tlog="tail -f log/development.log"
 # https://coderwall.com/p/vyl8zg
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 
+# Homebrew
+alias brupdate='brew update && brew outdated'
+
+## Ruby
+
 # RBENV
 if which rbenv > /dev/null
   then
@@ -45,8 +50,34 @@ if which rbenv > /dev/null
     export PATH="./bin:$PATH"
 fi
 
-# RVM
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+# http://samsaffron.com/archive/2013/05/03/eliminating-my-trivial-inconveniences
+# export RUBY_GC_MALLOC_LIMIT=1000000000
+# export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
+# Ruby pre 2.1
+# export RUBY_HEAP_MIN_SLOTS=800000
+# export RUBY_FREE_MIN=600000
+
+# Ruby 2.1
+# export RUBY_GC_HEAP_INIT_SLOTS
+# export RUBY_GC_HEAP_FREE_SLOTS
+# export LD_PRELOAD=/usr/lib/libtcmalloc_minimal.so
+
+# More also here: http://tmm1.net/ruby21-rgengc/
+# export RUBY_GC_HEAP_INIT_SLOTS=600000
+# export RUBY_GC_HEAP_FREE_SLOTS=600000
+# export RUBY_GC_HEAP_GROWTH_FACTOR=1.25
+# export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
+
+# https://gist.github.com/csfrancis/ae59547804aedb82016d
+export RUBY_GC_OLDMALLOC_LIMIT=128000000
+export RUBY_GC_MALLOC_LIMIT=128000000
+export RUBY_GC_HEAP_SLOTS_GROWTH_FACTOR=1.25
+export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
+export RUBY_GC_HEAP_INIT_SLOTS=1600000
+export RUBY_GC_HEAP_FREE_SLOTS=600000
+export RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.3
+
+## Python
 
 # pyenv
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
@@ -73,7 +104,7 @@ alias tlf="tail -f"
 
 alias f="find . -iname"
 alias m="more"
-alias p="ps xa | grep " 
+alias p="ps xa | grep "
 alias ducks="du -cksh * | sort -rn|head -11" # Lists folders and files sizes in the current folder
 alias topc="top -o cpu"
 alias systail="tail -f /var/log/system.log"
@@ -105,27 +136,8 @@ export EDITOR="subl -n -w"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-# Homebrew EC2 tools
-# export JAVA_HOME="$(/usr/libexec/java_home)"
 
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
-
-# http://samsaffron.com/archive/2013/05/03/eliminating-my-trivial-inconveniences
-# export RUBY_GC_MALLOC_LIMIT=1000000000
-# export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1.25
-# Ruby pre 2.1
-# export RUBY_HEAP_MIN_SLOTS=800000
-# export RUBY_FREE_MIN=600000
-# Ruby 2.1
-# export RUBY_GC_HEAP_INIT_SLOTS
-# export RUBY_GC_HEAP_FREE_SLOTS
-# export LD_PRELOAD=/usr/lib/libtcmalloc_minimal.so
-
-# More also here: http://tmm1.net/ruby21-rgengc/
-# export RUBY_GC_HEAP_INIT_SLOTS=600000
-# export RUBY_GC_HEAP_FREE_SLOTS=600000
-# export RUBY_GC_HEAP_GROWTH_FACTOR=1.25
-# export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
 
 ## PATHS
 export GOPATH="/Users/johnpaul/.go"
@@ -141,7 +153,8 @@ if [ -d ~/bin ]; then
 fi
 
 # Homebrews
-alias brupdate='brew update && brew outdated'
+# EC2 tools
+# export JAVA_HOME="$(/usr/libexec/java_home)"
 
 if [ -f `brew --prefix`/etc/bash_completion ]; then
   . `brew --prefix`/etc/bash_completion
@@ -166,7 +179,6 @@ fi
 
 # Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
-# problems with this so removing for now
 export PATH=".git/safe/../../bin:$PATH"
 
 ## Autocompletion
