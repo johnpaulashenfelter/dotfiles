@@ -38,18 +38,8 @@ alias tlog="tail -f log/development.log"
 # https://coderwall.com/p/vyl8zg
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 
-# RBENV
-if which rbenv > /dev/null
-  then
-    eval "$(rbenv init -)"
-    export PATH="./bin:$PATH"
-fi
-
-# RVM
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
 # pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # To use Homebrew's directories rather than ~/.pyenv add to your profile:
 # export PYENV_ROOT=/usr/local/opt/pyenv
@@ -60,20 +50,20 @@ function heftiest {
 }
 
 # highlingint from https://gist.github.com/jimbojsb/1630790
-function light() {
-  if [ -z "$2" ]
-    then src="pbpaste"
-  else
-    src="cat $2"
-  fi
-  $src | highlight -O rtf --syntax $1 --font Inconsolata --style solarized-dark --font-size 24 | pbcopy
-}
+# function light() {
+#   if [ -z "$2" ]
+#     then src="pbpaste"
+#   else
+#     src="cat $2"
+#   fi
+#   $src | highlight -O rtf --syntax $1 --font Inconsolata --style solarized-dark --font-size 24 | pbcopy
+# }
 # Misc
 alias tlf="tail -f"
 
 alias f="find . -iname"
 alias m="more"
-alias p="ps xa | grep " 
+alias p="ps xa | grep "
 alias ducks="du -cksh * | sort -rn|head -11" # Lists folders and files sizes in the current folder
 alias topc="top -o cpu"
 alias systail="tail -f /var/log/system.log"
@@ -165,6 +155,14 @@ fi
 # Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
 # problems with this so removing for now
+export PATH=".git/safe/../../bin:$PATH"
+
+# load rbenv if available
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
+fi
+
+# mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
 ## Autocompletion
