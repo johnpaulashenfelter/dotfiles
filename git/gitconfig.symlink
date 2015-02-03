@@ -2,6 +2,7 @@
   name = John Paul Ashenfelter
   email = johnpaul@transitionpoint.com
 [alias]
+   p = push
   cp = cherry-pick
   cl = clone
   ci = commit
@@ -9,6 +10,9 @@
   st = status -sb
   nm = branch --no-merged
   put = push origin HEAD
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
 
   # stash shortcuts
   sl = stash list

@@ -1,2 +1,5 @@
- BUNDLE_PATH: vendor/bundle
+---
+BUNDLE_PATH: .bundle
+BUNDLE_JOBS: '3'
+BUNDLE_BUNDLE_WITHOUT: production
 

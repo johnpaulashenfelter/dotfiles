@@ -26,18 +26,7 @@ Host ss-transitionpoint
   HostName transitionpoint.strongspace.com
   User transitionpoint
 
-Host pear
-  HostName 184.106.165.120
-  User deploy
-
-Host pear-analyzer
-  HostName 173.203.100.181
-  User root
-
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
 
-Host web1 web2 web3 web4 worker
-  HostName %h.teamtreehouse.com
-  User treehouse
