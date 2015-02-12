@@ -6,8 +6,8 @@ These are config files to set up a system the way I like it. Originally a lot wa
 # Installation
 
   git clone git@github.com:johnpaulashenfelter/dotfiles.git
-  cd ~/.dotfiles
-  rake install
+  Using https://github.com/thoughtbot/rcm
+  rcup -v
 
 
 # Environment
