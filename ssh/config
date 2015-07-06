@@ -29,3 +29,8 @@ Host ss-transitionpoint
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
+
+Host heroku.wheelhouse
+  HostName heroku.com
+  IdentityFile "/Users/johnpaul/.ssh/identity.heroku.wheelhouse"
+  IdentitiesOnly yes
