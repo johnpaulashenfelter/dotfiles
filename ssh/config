@@ -29,6 +29,3 @@ Host ss-transitionpoint
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
-
-Host chef.bc
-   HostName 10.1.4.9
