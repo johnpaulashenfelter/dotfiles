@@ -173,6 +173,8 @@ if [ -f `brew --prefix`/etc/autojump.sh ]; then
   . `brew --prefix`/etc/autojump.sh
 fi
 
+source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
+
 if [ -d /usr/local/bin ]; then
 	export PATH=/usr/local/bin:$PATH
 fi
