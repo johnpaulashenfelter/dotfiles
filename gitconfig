@@ -74,6 +74,9 @@
 	# log = true
 [push]
   default = tracking
+#
+[commit]
+  template = ~/.gitmessage
 [branch]
   # setup remote AND local branches for tracking
 #	autosetupmerge = always
