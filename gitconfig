@@ -61,7 +61,7 @@
 [color "status"]
   added = yellow
   changed = green
-  untracked = cyan	
+  untracked = cyan
 [core]
 	excludesfile = /Users/johnpaul/.gitignore
 	editor = subl -w
@@ -76,17 +76,17 @@
   default = tracking
 [branch]
   # setup remote AND local branches for tracking
-#	autosetupmerge = always 
+#	autosetupmerge = always
 [rerere]
 	enabled = 1
 [heroku]
 	account = tpoint
 # from thoughtbot dotfiles
 [format]
-  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s	
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
