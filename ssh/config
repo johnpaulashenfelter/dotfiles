@@ -14,6 +14,16 @@ Host heroku.tpoint
   IdentityFile ~/.ssh/id_rsa
   IdentitiesOnly yes
 
+Host heroku.wheelhouse
+  HostName heroku.com
+  IdentityFile "/Users/johnpaul/.ssh/wheelhouse"
+  IdentitiesOnly yes
+
+Host heroku.wheelhouse-tech
+  HostName heroku.com
+  IdentityFile "/Users/johnpaul/.ssh/wheelhouse-tech"
+  IdentitiesOnly yes
+
 Host ss
   HostName transitionpt.strongspace.com
   User transitionpt
@@ -29,8 +39,3 @@ Host ss-transitionpoint
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
-
-Host heroku.wheelhouse
-  HostName heroku.com
-  IdentityFile "/Users/johnpaul/.ssh/identity.heroku.wheelhouse"
-  IdentitiesOnly yes
