@@ -5,7 +5,7 @@ Host kwnews
   User rails
 
 Host kwnews-next
-  HostName 166.78.108.39
+  HostName 45.79.143.128 
   User root
 #  Password 6JbBwJQt55Fe
 
