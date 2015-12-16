@@ -1,6 +1,9 @@
-ssl
-sshsubversion/auth/svn.simple
-subversion/auth/svn.ssl.client-passphrase
-subversion/auth/svn.ssl.server
-subversion/auth/svn.username
-subversion/auth/svn.simple/
+atom/storage
+atom/compile-cache
+atom/dev
+atom/.npm
+atom/.node-gyp
+atom/.apm/
+atom/packages/
+atom/atom-shell/
+

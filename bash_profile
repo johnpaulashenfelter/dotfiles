@@ -85,6 +85,9 @@ export RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.3
 # To use Homebrew's directories rather than ~/.pyenv add to your profile:
 # export PYENV_ROOT=/usr/local/opt/pyenv
 
+## Go
+# export PATH=$PATH:/usr/local/opt/go/libexec/bin
+
 # Quickly find the big files in a rails app
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
