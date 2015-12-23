@@ -1,12 +1,12 @@
 #IdentityFile ~/.ssh/id_rsa.pub
 
-Host kwnews
-  HostName apps.kwnews.com
+Host kwnews-legacy
+  HostName legacy.kwnews.com
   #173.246.46.139
   User rails
 
-Host kwnews-next
-  HostName apps2.kwnews.com
+Host kwnews
+  HostName apps.kwnews.com
   #45.79.143.128
   User deploy
 
