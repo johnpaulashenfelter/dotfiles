@@ -1,15 +1,8 @@
 # Ruby tools
-.ruby-version
-.rbenv-version
-.rvmrc
 
 # Pow
 .powrc
 .powenv
-
-# Zeus
-zeus.json
-custom_plan.rb
 
 # Rails app defaults
 /.bundle
@@ -19,11 +12,8 @@ custom_plan.rb
 /vendor/bundle
 
 # Development tools
-.svn
 .idea
 .eclipse
-*.sublime-project
-*.sublime-workspace
 *.swp
 *~
 
