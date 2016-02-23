@@ -45,7 +45,7 @@
   # Kaleidoscope reviewing
 	ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
 [color]
-  ui = auto
+  ui = always
   # diff = auto
   # status = auto
   # branch = auto
@@ -54,18 +54,31 @@
   local = yellow
   remote = green
 [color "diff"]
-  meta = yellow bold
-  frag = magenta bold
-  old = red bold
-  new = green bold
+  commit = green
+  meta = yellow
+  frag = cyan
+  old = red
+  new = green
+  whitespace = red reverse
+#  meta = yellow bold
+#  frag = magenta bold
+#  old = red bold
+#  new = green bold
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
 [core]
 	excludesfile = /Users/johnpaul/.gitignore
 	editor = subl -w
 	autocrlf = input
+# https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
+  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [github]
 	user = johnpaulashenfelter
 	token = ec96131711d34decfea9c883786071d1
