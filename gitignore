@@ -16,6 +16,7 @@
 .eclipse
 *.swp
 *~
+.svn/
 
 # Mac
 .DS_Store
