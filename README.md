@@ -1,4 +1,4 @@
-John Paul Ashenfelter dotfiles
+# John Paul Ashenfelter dotfiles
 
 These are config files to set up a system the way I like it. Originally a lot was copied from Ryan Bates dotfiles (https://github.com/ryanb/dotfiles), but there have been substantial adjustments made over the past couple years, most recently based on https://github.com/holman/dotfiles particularly for the better way to deal with symlinking and other setup tasks
 
@@ -27,3 +27,19 @@ MacOSX using the default bash shell
 * ssh keys for syncing between machines
 * ssl config file
 * development defaults
+
+## Homebrew
+
+We have lists to help sync:
+
+* Brewfile -- brew install [foo]
+* Brew_taps -- brew tap [foo]
+* Brew_cask -- brew cask install [foo]
+
+## Other setup
+
+### If using Docker.app
+cd /usr/local/etc/bash_completion.d
+ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
+ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion
+ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
