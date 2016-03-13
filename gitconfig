@@ -2,7 +2,9 @@
   name = John Paul Ashenfelter
   email = johnpaul@transitionpoint.com
 [alias]
-   p = push
+  p = push
+  # https://robots.thoughtbot.com/git-push-force-with-lease
+  pf = push --force-with-lease
   cp = cherry-pick
   cl = clone
   ci = commit
