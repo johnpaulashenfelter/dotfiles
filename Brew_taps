@@ -1,7 +1,4 @@
 caskroom/cask
-homebrew/binary
-homebrew/dupes
 homebrew/science
-nviennot/tmate
 staticfloat/julia
 thoughtbot/formulae

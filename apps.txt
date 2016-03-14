@@ -1,24 +1,18 @@
-1Password.app/
 A Better Finder Rename 9.app/
+AIR Music Technology/
 Adium.app/
-Airmail.app/
 Alfred 2.app/
-Amazon Music.app/
 App Store.app/
-AppZapper.app/
-Arduino.app/
-Authorizer.app/
 Automator.app/
-Battle.net.app/
-BetterTouchTool.app/
-BookMacster.app/
-Caffeine.app/
+Avid/
+Avid_Uninstallers/
+BusyCal.app/
+BusyContacts.app/
 Calculator.app/
 Calendar.app/
 Changes.app/
 Chess.app/
 CoRD.app/
-Cocktail.app/
 Code Collector Pro.app/
 CodeMeter.app/
 Coffitivity.app/
@@ -29,58 +23,38 @@ Dash.app/
 Dashboard.app/
 DeltaWalker.app/
 Dictionary.app/
-DiskAid.app/
-Divvy.app/
+Docker/
+Docker.app/
 Dropbox.app/
-Espionage.app/
-Evernote.app/
-ExpanDrive.app/
 FaceTime.app/
-Fantastical.app/
 Firefox.app/
-Flip Player.app/
-Flip4Mac/
-Flowdock.app/
-Fluid.app/
-Flux.app/
-FoldersSynchronizer/
 Font Book.app/
-ForkLift.app/
 Game Center.app/
 GarageBand.app/
-GitHub.app/
-GoodReaderUSB.app/
+GoToMeeting/
+GoToMeeting.app/
 Google Chrome.app/
-Google Drive.app/
-HandBrake.app/
-HipChat.app/
 Image Capture.app/
 Kaleidoscope.app/
+KeyCue.app/
 Keynote.app/
 Launchpad.app/
-Linkinus.app/
-LiveReload.app/
+Little Snitch Configuration.app/
 MacBreakZ 5.app/
 MacDown.app/
 Mail.app/
-Mailbox (Beta).app/
-Manager.app/
 Maps.app/
 Messages.app/
-Microsoft Office 2011/
+Microsoft Excel.app/
+Microsoft Remote Desktop.app/
 Microsoft Silverlight@
-MindNode Lite.app/
-Minecraft.app/
-Mint QuickView.app/
+Microsoft Word.app/
 Mission Control.app/
+Native Instruments/
 Navicat Premium Essentials.app/
 Navicat for PostgreSQL.app/
-NetSpot.app/
-Nitrous Desktop.app/
 Notes.app/
 Numbers.app/
-OmniFocus.app/
-OmniGraffle Professional 5.app/
 Pages.app/
 Paprika Recipe Manager.app/
 Parallels Desktop.app/
@@ -88,61 +62,28 @@ PhoneView.app/
 Photo Booth.app/
 Photos.app/
 Pixelmator.app/
-Pomodoro.app/
+Pomodoro Time.app/
 Preview.app/
+Pro Tools First.app/
 QuickTime Player.app/
-RStudio.app/
 Radium.app/
 ReadKit.app/
 Reminders.app/
-RescueTime.app/
-RubyMine.app/
 Safari.app/
-Scratch 1.4/
-Screenhero.app/
 Scrivener.app/
-Sequel Pro.app/
-Shuttle.app/
-Skim.app/
-Skitch.app/
-Skype.app/
-Slack.app/
-Sonos.app/
 Soulver.app/
-SoundCloud.app/
-SourceTree.app/
-Sparrow.app/
-Spotify.app/
-Steam.app/
+Spectacle.app/
 Stickies.app/
 Sublime Text.app/
-SuperDuper!.app/
 System Preferences.app/
 TextEdit.app/
-The Unarchiver.app/
 Time Machine.app/
-TotalFinder.app/
-Tracktion64.app/
-Transmission.app/
-TurboTax Deluxe 2014.app/
-Twitter.app/
 Utilities/
-VLC.app/
-Vagrant/
 VirtualBox.app/
-Viscosity.app/
-Voila.app/
-Watts.app/
-WhatSize.app/
 Xcode.app/
-dragondisk.app/
-iBooks Author.app/
 iBooks.app/
+iLok License Manager.app/
 iMovie.app/
-iPhoto.app/
 iStat Menus.app/
 iTerm.app/
 iTunes.app/
-iWork '09/
-rdm.app/
-terminal-notifier.app@
