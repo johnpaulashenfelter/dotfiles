@@ -6,4 +6,4 @@ atom/.node-gyp
 atom/.apm/
 atom/packages/
 atom/atom-shell/
-
+atom/blob-cache
