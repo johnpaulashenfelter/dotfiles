@@ -1,9 +1,7 @@
-atom/storage
-atom/compile-cache
-atom/dev
-atom/.npm
-atom/.node-gyp
 atom/.apm/
+atom/.node-gyp
+atom/blob-store
+atom/compile-cache
 atom/packages/
-atom/atom-shell/
-atom/blob-cache
+atom/storage
+
