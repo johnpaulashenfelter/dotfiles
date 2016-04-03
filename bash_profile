@@ -176,15 +176,13 @@ fi
 
 # Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
+# mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
 # load rbenv if available
 if which rbenv &>/dev/null ; then
   eval "$(rbenv init - --no-rehash)"
 fi
-
-# mkdir .git/safe in the root of repositories you trust
-export PATH=".git/safe/../../bin:$PATH"
 
 ## Autocompletion
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
