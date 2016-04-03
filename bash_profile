@@ -42,11 +42,10 @@ alias brupdate='brew update && brew outdated'
 ## Ruby
 
 # RBENV
-if which rbenv > /dev/null
-  then
-    eval "$(rbenv init -)"
-    export PATH="./bin:$PATH"
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init - --no-rehash)"
 fi
+
 
 # http://samsaffron.com/archive/2013/05/03/eliminating-my-trivial-inconveniences
 # export RUBY_GC_MALLOC_LIMIT=1000000000
@@ -178,12 +177,6 @@ fi
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
-
-# load rbenv if available
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
-fi
-
 ## Autocompletion
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
