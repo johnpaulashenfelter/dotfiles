@@ -28,8 +28,6 @@ alias b="bundle exec"
 alias migrate="rake db:migrate && rake db:test:prepare"
 alias rst="touch tmp/restart.txt" #passenger/pow restart
 
-alias wip="rake cucumber:wip"
-alias cuke="bundle exec cucumber"
 # http://geekystuff.net/2009/01/14/remove-all-ruby-gems/
 alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 
