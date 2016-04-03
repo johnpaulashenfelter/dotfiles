@@ -157,12 +157,8 @@ fi
 # EC2 tools
 # export JAVA_HOME="$(/usr/libexec/java_home)"
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
-fi
-
-if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
-    . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
 fi
 
 if [ -d /usr/local/share/npm/bin ]; then
@@ -173,8 +169,6 @@ fi
 if [ -f `brew --prefix`/etc/autojump.sh ]; then
   . `brew --prefix`/etc/autojump.sh
 fi
-
-source $(brew --repository)/Library/Contributions/brew_bash_completion.sh
 
 if [ -d /usr/local/bin ]; then
 	export PATH=/usr/local/bin:$PATH
@@ -199,6 +193,3 @@ export PATH=".git/safe/../../bin:$PATH"
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # Could just use `-g` instead, but being explicit
 complete -W "NSGlobalDomain" defaults
-
-# Brew autocompletion
-source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
