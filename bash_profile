@@ -126,7 +126,7 @@ function heftiest {
 
 ## Python
 # pyenv
-# if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 
 # To use Homebrew's directories rather than ~/.pyenv add to your profile:
 # export PYENV_ROOT=/usr/local/opt/pyenv
