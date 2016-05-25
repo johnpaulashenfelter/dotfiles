@@ -89,6 +89,7 @@ fi
 
 # Development
 alias editcommit="git commit --amend -m"
+alias h="heroku"
 alias s.="subl ."
 
 # Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
