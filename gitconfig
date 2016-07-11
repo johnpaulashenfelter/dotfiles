@@ -119,3 +119,5 @@
 	required = true
 [gui]
 	recentrepo = /Users/johnpaul/work/kwnews/ors
+[credential]
+	helper = osxkeychain
