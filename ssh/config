@@ -40,3 +40,9 @@ Host ss-transitionpoint
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
+
+Host bitbucket.combinex
+   HostName bitbucket.org
+   User git
+   IdentityFile ~/.ssh/combinex
+   IdentitiesOnly yes
