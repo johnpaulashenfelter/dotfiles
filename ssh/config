@@ -40,3 +40,9 @@ Host ss-transitionpoint
 Host pairlite
   HostName www7.pairlite.com
   User pl1814
+
+Host combinex-alpha
+  HostName stage.combinexlife.com
+  User combinex
+  IdentityFile "/Users/johnpaul/.ssh/combinex"
+  IdentitiesOnly yes
