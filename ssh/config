@@ -46,3 +46,10 @@ Host bitbucket.combinex
    User git
    IdentityFile ~/.ssh/combinex
    IdentitiesOnly yes
+
+Host combinex-alpha
+  HostName stage.combinexlife.com
+  User combinex
+#  IdentityFile ~/.ssh/combinex
+  IdentityFile "/Users/johnpaul/.ssh/combinex"
+  IdentitiesOnly yes
