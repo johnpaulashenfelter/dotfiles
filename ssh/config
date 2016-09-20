@@ -53,3 +53,10 @@ Host combinex-alpha
 #  IdentityFile ~/.ssh/combinex
   IdentityFile "/Users/johnpaul/.ssh/combinex"
   IdentitiesOnly yes
+
+Host combinex-beta
+  HostName combinexlife.com
+  User root
+  IdentityFile "/Users/johnpaul/.ssh/combinex"
+  IdentitiesOnly yes
+
