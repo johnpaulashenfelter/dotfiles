@@ -10,20 +10,20 @@ Host kwnews
   #45.79.143.128
   User deploy
 
-Host heroku.tpoint
-  HostName heroku.com
-  IdentityFile ~/.ssh/id_rsa
-  IdentitiesOnly yes
+# Host heroku.tpoint
+#   HostName heroku.com
+#   IdentityFile ~/.ssh/id_rsa
+#   IdentitiesOnly yes
 
-Host heroku.wheelhouse
-  HostName heroku.com
-  IdentityFile "/Users/johnpaul/.ssh/wheelhouse"
-  IdentitiesOnly yes
+# Host heroku.wheelhouse
+#   HostName heroku.com
+#   IdentityFile "/Users/johnpaul/.ssh/wheelhouse"
+#   IdentitiesOnly yes
 
-Host heroku.wheelhouse-tech
-  HostName heroku.com
-  IdentityFile "/Users/johnpaul/.ssh/wheelhouse-tech"
-  IdentitiesOnly yes
+# Host heroku.wheelhouse-tech
+#   HostName heroku.com
+#   IdentityFile "/Users/johnpaul/.ssh/wheelhouse-tech"
+#   IdentitiesOnly yes
 
 Host ss
   HostName transitionpt.strongspace.com
