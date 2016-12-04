@@ -1,5 +1,6 @@
 'packages': [
   'parcel'
+  'react'
   'ruby-test'
   'atom-dark-syntax'
   'atom-dark-ui'
