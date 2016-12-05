@@ -9,7 +9,6 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 ## Paths
-export GOPATH="/Users/johnpaul/.go"
 export NODE_PATH="/usr/local/share/npm/lib/node_modules"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
@@ -126,6 +125,7 @@ if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 # export PYENV_ROOT=/usr/local/opt/pyenv
 
 ## Go
+export GOPATH="/Users/johnpaul/.go"
 # export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # highlingint from https://gist.github.com/jimbojsb/1630790
