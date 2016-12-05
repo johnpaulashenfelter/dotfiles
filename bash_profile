@@ -103,15 +103,6 @@ fi
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
-# https://gist.github.com/csfrancis/ae59547804aedb82016d
-export RUBY_GC_OLDMALLOC_LIMIT=128000000
-export RUBY_GC_MALLOC_LIMIT=128000000
-export RUBY_GC_HEAP_SLOTS_GROWTH_FACTOR=1.25
-export RUBY_GC_HEAP_GROWTH_MAX_SLOTS=300000
-export RUBY_GC_HEAP_INIT_SLOTS=1600000
-export RUBY_GC_HEAP_FREE_SLOTS=600000
-export RUBY_GC_HEAP_OLDOBJECT_LIMIT_FACTOR=1.3
-
 ## Rails
 alias b="bundle exec"
 alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.html'
