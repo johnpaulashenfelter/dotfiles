@@ -92,15 +92,17 @@ alias editcommit="git commit --amend -m"
 alias h="heroku"
 alias s.="subl ."
 
+
+## Ruby
+if which rbenv &>/dev/null ; then
+  eval "$(rbenv init -)"
+fi
+
 # Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
-## Ruby
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init - --no-rehash)"
-fi
 # https://gist.github.com/csfrancis/ae59547804aedb82016d
 export RUBY_GC_OLDMALLOC_LIMIT=128000000
 export RUBY_GC_MALLOC_LIMIT=128000000
