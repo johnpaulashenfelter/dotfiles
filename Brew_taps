@@ -1,4 +1,9 @@
 caskroom/cask
+codeclimate/formulae
+homebrew/apache
+homebrew/core
 homebrew/science
+homebrew/services
+puma/puma
 staticfloat/julia
 thoughtbot/formulae
