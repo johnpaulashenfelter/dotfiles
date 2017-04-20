@@ -1,39 +1,19 @@
 #IdentityFile ~/.ssh/id_rsa.pub
 
-Host kwnews-legacy
-  HostName legacy.kwnews.com
-  #173.246.46.139
-  User rails
-
 Host kwnews
   HostName apps.kwnews.com
   #45.79.143.128
   User deploy
 
-# Host heroku.tpoint
-#   HostName heroku.com
-#   IdentityFile ~/.ssh/id_rsa
-#   IdentitiesOnly yes
-
-# Host heroku.wheelhouse
-#   HostName heroku.com
-#   IdentityFile "/Users/johnpaul/.ssh/wheelhouse"
-#   IdentitiesOnly yes
-
-# Host heroku.wheelhouse-tech
-#   HostName heroku.com
-#   IdentityFile "/Users/johnpaul/.ssh/wheelhouse-tech"
-#   IdentitiesOnly yes
-
-Host ss
+Host ss-media
   HostName transitionpt.strongspace.com
   User transitionpt
 
-Host ss-tpoint
+Host ss-rpg
   HostName tpoint.strongspace.com
   User tpoint
 
-Host ss-transitionpoint
+Host ss-software
   HostName transitionpoint.strongspace.com
   User transitionpoint
 
@@ -50,7 +30,6 @@ Host bitbucket.combinex
 Host combinex-alpha
   HostName stage.combinexlife.com
   User combinex
-#  IdentityFile ~/.ssh/combinex
   IdentityFile "/Users/johnpaul/.ssh/combinex"
   IdentitiesOnly yes
 
