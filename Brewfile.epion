@@ -1,0 +1,18 @@
+brew "autojump"
+brew "bash-completion"
+brew "git"
+brew "git-extras"
+brew "hub"
+brew "imagemagick@6"
+brew "node"
+brew "postgresql", restart_service: true
+brew "qt@5.5"
+brew "rb-env"
+brew "rbenv-default-gems"
+brew "rbenv-gemset"
+brew "reattach-to-user-namespace"
+brew "ruby-build"
+brew "thoughtbot/formulae/rcm"
+brew "tmux"
+brew "redis", restart_service: true
+brew "vim"
