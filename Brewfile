@@ -1,45 +1,45 @@
-autojump
-bash-completion
-certbot
-csv-fix
-direnv
-elasticsearch
-elixir
-elm
-erlang
-exercism
-gcc
-git-extras
-htop
-hub
-imagemagick@6
-jq
-staticfloat/julia/julia
-mame
-memcached
-mongodb
-mysql
-node
-thoughtbot/formulae/parity
-percona-toolkit
-pgtune
-phantomjs
-postgresql
-puma/puma/puma-dev
-python
-q
-qt@5.5
-homebrew/science/r
-rbenv
-rbenv-default-gems
-rbenv-gemset
-thoughtbot/formulae/rcm
-reattach-to-user-namespace
-redis
-scala
-shellcheck
-sloccount
-ssh-copy-id
-tmate
-tmux
-wget
+brew "autojump"
+brew "bash-completion"
+brew "certbot"
+brew "csv-fix"
+brew "direnv"
+brew "elasticsearch"
+brew "elixir"
+brew "elm"
+brew "erlang"
+brew "exercism"
+brew "gcc"
+brew "git-extras"
+brew "htop"
+brew "hub"
+brew "imagemagick@6"
+brew "jq"
+brew "staticfloat/julia/julia"
+brew "mame"
+brew "memcached"
+brew "mongodb"
+brew "mysql"
+brew "node"
+brew "thoughtbot/formulae/parity"
+brew "percona-toolkit"
+brew "pgtune"
+brew "phantomjs"
+brew "postgresql"
+brew "puma/puma/puma-dev"
+brew "python"
+brew "q"
+brew "qt@5.5"
+brew "homebrew/science/r"
+brew "rbenv"
+brew "rbenv-default-gems"
+brew "rbenv-gemset"
+brew "thoughtbot/formulae/rcm"
+brew "reattach-to-user-namespace"
+brew "redis"
+brew "scala"
+brew "shellcheck"
+brew "sloccount"
+brew "ssh-copy-id"
+brew "tmate"
+brew "tmux"
+brew "wget"
