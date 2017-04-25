@@ -7,7 +7,7 @@ brew "imagemagick@6"
 brew "node"
 brew "postgresql", restart_service: true
 brew "qt@5.5"
-brew "rb-env"
+brew "rbenv"
 brew "rbenv-default-gems"
 brew "rbenv-gemset"
 brew "reattach-to-user-namespace"
