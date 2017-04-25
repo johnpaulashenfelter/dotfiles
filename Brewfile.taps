@@ -1,0 +1,10 @@
+# brew bundle --file=
+tap "caskroom/cask"
+tap "codeclimate/formulae"
+tap "homebrew/apache"
+tap "homebrew/core"
+tap "homebrew/science"
+tap "homebrew/services"
+tap "puma/puma"
+tap "staticfloat/julia"
+tap "thoughtbot/formulae"
