@@ -38,8 +38,6 @@ We have lists to help sync:
 
 ## Other setup
 
-### If using Docker.app
-cd /usr/local/etc/bash_completion.d
-ln -s /Applications/Docker.app/Contents/Resources/etc/docker.bash-completion
-ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.bash-completion
-ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.bash-completion
+### Sublime
+$ cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+$ ln -s /Users/johnpaul/Dropbox/settings/sublime/User/
