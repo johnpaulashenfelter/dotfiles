@@ -1,2 +1,0 @@
-# Generate: apm list --installed --bare | grep '^[^@]\+' -o > atom_packages.txt
-# Install: apm install --packages-file atom_packages.txt
