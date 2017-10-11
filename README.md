@@ -5,9 +5,10 @@ These are config files to set up a system the way I like it. Originally a lot wa
 
 # Installation
 
-  git clone git@github.com:johnpaulashenfelter/dotfiles.git
-  Using https://github.com/thoughtbot/rcm
-  rcup -v
+  * git clone git@github.com:johnpaulashenfelter/dotfiles.git
+  * `brew bundle`
+  * OPTIONAL: `brew bundle Brewfile.dev`
+  * `rcup -v` (Using https://github.com/thoughtbot/rcm)
 
 
 # Environment
@@ -30,11 +31,8 @@ MacOSX using the default bash shell
 
 ## Homebrew
 
-We have lists to help sync:
-
-* Brewfile -- brew install [foo]
-* Brew_taps -- brew tap [foo]
-* Brew_cask -- brew cask install [foo]
+Most installed services, tools, and applications are installed using `brew bundle` and
+the corresponding Brewfiles that are available in the repo.
 
 ## Other setup
 
