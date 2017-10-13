@@ -5,11 +5,13 @@ These are config files to set up a system the way I like it. Originally a lot wa
 
 # Installation
 
-  * git clone git@github.com:johnpaulashenfelter/dotfiles.git
-  * `brew bundle`
-  * OPTIONAL: `brew bundle Brewfile.dev`
+  * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+  * `git clone git@github.com:johnpaulashenfelter/dotfiles.git .dotfiles`
+  * `brew bundle --file=.dotfiles/Brewfile`
+  * OPTIONAL: `brew bundle --file=.dotfiles/Brewfile.dev`
   * `rcup -v` (Using https://github.com/thoughtbot/rcm)
 
+Once Dropbox is installed, use Authy and 1password to authenticate
 
 # Environment
 
