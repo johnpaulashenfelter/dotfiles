@@ -31,7 +31,7 @@
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-    lh = log --graph
+  lh = log --graph
   la = !git lh --date-order --all 2> /dev/null
   lb = log --graph --simplify-by-decoration
   lba = !git lb --all
@@ -71,7 +71,7 @@
   changed = green
   untracked = cyan
 [core]
-	excludesfile = /Users/johnpaul/.gitignore
+	excludesfile = ~/.gitignore
 	editor = subl -w
 	autocrlf = input
 # https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
