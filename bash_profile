@@ -24,12 +24,14 @@ fi
 ### Easier navigation
 alias ..="cd .."
 alias ...="cd ../.."
+
 ### Easier listing
 alias ls="ls -GF" # always colorize and indicate type/executable
 # List all files colorized in long format, including dot files with filesize suffixes
 alias la="ls -ahl"
 alias l="clear && pwd && ls -FGl"
 alias u="cd .. && l"
+
 ### Shorthand
 alias c="clear"
 alias df="df -h"
@@ -57,10 +59,13 @@ complete -W "NSGlobalDomain" defaults
 
 ## Aliases
 alias clean_term_logs="sudo rm -rf /private/var/log/asl/*.asl"
+
 ## Flush Directory Service cache
 alias flush="sudo killall -HUP mDNSResponder" # OSX 10.7 - 10.8
+
 ## Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
+
 ## View HTTP traffic
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
@@ -82,6 +87,11 @@ if [ -f `brew --prefix`/etc/autojump.sh ]; then
   . `brew --prefix`/etc/autojump.sh
 fi
 
+# Load rupa's z if installed
+if command -v brew >/dev/null 2>&1; then
+  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi
+
 if [ -d /usr/local/bin ]; then
   export PATH=/usr/local/bin:$PATH
 fi
@@ -90,7 +100,7 @@ fi
 alias editcommit="git commit --amend -m"
 alias h="heroku"
 alias s.="subl ."
-
+alias ap="aptible"
 
 ## Ruby
 if which rbenv &>/dev/null ; then

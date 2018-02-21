@@ -14,6 +14,7 @@ brew "reattach-to-user-namespace"
 brew "ssh-copy-id"
 brew "tmux"
 brew "wget"
+brew "z"
 
 cask "1password"
 cask "alfred"
