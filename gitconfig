@@ -2,32 +2,35 @@
   name = John Paul Ashenfelter
   email = johnpaul@transitionpoint.com
 [alias]
+  branches = branch -a
+  ca = commit -am
+  ci = commit
+  cl = clone
+  co = checkout
+  cp = cherry-pick
+  nm = branch --no-merged
   p = push
+  put = push origin HEAD
+  remotes = remote -v
+  st = status -sb
+  tags = tag -l
+
+  # stash shortcuts
+  sa = stash apply
+  sl = stash list
+  ss = stash save
+
   # https://robots.thoughtbot.com/git-push-force-with-lease
   pf = push --force-with-lease
-  cp = cherry-pick
-  cl = clone
-  ci = commit
-  co = checkout
-  st = status -sb
-  nm = branch --no-merged
-  put = push origin HEAD
-  tags = tag -l
-  branches = branch -a
-  remotes = remote -v
-  ca = commit -am
-  # stash shortcuts
-  sl = stash list
-  sa = stash apply
-  ss = stash save
 
   # diff
   diff = diff --word-diff
-  ds = diff --staged      # git ds - diff your staged changes == review before committing.
   dc = diff --cached
+  ds = diff --staged      # git ds - diff your staged changes == review before committing.
 
   # log formats
   l = log --pretty=oneline -n 20 --graph
+  lc = show --name-status
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
