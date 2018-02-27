@@ -44,6 +44,8 @@
   daylog = log --since '1 day ago' --oneline --author <johnpaul@transitionpoint.com>  # I know what you did yesterday - great for follow-ups
   logme = log --author <johnpaul@transitionpoint.com> --pretty=format:\"%cd  %h  %s\" --date=short
 
+  uncommit = reset HEAD~ --soft
+
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
 
