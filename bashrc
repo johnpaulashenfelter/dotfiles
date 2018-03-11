@@ -4,6 +4,12 @@ function __git_dirty {
   [ $? == 1 ] && echo "!"
 }
 
+__rbenv_ps1 ()
+{
+  rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
+  printf $rbenv_ruby_version
+}
+
 bash_prompt() {
   local NONE="\[\033[0m\]"    # unsets color to term's fg color
 
@@ -40,8 +46,11 @@ bash_prompt() {
   local UC=$W                 # user's color
   [ $UID -eq "0" ] && UC=$R   # root's color
 
-  PS1="$R[\$(rbenv version-name)]$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)$EMY\$(__git_dirty)${NONE} $ "
-  # PS1="$R[\$(~/.rvm/bin/rvm-prompt)]$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)${NONE} $ "
+  if [ `which rbenv` ]; then
+    PS1="$R[\$(rbenv version-name)]$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)$EMY\$(__git_dirty)${NONE} $ "
+  else
+    PS1="$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)$EMY\$(__git_dirty)${NONE} $ "
+  fi
 }
 
 bash_prompt
