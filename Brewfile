@@ -1,7 +1,7 @@
 tap "homebrew/core"
-tap "homebrew/drivers"
 tap "homebrew/bundle"
 tap "caskroom/cask"
+tap "caskroom/drivers"
 tap "thoughtbot/formulae"
 
 brew "autojump"
