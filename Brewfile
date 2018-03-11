@@ -64,6 +64,8 @@ cask "drivers/sonos"
 tap "caskroom/fonts"
 cask "font-anonymous-pro"
 cask "font-bitstream-vera"
+cask "font-dejavu-sans"
+cask "font-hack"
 cask "font-inconsolata"
 cask "font-source-code-pro"
 
