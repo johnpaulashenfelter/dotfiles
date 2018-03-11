@@ -16,7 +16,7 @@ brew "thoughtbot/formulae/rcm"
 brew "thoughtbot/formulae/parity"
 
 tap "caskroom/cask"
-cask "1password"
+# cask "1password" Use the paid App Store version
 cask "alfred"
 cask "amazon-music"
 cask "appcleaner"
