@@ -1,0 +1,1 @@
+EXCLUDES="README.md Brewfile Brewfile.dev apps.txt rcrc.example"
