@@ -123,6 +123,9 @@ end
 TASK
 end
 
+run "rm README.md"
+run "rm -rf test/"
+
 after_bundle do
   bin/bundle exec guard init
 end
