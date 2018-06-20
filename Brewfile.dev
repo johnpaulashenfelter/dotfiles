@@ -1,9 +1,9 @@
+brew "asdf"
 brew "direnv"
 brew "htop"
 brew "httpie"
 brew "hub"
 brew "jq"
-brew "node"
 brew "qt@5.5"
 brew "ruby-build"
 brew "rbenv"
@@ -11,7 +11,7 @@ brew "rbenv-default-gems"
 brew "rbenv-gemset"
 brew "shellcheck"
 brew "sloccount"
-brew "yarn"
+brew "yarn" args: ["without-node"]
 
 tap "homebrew/services"
 brew "mysql", restart_service: true
