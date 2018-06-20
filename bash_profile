@@ -149,3 +149,6 @@ export GOPATH="/Users/johnpaul/.go"
 # }
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
+. $(brew --prefix)/opt/asdf/asdf.sh
+. $(brew --prefix)/opt/asdf/etc/bash_completion.d/asdf.bash
