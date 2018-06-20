@@ -16,7 +16,6 @@ brew "thoughtbot/formulae/rcm"
 brew "thoughtbot/formulae/parity"
 
 tap "caskroom/cask"
-# cask "1password" Use the paid App Store version
 cask "alfred"
 cask "amazon-music"
 cask "appcleaner"
@@ -58,6 +57,17 @@ cask "superduper"
 cask "the-unarchiver"
 cask "transmission"
 cask "whatsize"
+
+# Install Mac App Store apps
+brew "mas"
+mas install 443987910 # 1Password (6.8.8)
+mas install 937984704 # Amphetamine (3.0.2)
+mas install 1091189122 # Bear (1.5.5)
+mas install 924726344 # Deliveries (3.0.8)
+mas install 540348655 # Monosnap (3.4.15)
+mas install 407963104 # Pixelmator (3.7)
+mas install 588726889 # ReadKit (2.5.4)
+mas install 907364780 # Tomato One (1.0.6)
 
 tap "caskroom/drivers"
 cask "drivers/sonos"
