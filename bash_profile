@@ -9,7 +9,6 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
 ## Paths
-export NODE_PATH="/usr/local/share/npm/lib/node_modules"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 if [ -f ~/.bashrc ]; then
@@ -126,17 +125,6 @@ alias tlog="tail -f log/development.log"
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
-
-## Python
-# pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
-# To use Homebrew's directories rather than ~/.pyenv add to your profile:
-# export PYENV_ROOT=/usr/local/opt/pyenv
-
-## Go
-export GOPATH="/Users/johnpaul/.go"
-# export PATH=$PATH:/usr/local/opt/go/libexec/bin
 
 # highlingint from https://gist.github.com/jimbojsb/1630790
 # function light() {
