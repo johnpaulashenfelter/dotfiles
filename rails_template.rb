@@ -128,4 +128,9 @@ run "rm -rf test/"
 
 after_bundle do
   run "bin/bundle exec guard init"
+
+  git :init
+  git add: '.'
+  git commit: "-a -m 'Initial commit'"
 end
+
