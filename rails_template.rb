@@ -122,6 +122,12 @@ end
 ActiveRecord::Migration.maintain_test_schema!
 CODE
 
+file "spec/support/factory_bot.rb", <<-CODE
+RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+end
+CODE
+
 rakefile("bundler-audit.rake") do
 <<-TASK
 if Rails.env.development? || Rails.env.test?
