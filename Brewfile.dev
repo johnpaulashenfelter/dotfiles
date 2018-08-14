@@ -58,5 +58,7 @@ cask "paw"
 #cask "rstudio"
 cask "sequel-pro"
 cask "sourcetree"
+cask "tableau-public"
+cask "visual-studio-code"
 
 #cask "elm-platform"
