@@ -1,5 +1,7 @@
 # Bash
 
+source /usr/local/opt/asdf/asdf.sh
+
 ## Options
 export HISTFILESIZE=5000
 export EDITOR="subl -n -w"
