@@ -97,6 +97,7 @@ require File.expand_path("../../config/environment", __FILE__)
 abort("DATABASE_URL environment variable is set") if ENV["DATABASE_URL"]
 
 require "rspec/rails"
+require "shoulda/matchers"
 
 Dir[Rails.root.join("spec/support/**/*.rb")].sort.each { |file| require file }
 
@@ -111,7 +112,20 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
 end
 
+Shoulda::Matchers.configure do |config|
+  config.integrate do |with|
+    with.test_framework :rspec
+    with.library :rails
+  end
+end
+
 ActiveRecord::Migration.maintain_test_schema!
+CODE
+
+file "spec/support/factory_bot.rb", <<-CODE
+RSpec.configure do |config|
+  config.include FactoryBot::Syntax::Methods
+end
 CODE
 
 rakefile("bundler-audit.rake") do
@@ -127,5 +141,10 @@ run "rm README.md"
 run "rm -rf test/"
 
 after_bundle do
-  bin/bundle exec guard init
+  run "bin/bundle exec guard init"
+
+  git :init
+  git add: '.'
+  git commit: "-a -m 'Initial commit'"
 end
+
