@@ -93,7 +93,6 @@ fi
 alias editcommit="git commit --amend -m"
 alias h="heroku"
 alias s.="subl ."
-alias ap="aptible"
 
 ## Ruby
 if which rbenv &>/dev/null ; then
