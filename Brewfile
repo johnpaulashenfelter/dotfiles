@@ -61,6 +61,8 @@ cask "transmission"
 cask "whatsize"
 
 # Install Mac App Store apps
+tap "mas-cli/tap"
+tap-pin "mas-cli/tap"
 brew "mas"
 mas install 443987910 # 1Password (6.8.8)
 mas install 937984704 # Amphetamine (3.0.2)
