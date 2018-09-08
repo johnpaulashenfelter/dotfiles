@@ -1,6 +1,10 @@
 # Bash
 
-source /usr/local/opt/asdf/asdf.sh
+if [ -d $(brew --prefix)/opt/asdf ]; then
+  . $(brew --prefix)/opt/asdf/asdf.sh
+  . $(brew --prefix)/opt/asdf/etc/bash_completion.d/asdf.bash
+fi
+# source /usr/local/opt/asdf/asdf.sh
 
 ## Options
 export HISTFILESIZE=5000
@@ -130,6 +134,3 @@ function heftiest {
 # }
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-. $(brew --prefix)/opt/asdf/asdf.sh
-. $(brew --prefix)/opt/asdf/etc/bash_completion.d/asdf.bash
