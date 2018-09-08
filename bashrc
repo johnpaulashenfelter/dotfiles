@@ -47,7 +47,7 @@ bash_prompt() {
   [ $UID -eq "0" ] && UC=$R   # root's color
 
   if [ `which rbenv` ]; then
-    PS1="$R[\$(rbenv version-name)]$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)$EMY\$(__git_dirty)${NONE} $ "
+    PS1="$R[\$(__rbenv_ps1 )]$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)$EMY\$(__git_dirty)${NONE} $ "
   else
     PS1="$C\u@\h$W:$EMC\w$EMW\$(__git_ps1)$EMY\$(__git_dirty)${NONE} $ "
   fi
