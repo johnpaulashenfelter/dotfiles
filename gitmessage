@@ -1,15 +1,14 @@
-Summarize changes in 50 characters or less, imperative and capitalized
+# Summarize changes in 50 characters or less, imperative and capitalized
 
-More detailed explanatory text, if necessary.
- - blank line 2 is critical unless no body text
- - Wrap to 72
- - the first line might be subject, reset the body of email
- - Space before bullets, blank lines between paragraphs
+# More detailed explanatory text, if necessary.
+#  - blank line 2 is critical unless no body text
+#  - Wrap to 72
+#  - the first line might be subject, reset the body of email
+#  - Space before bullets, blank lines between paragraphs
 
-Explain the problem that this commit is solving. Why, not how.
-Are there side effects or other unintuitive consequenses of this
-change? Here's the place to explain them.
+# Explain the problem that this commit is solving. Why, not how.
+# Are there side effects or other unintuitive consequenses of this change? Here's the place to explain them.
 
-Resolves: #123
-See also: #456, #789
+# Resolves: #123
+# See also: #456, #789
 # Co-authored-by: name <name@example.com>
