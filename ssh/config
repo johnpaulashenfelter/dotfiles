@@ -13,10 +13,14 @@ Host kwnews
 Host ss-media
   HostName transitionpt.strongspace.com
   User transitionpt
+  IdentityFile "/Users/johnpaul/.ssh/xander/id_rsa"
+  IdentitiesOnly yes
 
 Host ss-rpg
   HostName tpoint.strongspace.com
   User tpoint
+  IdentityFile "/Users/johnpaul/.ssh/xander/id_rsa"
+  IdentitiesOnly yes
 
 Host ss-software
   HostName transitionpoint.strongspace.com
@@ -43,4 +47,3 @@ Host combinex-beta
   User root
   IdentityFile "/Users/johnpaul/.ssh/combinex"
   IdentitiesOnly yes
-
