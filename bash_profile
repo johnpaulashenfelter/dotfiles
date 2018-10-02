@@ -80,10 +80,6 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-if [ -d /usr/local/share/npm/bin ]; then
-  export PATH=/usr/local/share/npm/bin:$PATH
-fi
-
 if [ -f `brew --prefix`/etc/autojump.sh ]; then
   . `brew --prefix`/etc/autojump.sh
 fi
