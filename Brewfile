@@ -1,7 +1,6 @@
 tap "homebrew/core"
 tap "homebrew/bundle"
 
-brew "autojump"
 brew "bash-completion"
 brew "git"
 brew "git-extras"
