@@ -14,9 +14,6 @@ export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
 
-## Paths
-export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
-
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
