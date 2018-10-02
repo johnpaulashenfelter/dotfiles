@@ -89,10 +89,6 @@ if command -v brew >/dev/null 2>&1; then
   [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-if [ -d /usr/local/bin ]; then
-  export PATH=/usr/local/bin:$PATH
-fi
-
 # Development
 alias editcommit="git commit --amend -m"
 alias h="heroku"
