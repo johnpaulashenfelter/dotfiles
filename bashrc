@@ -73,9 +73,6 @@ bind "set show-all-if-ambiguous On" # show list automatically, without double ta
 
 set -o vi
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
 # Add direnv
 if [ -f $(brew --prefix)/bin/direnv ]; then
   eval "$(direnv hook bash)"
