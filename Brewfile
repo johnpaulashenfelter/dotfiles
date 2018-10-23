@@ -55,7 +55,6 @@ cask "whatsize"
 tap "mas-cli/tap"
 tap-pin "mas-cli/tap"
 brew "mas"
-mas install 573171375   # Airmail (1.4.2)
 mas install 443987910   # 1Password (6.8.9)
 mas install 937984704   # Amphetamine (4.0.4)
 mas install 973134470   # Be Focused (1.7.4)
