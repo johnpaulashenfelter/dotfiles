@@ -90,6 +90,7 @@ fi
 alias editcommit="git commit --amend -m"
 alias h="heroku"
 alias s.="subl ."
+alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 
 ## Ruby
 if which rbenv &>/dev/null ; then
@@ -109,7 +110,6 @@ alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias migrate="rails db:migrate && rake db:test:prepare"
 alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
 # https://coderwall.com/p/vyl8zg
-alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 alias tlog="less +F log/development.log"
 # Quickly find the big files in a rails app
 function heftiest {
