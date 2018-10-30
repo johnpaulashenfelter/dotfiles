@@ -8,6 +8,7 @@
   cl = clone
   co = checkout
   cp = cherry-pick
+  ff = merge --ff-only
   nm = branch --no-merged
   p = push
   put = push origin HEAD
