@@ -49,7 +49,7 @@ alias reload=". ~/.bash_profile"
 alias rsync="rsync -avz"
 alias space="du -shc * .[^.]*"
 alias systail="tail -f /var/log/system.log"
-alias tlf="tail -f"
+alias t="less +F"
 alias topc="top -o cpu"
 
 # OSX
