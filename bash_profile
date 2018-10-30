@@ -107,7 +107,7 @@ alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.htm
 # http://geekystuff.net/2009/01/14/remove-all-ruby-gems/
 alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias migrate="rake db:migrate && rake db:test:prepare"
-alias rst="touch tmp/restart.txt" #passenger/pow restart
+alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
 # https://coderwall.com/p/vyl8zg
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 alias tlog="tail -f log/development.log"
