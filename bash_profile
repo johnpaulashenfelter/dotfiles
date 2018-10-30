@@ -7,12 +7,13 @@ if [ -d $(brew --prefix)/opt/asdf ]; then
 fi
 
 ## Options
-export HISTFILESIZE=5000
 export EDITOR="subl -n -w"
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
+export HISTFILESIZE=5000
+
 # Prefer US English and use UTF-8
-export LC_ALL="en_US.UTF-8"
 export LANG="en_US"
+export LC_ALL="en_US.UTF-8"
 
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
@@ -59,20 +60,19 @@ complete -W "NSGlobalDomain" defaults
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
 ## Common tasks
-# alias clean_term_logs="sudo rm -rf /private/var/log/asl/*.asl"
-
-# Flush Directory Service cache
-alias flush="sudo killall -HUP mDNSResponder" # OSX 10.7 - 10.8
 
 # Clear camera list for video calls
 alias camerafix='sudo killall VDCAssistant'
+
+# Flush Directory Service cache
+alias flush="sudo killall -HUP mDNSResponder" # OSX 10.7 - 10.8
 
 # Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
 ## View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 
 ## Homebrew
 alias brupdate='brew update && brew outdated'
@@ -117,4 +117,3 @@ alias tlog="less +F log/development.log"
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
-
