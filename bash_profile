@@ -110,21 +110,12 @@ alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.htm
 alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias migrate="rails db:migrate && rake db:test:prepare"
 alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
+
 # https://coderwall.com/p/vyl8zg
 alias tlog="less +F log/development.log"
+
 # Quickly find the big files in a rails app
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
 
-# highlingint from https://gist.github.com/jimbojsb/1630790
-# function light() {
-#   if [ -z "$2" ]
-#     then src="pbpaste"
-#   else
-#     src="cat $2"
-#   fi
-#   $src | highlight -O rtf --syntax $1 --font Inconsolata --style solarized-dark --font-size 24 | pbcopy
-# }
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
