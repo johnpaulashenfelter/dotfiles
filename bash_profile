@@ -106,11 +106,11 @@ alias b="bundle exec"
 alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.html'
 # http://geekystuff.net/2009/01/14/remove-all-ruby-gems/
 alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
-alias migrate="rake db:migrate && rake db:test:prepare"
+alias migrate="rails db:migrate && rake db:test:prepare"
 alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
 # https://coderwall.com/p/vyl8zg
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
-alias tlog="tail -f log/development.log"
+alias tlog="less +F log/development.log"
 # Quickly find the big files in a rails app
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
