@@ -1,7 +1,7 @@
 # Bash
 
 # source /usr/local/opt/asdf/asdf.sh
-sif [ -d $(brew --prefix)/opt/asdf ]; then
+if [ -d $(brew --prefix)/opt/asdf ]; then
   . $(brew --prefix)/opt/asdf/asdf.sh
   . $(brew --prefix)/opt/asdf/etc/bash_completion.d/asdf.bash
 fi
@@ -110,7 +110,6 @@ alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.htm
 alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias migrate="rails db:migrate && rake db:test:prepare"
 alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
-
 # https://coderwall.com/p/vyl8zg
 alias tlog="less +F log/development.log"
 
