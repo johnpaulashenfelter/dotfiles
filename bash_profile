@@ -1,10 +1,10 @@
 # Bash
 
-if [ -d $(brew --prefix)/opt/asdf ]; then
+# source /usr/local/opt/asdf/asdf.sh
+sif [ -d $(brew --prefix)/opt/asdf ]; then
   . $(brew --prefix)/opt/asdf/asdf.sh
   . $(brew --prefix)/opt/asdf/etc/bash_completion.d/asdf.bash
 fi
-# source /usr/local/opt/asdf/asdf.sh
 
 ## Options
 export HISTFILESIZE=5000
@@ -50,7 +50,6 @@ alias rsync="rsync -avz"
 alias space="du -shc * .[^.]*"
 alias systail="tail -f /var/log/system.log"
 alias t="less +F"
-alias topc="top -o cpu"
 
 # OSX
 # Add tab completion for `defaults read|write NSGlobalDomain`
@@ -59,13 +58,16 @@ complete -W "NSGlobalDomain" defaults
 # Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-## Aliases
-alias clean_term_logs="sudo rm -rf /private/var/log/asl/*.asl"
+## Common tasks
+# alias clean_term_logs="sudo rm -rf /private/var/log/asl/*.asl"
 
-## Flush Directory Service cache
+# Flush Directory Service cache
 alias flush="sudo killall -HUP mDNSResponder" # OSX 10.7 - 10.8
 
-## Enhanced WHOIS lookups
+# Clear camera list for video calls
+alias camerafix='sudo killall VDCAssistant'
+
+# Enhanced WHOIS lookups
 alias whois="whois -h whois-servers.net"
 
 ## View HTTP traffic
@@ -87,7 +89,6 @@ if command -v brew >/dev/null 2>&1; then
 fi
 
 # Development
-alias editcommit="git commit --amend -m"
 alias h="heroku"
 alias s.="subl ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
