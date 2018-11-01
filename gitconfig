@@ -45,7 +45,7 @@
   undopush = push -f origin HEAD^:master
 
 [color]
-  ui = always
+  ui = auto
   # diff = auto
   # status = auto
   # branch = auto
