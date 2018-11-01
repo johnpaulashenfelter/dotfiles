@@ -15,11 +15,6 @@
   st = status -sb
   tags = tag -l
 
-  # stash shortcuts
-  sa = stash apply
-  sl = stash list
-  ss = stash save
-
   # https://robots.thoughtbot.com/git-push-force-with-lease
   pf = push --force-with-lease
 
