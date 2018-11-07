@@ -3,6 +3,7 @@ brew "direnv"
 brew "htop"
 brew "httpie"
 brew "hub"
+brew "git-extras"
 brew "gpg"
 brew "jq"
 brew "qt@5.5"
@@ -10,9 +11,13 @@ brew "ruby-build"
 brew "rbenv"
 brew "rbenv-default-gems"
 brew "rbenv-gemset"
+brew "reattach-to-user-namespace"
 brew "shellcheck"
 brew "sloccount"
+brew "tmux"
 brew "yarn" args: ["without-node"]
+
+
 
 tap "homebrew/services"
 brew "mysql", restart_service: true
