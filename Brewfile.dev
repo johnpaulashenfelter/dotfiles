@@ -18,7 +18,6 @@ brew "tmux"
 brew "yarn" args: ["without-node"]
 
 
-
 tap "homebrew/services"
 brew "mysql", restart_service: true
 brew "postgresql", restart_service: true
@@ -58,12 +57,12 @@ cask "dragondisk"
 cask "github"
 cask "imageoptim"
 cask "licecap"
-cask "ngrok"
+#cask "ngrok"
 cask "paw"
 #cask "rstudio"
 cask "sequel-pro"
 cask "sourcetree"
-cask "tableau-public"
+#cask "tableau-public"
 cask "visual-studio-code"
 
 #cask "elm-platform"
