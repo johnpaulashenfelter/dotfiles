@@ -1,7 +1,7 @@
-agenda
-apptivate
-hammerspoon
-musescore
-slate
-sonic-pi
-soundnode
+brew cask install "agenda"
+brew cask install "apptivate"
+brew cask install "hammerspoon"
+brew cask install "musescore"
+brew cask install "slate"
+brew cask install "sonic-pi"
+brew cask install "soundnode"
