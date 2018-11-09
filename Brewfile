@@ -57,7 +57,7 @@ cask "yacreader"
 
 # Install Mac App Store apps
 tap "mas-cli/tap"
-# tap-pin "mas-cli/tap"
+"tap-pin mas-cli/tap"
 brew "mas"
 
 mas "1Password", id: 443987910   
