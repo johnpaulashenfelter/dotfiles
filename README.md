@@ -11,7 +11,7 @@ Install 1password from the App Store
 ## Installation
 
   * `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
-  * `git clone git@github.com:johnpaulashenfelter/dotfiles.git .dotfiles`
+  * `git clone https://github.com/johnpaulashenfelter/dotfiles.git .dotfiles`
   * `brew bundle --file=.dotfiles/Brewfile`
   * OPTIONAL: `brew bundle --file=.dotfiles/Brewfile.dev`
   * `rcup -v` (Using https://github.com/thoughtbot/rcm)
