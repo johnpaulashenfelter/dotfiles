@@ -25,7 +25,9 @@ Once Dropbox is installed, use Authy and 1password to authenticate
  * Open iterm, Preferences > General > Load...from custom file `~/Dropbox/settings/com.googlecode.iterm2.plist`
  * Open Alfred, Advanced > Sync `~/Dropbox/settings/Alfred`
  * Open Dash, General > Syncing `~/Dropbox/settings/Dash`
-
+ * Create a new ssh key for GitHub/etc
+ 	- ssh-keygen -t rsa -b 4096 -C "john@ashenfelter.com"
+ 	- ssh-add -K ~/.ssh/id_rsa
 
 # Environment
 
