@@ -48,7 +48,7 @@ cask "firefox-developer-edition"
 # tap "staticfloat/julia"
 # brew "staticfloat/julia/julia"
 
-cask "atom"
+# cask "atom"
 cask "deltawalker"
 # cask "dragondisk"
 # cask "github"
