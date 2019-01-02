@@ -68,7 +68,8 @@ mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344   
 mas "Gladys", id: 1382386877  
 mas "Monosnap", id: 540348655   
-mas "Pixelmator", id: 407963104   
+mas "Pixelmator", id: 407963104
+mas "Pocket", id: 568494494 
 mas "Reeder", id: 880001334   
 mas "Spark", id: 1176895641  
 mas "Tomato One", id: 907364780   
