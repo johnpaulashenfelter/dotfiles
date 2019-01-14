@@ -37,7 +37,7 @@ Host bitbucket.combinex
    IdentitiesOnly yes
 
 Host combinex-alpha
-  HostName stage.combinexlife.com
+  HostName alpha.cjpikon.com
   User combinex
   IdentityFile "/Users/johnpaul/.ssh/combinex"
   IdentitiesOnly yes
