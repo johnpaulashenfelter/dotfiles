@@ -90,7 +90,7 @@ fi
 
 # Development
 alias h="heroku"
-alias s.="subl ."
+alias s.="code ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 
 ## Ruby
