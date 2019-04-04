@@ -47,3 +47,20 @@ Host combinex-beta
   User root
   IdentityFile "/Users/johnpaul/.ssh/combinex"
   IdentitiesOnly yes
+
+Host broome
+  HostName broome.cluster.recurse.com
+
+# GPU
+Host crosby
+  HostName crosby.cluster.recurse.com
+# GPU
+Host mercer
+  HostName mercer.cluster.recurse.com
+
+Host spring
+  HostName spring.cluster.recurse.com
+
+Host broome crosby mercer spring
+  User jpa5n
+  IdentitiesOnly yes
