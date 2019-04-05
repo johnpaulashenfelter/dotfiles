@@ -7,7 +7,8 @@ if [ -d $(brew --prefix)/opt/asdf ]; then
 fi
 
 ## Options
-export EDITOR="subl -n -w"
+export EDITOR="code -n -w"
+export VISUAL="code -n -w"
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
 export HISTFILESIZE=5000
 
