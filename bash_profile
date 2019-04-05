@@ -93,6 +93,11 @@ alias h="heroku"
 alias s.="code ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 
+# Python/Anaconda/ML
+export PATH="/usr/local/anaconda3/bin:$PATH"
+alias sa="source activate "
+alias jup="jupyter notebook"
+
 ## Ruby
 if which rbenv &>/dev/null ; then
   eval "$(rbenv init -)"
