@@ -62,7 +62,7 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -n
 
 # Misc -------------------------------------------------------------
 export HISTCONTROL=ignoredups
-export HISTIGNORE="&:ls:exit" #ls *: ignores all ls commands
+export HISTIGNORE="&:ls:exit:git ci*" #ls *: ignores all ls commands
 
 # https://zwischenzugs.com/2019/04/03/eight-obscure-bash-options-you-might-want-to-know-about/
 shopt -s cdspell #This will correct minor spelling errors in a cd command
