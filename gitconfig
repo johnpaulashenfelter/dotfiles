@@ -44,6 +44,10 @@
   # Undo a `git push`
   undopush = push -f origin HEAD^:master
 
+  # from the source https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
+	unstage = reset HEAD --
+	last = log -1 HEAD
+
 [color]
   ui = auto
   # diff = auto
@@ -70,7 +74,7 @@
   untracked = cyan
 [core]
 	excludesfile = /Users/johnpaul/.gitignore
-	editor = subl -w
+	editor = code --wait
 	autocrlf = input
 # https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
   pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
