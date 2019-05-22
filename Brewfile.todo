@@ -1,7 +1,8 @@
-brew cask install "agenda"
-brew cask install "apptivate"
-brew cask install "hammerspoon"
-brew cask install "musescore"
-brew cask install "slate"
-brew cask install "sonic-pi"
-brew cask install "soundnode"
+cask "agenda"
+cask "apptivate"
+cask "musescore"
+cask "slate"
+cask "sonic-pi"
+cask "soundnode"
+
+# brew "yarn", args: ["without-node"]

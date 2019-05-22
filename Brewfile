@@ -1,43 +1,103 @@
-tap "homebrew/core"
+tap "heroku/brew"
 tap "homebrew/bundle"
-
-brew "bash-completion"
-brew "git"
-brew "ssh-copy-id"
-brew "wget"
-brew "z"
-
+tap "homebrew/cask"
+tap "homebrew/cask-drivers"
+tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "mas-cli/tap"
+tap "puma/puma"
 tap "thoughtbot/formulae"
-brew "thoughtbot/formulae/rcm"
+brew "asdf"
+brew "bash"
+brew "bash-completion"
+brew "cloc"
+brew "direnv"
+brew "gel"
+brew "git"
+brew "git-extras"
+brew "sqlite"
+brew "glib"
+brew "gnupg"
+brew "graphviz"
+brew "lua"
+brew "highlight"
+brew "htop"
+brew "hub"
+brew "jq"
+brew "mysql@5.7", restart_service: true
+brew "node"
+brew "postgresql", restart_service: true
+brew "ruby-build"
+brew "rbenv"
+brew "rbenv-default-gems"
+brew "rbenv-gemset"
+brew "reattach-to-user-namespace"
+brew "redis", restart_service: true
+brew "shellcheck"
+brew "sloccount"
+brew "ssh-copy-id"
+brew "telnet"
+brew "tmux"
+brew "wget"
+brew "yarn"
+brew "z"
+brew "heroku/brew/heroku"
+brew "mas-cli/tap/mas"
+brew "puma/puma/puma-dev"
 brew "thoughtbot/formulae/parity"
-
-tap "caskroom/cask"
+brew "thoughtbot/formulae/rcm"
 cask "alfred"
+cask "anaconda"
 cask "anki"
 cask "appcleaner"
 cask "arq"
 cask "bartender"
+cask "bookmacster"
+cask "brave-browser"
 cask "calibre"
-cask "cocktail"
+cask "daisydisk"
 cask "dash"
+cask "deltawalker"
 cask "divvy"
+cask "docker"
 cask "dropbox"
 cask "expandrive"
+cask "firefox"
 cask "fluid"
+cask "flux"
+cask "font-anonymous-pro"
+cask "font-bitstream-vera"
+cask "font-dejavu-sans"
+cask "font-hack"
+cask "font-inconsolata"
+cask "font-open-sans"
+cask "font-public-sans"
+cask "font-source-code-pro"
 cask "google-chrome"
+cask "grandperspective"
+cask "graphql-playground"
+cask "hammerspoon"
 cask "hazel"
+cask "hermes"
+cask "imageoptim"
 cask "istat-menus"
 cask "iterm2"
 cask "keepingyouawake"
 cask "keybase"
 cask "keycue"
+cask "krita"
+cask "licecap"
 cask "little-snitch"
 cask "macbreakz"
 cask "macdown"
+cask "ngrok"
 cask "nightowl"
 cask "omnifocus"
+cask "onyx"
+cask "paw"
 cask "private-internet-access"
-cask "qbserve"
 cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
@@ -45,41 +105,41 @@ cask "qlprettypatch"
 cask "qlstephen"
 cask "quicklook-csv"
 cask "quicklook-json"
+cask "rocket"
 cask "selfcontrol"
+cask "sequel-pro"
+cask "skype"
 cask "sonos"
+cask "sourcetree"
+cask "spectacle"
 cask "spotify"
 cask "steam"
 cask "sublime-text"
 cask "superduper"
 cask "the-unarchiver"
+cask "trailer"
 cask "transmission"
+cask "visual-studio-code"
 cask "whatsize"
 cask "yacreader"
-
-# Install Mac App Store apps
-tap "mas-cli/tap"
-"tap-pin mas-cli/tap"
-brew "mas"
-
-mas "1Password", id: 443987910   
-mas "Amphetamine", id: 937984704   
-mas "Be Focused", id: 973134470   
-mas "Day One", id: 1055511498  
-mas "Deliveries", id: 924726344   
-mas "Gladys", id: 1382386877  
-mas "Monosnap", id: 540348655   
-mas "Pixelmator", id: 407963104
-mas "Pocket", id: 568494494 
-mas "Reeder", id: 880001334   
-mas "Spark", id: 1176895641  
-mas "Tomato One", id: 907364780   
-
-tap "caskroom/fonts"
-cask "font-anonymous-pro"
-cask "font-bitstream-vera"
-cask "font-dejavu-sans"
-cask "font-hack"
-cask "font-inconsolata"
-cask "font-open-sans"
-cask "font-source-code-pro"
- 
+cask "zulip"
+mas "com.agilebits.onepassword-osx", id: 443987910
+mas "com.appgeneration.iTunerOSxFree", id: 881415018
+mas "com.apple.dt.Xcode", id: 497799835
+mas "com.apple.garageband10", id: 682658836
+mas "com.apple.iMovieApp", id: 408981434
+mas "com.apple.iWork.Keynote", id: 409183694
+mas "com.apple.iWork.Numbers", id: 409203825
+mas "com.apple.iWork.Pages", id: 409201541
+mas "com.bloombuilt.dayone-mac", id: 1055511498
+mas "com.ghostery.lite", id: 1436953057
+mas "com.if.Amphetamine", id: 937984704
+mas "com.junecloud.mac.Deliveries", id: 924726344
+mas "com.microsoft.rdc.macos", id: 1295203466
+mas "com.monosnap.monosnap", id: 540348655
+mas "com.pixelmatorteam.pixelmator", id: 407963104
+mas "com.readdle.smartemail-Mac", id: 1176895641
+mas "com.readitlater.PocketMac", id: 568494494
+mas "com.reederapp.rkit2.mac", id: 880001334
+mas "com.somafm.somafmmac", id: 449155338
+mas "com.xwavesoft.pomodoromac", id: 961632517
