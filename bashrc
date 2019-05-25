@@ -64,14 +64,16 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -n
 export HISTCONTROL=ignoredups
 export HISTIGNORE="&:ls:exit:git ci*" #ls *: ignores all ls commands
 
-# https://zwischenzugs.com/2019/04/03/eight-obscure-bash-options-you-might-want-to-know-about/
-shopt -s cdspell #This will correct minor spelling errors in a cd command
-shopt -s autocd
-shopt -s direxpand
-shopt -s checkjobs
-shopt -s globstar
-shopt -s extglob
-shopt -s histverify
+if [ -f $(brew --prefix)/bin/bash ]; then
+  # https://zwischenzugs.com/2019/04/03/eight-obscure-bash-options-you-might-want-to-know-about/
+  shopt -s cdspell #This will correct minor spelling errors in a cd command
+  shopt -s autocd
+  shopt -s direxpand
+  shopt -s checkjobs
+  shopt -s globstar
+  shopt -s extglob
+  shopt -s histverify
+fi
 
 # bash completion settings (actually, these are readline settings)
 bind "set completion-ignore-case on" # note: bind used instead of sticking these in .inputrc
