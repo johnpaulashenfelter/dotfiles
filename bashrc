@@ -58,11 +58,15 @@ unset bash_prompt
 
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
+export PROMPT_COMMAND='history -a && echo -ne "\033]0;${USER}@${HOSTNAME%%.*} ${PWD}"; echo -ne "\007"'  # user@host path
 
 # Misc -------------------------------------------------------------
-export HISTCONTROL=ignoredups
-export HISTIGNORE="&:ls:exit:git ci*" #ls *: ignores all ls commands
+# https://sanctum.geek.nz/arabesque/better-bash-history/
+export HISTCONTROL=ignoreboth
+export HISTSIZE=100000
+export HISTFILESIZE=1000000
+#export HISTTIMEFORMAT='%F %T '
+export HISTIGNORE="&:ls:exit:bg:fg:history:z:br:brew *:heroku *:h:s.:gem *:git ci*" #ls *: ignores all ls commands
 
 if [ -f $(brew --prefix)/bin/bash ]; then
   # https://zwischenzugs.com/2019/04/03/eight-obscure-bash-options-you-might-want-to-know-about/
@@ -73,6 +77,9 @@ if [ -f $(brew --prefix)/bin/bash ]; then
   shopt -s globstar
   shopt -s extglob
   shopt -s histverify
+  # https://sanctum.geek.nz/arabesque/better-bash-history/
+  shopt -s histappend
+  shopt -s cmdhist
 fi
 
 # bash completion settings (actually, these are readline settings)

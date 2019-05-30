@@ -10,7 +10,6 @@ fi
 export EDITOR="code -n -w"
 export VISUAL="code -n -w"
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
-export HISTFILESIZE=5000
 
 # Prefer US English and use UTF-8
 export LANG="en_US"
