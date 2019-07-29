@@ -14,29 +14,29 @@ brew "bash"
 brew "bash-completion"
 brew "cloc"
 brew "direnv"
+brew "exercism"
 brew "gel"
 brew "git"
 brew "git-extras"
-brew "sqlite"
 brew "glib"
 brew "gnupg"
 brew "graphviz"
 brew "lua"
 brew "highlight"
 brew "htop"
+brew "httpie"
 brew "hub"
 brew "jq"
 brew "mysql@5.7", restart_service: true
 brew "node"
 brew "postgresql", restart_service: true
-brew "ruby-build"
-brew "rbenv"
-brew "rbenv-default-gems"
-brew "rbenv-gemset"
+brew "python"
+brew "qpdf"
 brew "reattach-to-user-namespace"
 brew "redis", restart_service: true
 brew "shellcheck"
 brew "sloccount"
+brew "sqlite"
 brew "ssh-copy-id"
 brew "telnet"
 brew "tmux"
@@ -48,6 +48,7 @@ brew "mas-cli/tap/mas"
 brew "puma/puma/puma-dev"
 brew "thoughtbot/formulae/parity"
 brew "thoughtbot/formulae/rcm"
+cask "1password"
 cask "alfred"
 cask "anaconda"
 cask "anki"
@@ -57,19 +58,19 @@ cask "bartender"
 cask "bookmacster"
 cask "brave-browser"
 cask "calibre"
+cask "cocktail"
 cask "daisydisk"
 cask "dash"
 cask "deltawalker"
 cask "divvy"
-cask "docker"
 cask "dropbox"
 cask "expandrive"
 cask "firefox"
 cask "fluid"
-cask "flux"
 cask "font-anonymous-pro"
 cask "font-bitstream-vera"
 cask "font-dejavu-sans"
+cask "font-fira-code"
 cask "font-hack"
 cask "font-inconsolata"
 cask "font-open-sans"
@@ -87,6 +88,7 @@ cask "iterm2"
 cask "keepingyouawake"
 cask "keybase"
 cask "keycue"
+cask "krisp"
 cask "krita"
 cask "licecap"
 cask "little-snitch"
@@ -94,10 +96,12 @@ cask "macbreakz"
 cask "macdown"
 cask "ngrok"
 cask "nightowl"
+cask "nvalt"
 cask "omnifocus"
 cask "onyx"
 cask "paw"
 cask "private-internet-access"
+cask "qbserve"
 cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
@@ -109,6 +113,7 @@ cask "rocket"
 cask "selfcontrol"
 cask "sequel-pro-nightly"
 cask "skype"
+cask "slack"
 cask "sonos"
 cask "sourcetree"
 cask "spectacle"
@@ -119,27 +124,27 @@ cask "superduper"
 cask "the-unarchiver"
 cask "trailer"
 cask "transmission"
+cask "vcv-rack"
 cask "visual-studio-code"
-cask "whatsize"
+cask "waltr"
 cask "yacreader"
 cask "zulip"
-mas "com.agilebits.onepassword-osx", id: 443987910
-mas "com.appgeneration.iTunerOSxFree", id: 881415018
-mas "com.apple.dt.Xcode", id: 497799835
-mas "com.apple.garageband10", id: 682658836
-mas "com.apple.iMovieApp", id: 408981434
-mas "com.apple.iWork.Keynote", id: 409183694
-mas "com.apple.iWork.Numbers", id: 409203825
-mas "com.apple.iWork.Pages", id: 409201541
-mas "com.bloombuilt.dayone-mac", id: 1055511498
-mas "com.ghostery.lite", id: 1436953057
-mas "com.if.Amphetamine", id: 937984704
-mas "com.junecloud.mac.Deliveries", id: 924726344
-mas "com.microsoft.rdc.macos", id: 1295203466
-mas "com.monosnap.monosnap", id: 540348655
-mas "com.pixelmatorteam.pixelmator", id: 407963104
-mas "com.readdle.smartemail-Mac", id: 1176895641
-mas "com.readitlater.PocketMac", id: 568494494
-mas "com.reederapp.rkit2.mac", id: 880001334
-mas "com.somafm.somafmmac", id: 449155338
-mas "com.xwavesoft.pomodoromac", id: 961632517
+mas "Amphetamine", id: 937984704
+mas "Be Focused Pro", id: 961632517
+mas "Bear", id: 1091189122
+mas "Day One", id: 1055511498
+mas "Deliveries", id: 924726344
+mas "GarageBand", id: 682658836
+mas "GhosteryLite", id: 1436953057
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Microsoft Remote Desktop", id: 1295203466
+mas "Monosnap", id: 540348655
+mas "myTuner Radio", id: 881415018
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Pixelmator", id: 407963104
+mas "Pocket", id: 568494494
+mas "Reeder", id: 880001334
+mas "Spark", id: 1176895641
+mas "Tomato One", id: 907364780
