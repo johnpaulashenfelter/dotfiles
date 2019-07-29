@@ -48,6 +48,10 @@ Host combinex-beta
   IdentityFile "/Users/johnpaul/.ssh/combinex"
   IdentitiesOnly yes
 
+Host pihole-office
+  HostName 192.168.246.5
+  User pi
+
 Host broome
   HostName broome.cluster.recurse.com
 
