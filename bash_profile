@@ -100,11 +100,6 @@ alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnp
 alias sa="source activate "
 alias jup="jupyter notebook"
 
-## Ruby
-if which rbenv &>/dev/null ; then
-  eval "$(rbenv init -)"
-fi
-
 # Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
 # mkdir .git/safe in the root of repositories you trust
