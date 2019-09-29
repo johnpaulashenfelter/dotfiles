@@ -69,7 +69,7 @@ cask "dropzone"
 cask "expandrive"
 cask "firefox"
 cask "fluid"
-cask "flume"
+cask "flux"
 cask "font-anonymous-pro"
 cask "font-bitstream-vera"
 cask "font-dejavu-sans"
@@ -81,7 +81,10 @@ cask "font-public-sans"
 cask "font-source-code-pro"
 cask "gitup"
 cask "google-chrome"
-cask "handbrake"
+cask "gpg-suite-no-mail"
+cask "grandperspective"
+cask "graphql-playground"
+cask "hammerspoon"
 cask "hazel"
 cask "hermes"
 cask "imageoptim"
@@ -151,6 +154,7 @@ mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 880001334
+mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "Tomato One", id: 907364780
 mas "VOX", id: 461369673
