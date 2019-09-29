@@ -1,11 +1,9 @@
-IdentityFile ~/.ssh/id_rsa.pub
+Include conf.d/*
 
 Host *
  AddKeysToAgent yes
  UseKeychain yes
  IdentityFile ~/.ssh/id_rsa
-
-Include conf.d/*
 
 Host ss-media
   HostName transitionpt.strongspace.com
