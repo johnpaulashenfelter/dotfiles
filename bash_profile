@@ -136,3 +136,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+
+# ODDBALL
+alias run-staging="ssh socks -D 2001 -N"
+alias run-vastaging="ssh socks-va -D 2001 -N"
