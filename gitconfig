@@ -117,9 +117,9 @@
 	smudge = git-media-smudge %f
 [filter "lfs"]
 	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
+	smudge = git-lfs smudge --skip -- %f
 	required = true
-	process = git-lfs filter-process
+	process = git-lfs filter-process --skip
 [gui]
 	recentrepo = /Users/johnpaul/work/kwnews/ors
 [credential]
