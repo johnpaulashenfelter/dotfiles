@@ -1,6 +1,8 @@
+IdentityFile ~/.ssh/id_rsa
 Include conf.d/*
 
 Host *
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/id_rsa
+#  IdentityFile ~/.ssh/id_rsa_vagov
+
