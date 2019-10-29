@@ -18,7 +18,7 @@ brew "exercism"
 brew "gel"
 brew "git"
 brew "git-extras"
-brew "glib"
+brew "git-lfs"
 brew "gnupg"
 brew "graphviz"
 brew "lua"
@@ -38,8 +38,7 @@ brew "shellcheck"
 brew "sloccount"
 brew "sqlite"
 brew "ssh-copy-id"
-brew "telnet"
-brew "tmux"
+brew "sshrc"
 brew "wget"
 brew "yarn"
 brew "z"
@@ -56,8 +55,7 @@ cask "anki"
 cask "appcleaner"
 cask "arq"
 cask "bartender"
-cask "bookmacster"
-cask "brave-browser"
+cask "bbedit"
 cask "calibre"
 cask "choosy"
 cask "daisydisk"
@@ -123,6 +121,7 @@ cask "selfcontrol"
 cask "sequel-pro-nightly"
 cask "skype"
 cask "slack"
+cask "soapui"
 cask "sonos"
 cask "sourcetree"
 cask "spectacle"
@@ -156,7 +155,7 @@ mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 880001334
-mas "SomaFM", id: 449155338
+mas "Save to Pocket", id: 1477385213
 mas "Spark", id: 1176895641
 mas "Tomato One", id: 907364780
 mas "VOX", id: 461369673
