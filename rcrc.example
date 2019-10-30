@@ -1,1 +1,3 @@
-EXCLUDES="README.md Brewfile Brewfile.dev apps.txt rcrc.example"
+EXCLUDES="README.md Brewfile Brewfile.todo rcrc.example"
+SYMLINK_DIRS="bin"
+UNDOTTED="bin"
