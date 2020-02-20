@@ -21,7 +21,7 @@ brew "credstash"
 brew "direnv"
 brew "exercism"
 brew "geos"
-brew "libdap"
+brew "proj"
 brew "numpy"
 brew "qt"
 brew "poppler"
@@ -36,12 +36,11 @@ brew "httpie"
 brew "hub"
 brew "imagemagick"
 brew "jq"
-brew "mysql@5.7", restart_service: true, link: true
+brew "mysql@5.7", link: true
 brew "node"
-brew "postgresql", restart_service: true
-brew "postgis"
+brew "postgresql@11"
 brew "qpdf"
-brew "redis", restart_service: true
+brew "redis"
 brew "shellcheck"
 brew "sloccount"
 brew "ssh-copy-id"
@@ -49,6 +48,7 @@ brew "sshrc"
 brew "wget"
 brew "yarn"
 brew "z"
+brew "github/gh/gh"
 brew "heroku/brew/heroku"
 brew "mas-cli/tap/mas"
 brew "puma/puma/puma-dev"
@@ -124,6 +124,7 @@ cask "quicklook-json"
 cask "rocket"
 cask "selfcontrol"
 cask "sequel-pro-nightly"
+cask "session-manager-plugin"
 cask "slack"
 cask "sonos"
 cask "sourcetree"
@@ -149,7 +150,7 @@ mas "Bear", id: 1091189122
 mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344
 mas "GarageBand", id: 682658836
-mas "GhosteryLite", id: 1436953057
+mas "Ghostery Lite", id: 1436953057
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
