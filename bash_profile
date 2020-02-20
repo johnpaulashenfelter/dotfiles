@@ -135,8 +135,13 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-export PATH="/usr/local/opt/postgresql@9.6/bin:$PATH"
+if [ -d /usr/local/opt/mysql@5.7/bin ]; then
+  export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+fi
+
+if [ -d /usr/local/opt/postgresql@11/bin ]; then
+  export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+fi
 
 # ODDBALL
 alias run-staging="ssh -vvv socks -D 2001 -N"
