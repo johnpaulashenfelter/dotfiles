@@ -3,148 +3,153 @@ gem "rack-canonical-host"
 gem "recipient_interceptor"
 gem "title"
 
+gem_group :development do
+  gem "gem-licenses"
+  gem "guard-rspec"
+end
+
 gem_group :development, :test do
   gem "awesome_print"
   gem "bullet"
-  gem "bundler-audit", ">= 0.5.0", require: false
+  gem "bundler-audit", require: false
   gem "dotenv-rails"
   gem "factory_bot_rails"
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails"
-  gem "rubocop"
-end
-
-gem_group :development do
-  gem "foreman"
-  gem "gem-licenses"
-  gem "guard-rspec"
+  gem "rubocop-rails", require: false
 end
 
 gem_group :test do
-  gem "capybara-webkit"
+  gem "capybara", ">= 2.15"
   gem "database_cleaner"
   gem "launchy"
+  gem "selenium-webdriver"
   gem "shoulda-matchers"
   gem "simplecov", require: false
+  gem "webdrivers"
   gem "webmock"
 end
 
 run "bundle install"
 
-generate "rspec:install"
-
-file '.env', <<-CODE
-# https://github.com/ddollar/forego
-ASSET_HOST=localhost:3000
-APPLICATION_HOST=localhost:3000
-PORT=3000
-RACK_ENV=development
-RACK_MINI_PROFILER=0
-SECRET_KEY_BASE=development_secret
-EXECJS_RUNTIME=Node
-SMTP_ADDRESS=smtp.example.com
-SMTP_DOMAIN=example.com
-SMTP_PASSWORD=password
-SMTP_USERNAME=username
-WEB_CONCURRENCY=1
+file ".env", <<~CODE
+  # https://github.com/ddollar/forego
+  ASSET_HOST=localhost:3000
+  APPLICATION_HOST=localhost:3000
+  PORT=3000
+  RACK_ENV=development
+  RACK_MINI_PROFILER=0
+  SECRET_KEY_BASE=development_secret
+  EXECJS_RUNTIME=Node
+  SMTP_ADDRESS=smtp.example.com
+  SMTP_DOMAIN=example.com
+  SMTP_PASSWORD=password
+  SMTP_USERNAME=username
+  WEB_CONCURRENCY=1
 CODE
 
-file '.rspec', <<-CODE
---require spec_helper
+file "Procfile", <<~CODE
+  web: bundle exec puma -p $PORT -C ./config/puma.rb
 CODE
 
-file 'Procfile', <<-CODE
-web: bundle exec puma -p $PORT -C ./config/puma.rb
+file ".rspec", <<~CODE
+  --require spec_helper
 CODE
 
-file 'spec/spec_helper.rb', <<-CODE
-if ENV.fetch("COVERAGE", false)
-  require "simplecov"
-
-  if ENV["CIRCLE_ARTIFACTS"]
-    dir = File.join(ENV["CIRCLE_ARTIFACTS"], "coverage")
-    SimpleCov.coverage_dir(dir)
+file "spec/spec_helper.rb", <<~CODE
+  if ENV.fetch("COVERAGE", false)
+    require "simplecov"
+    SimpleCov.start "rails"
   end
 
-SimpleCov.start "rails"
-end
+  require "webmock/rspec"
 
-require "webmock/rspec"
+  # http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+  RSpec.configure do |config|
+    config.expect_with :rspec do |expectations|
+      expectations.include_chain_clauses_in_custom_matcher_descriptions = true
+    end
 
-# http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-RSpec.configure do |config|
-  config.expect_with :rspec do |expectations|
-    expectations.syntax = :expect
+    config.mock_with :rspec do |mocks|
+      mocks.verify_partial_doubles = true
+    end
+
+    config.shared_context_metadata_behavior = :apply_to_host_groups
+
+    config.filter_run_when_matching :focus
+    config.example_status_persistence_file_path = "tmp/rspec_examples.txt"
+    config.disable_monkey_patching!
+
+    if config.files_to_run.one?
+      config.default_formatter = "doc"
+    end
+
+    config.profile_examples = 10
+  
+    config.order = :random
+    Kernel.srand config.seed
   end
 
-  config.mock_with :rspec do |mocks|
-    mocks.syntax = :expect
-    mocks.verify_partial_doubles = true
-  end
-
-  config.example_status_persistence_file_path = "tmp/rspec_examples.txt"
-  config.order = :random
-end
-
-WebMock.disable_net_connect!(allow_localhost: true)
+  WebMock.disable_net_connect!(allow_localhost: true)
 CODE
 
-file 'spec/rails_helper.rb', <<-CODE
-ENV["RACK_ENV"] = "test"
+file "spec/rails_helper.rb", <<~'CODE'
+  require "spec_helper"
+  ENV["RAILS_ENV"] ||= "test"
 
-require File.expand_path("../../config/environment", __FILE__)
-abort("DATABASE_URL environment variable is set") if ENV["DATABASE_URL"]
+  require File.expand_path("../config/environment"', __dir__)
+  abort("DATABASE_URL environment variable is set") if ENV["DATABASE_URL"]
 
-require "rspec/rails"
-require "shoulda/matchers"
+  require "rspec/rails"
+  require "shoulda/matchers"
 
-Dir[Rails.root.join("spec/support/**/*.rb")].sort.each { |file| require file }
+  Dir[Rails.root.join("spec/support/**/*.rb")].sort.each { |file| require file }
 
-module Features
-  # Extend this module in spec/support/features/*.rb
-end
-
-RSpec.configure do |config|
-  config.include Features, type: :feature
-  config.infer_base_class_for_anonymous_controllers = false
-  config.infer_spec_type_from_file_location!
-  config.use_transactional_fixtures = true
-end
-
-Shoulda::Matchers.configure do |config|
-  config.integrate do |with|
-    with.test_framework :rspec
-    with.library :rails
+  begin
+    ActiveRecord::Migration.maintain_test_schema!
+  rescue ActiveRecord::PendingMigrationError => e
+    puts e.to_s.strip
+    exit 1
   end
-end
 
-ActiveRecord::Migration.maintain_test_schema!
+  RSpec.configure do |config|
+    config.fixture_path = "#{::Rails.root}/spec/fixtures"
+    config.use_transactional_fixtures = true
+
+    config.infer_spec_type_from_file_location!
+    
+    config.filter_rails_from_backtrace!
+    ## config.filter_gems_from_backtrace("gem name")
+  end
 CODE
 
-file "spec/support/factory_bot.rb", <<-CODE
-RSpec.configure do |config|
-  config.include FactoryBot::Syntax::Methods
-end
+file "spec/support/shoulda.rb", <<~CODE
+  Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+CODE
+
+file "spec/support/factory_bot.rb", <<~CODE
+  RSpec.configure do |config|
+    config.include FactoryBot::Syntax::Methods
+  end
 CODE
 
 rakefile("bundler-audit.rake") do
-<<-TASK
-if Rails.env.development? || Rails.env.test?
-  require "bundler/audit/task"
-  Bundler::Audit::Task.new
-end
+<<~TASK
+  if Rails.env.development? || Rails.env.test?
+    require "bundler/audit/task"
+    Bundler::Audit::Task.new
+  end
 TASK
 end
 
-run "rm README.md"
-run "rm -rf test/"
-
 after_bundle do
   run "bin/bundle exec guard init"
-
-  git :init
-  git add: '.'
-  git commit: "-a -m 'Initial commit'"
+  run "cp $(bundle exec i18n-tasks gem-path)/templates/config/i18n-tasks.yml config/"
+  run "cp $(bundle exec i18n-tasks gem-path)/templates/rspec/i18n_spec.rb spec/"
 end
-
