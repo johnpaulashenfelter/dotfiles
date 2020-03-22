@@ -1,9 +1,3 @@
---skip-spring
 # http://pixelatedworks.com/articles/configuring_new_rails_projects_with_railsrc_and_templates/
 --database=postgresql
-# --webpack
---skip-action-cable
---skip-spring
---skip-coffee
---skip-turbolinks
 --template=~/.dotfiles/rails_template.rb
