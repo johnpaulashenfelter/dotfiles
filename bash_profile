@@ -94,6 +94,7 @@ fi
 alias h="heroku"
 alias s.="code ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
+alias dw="/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker"
 
 # Python/Anaconda/ML
 # export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
