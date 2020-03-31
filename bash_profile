@@ -145,5 +145,9 @@ if [ -d /usr/local/opt/postgresql@11/bin ]; then
 fi
 
 # ODDBALL
+if [ -f ~/.ssh/id_rsa_vagov ]; then
+  ssh-add -K ~/.ssh/id_rsa_vagov 2>/dev/null;
+fi
+
 alias run-staging="ssh -vvv socks -D 2001 -N"
 alias run-vastaging="ssh -vvv socks-va -D 2001 -N"
