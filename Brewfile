@@ -17,6 +17,7 @@ brew "bash"
 brew "bash-completion"
 brew "python"
 brew "glib"
+brew "circleci"
 brew "clamav"
 brew "credstash"
 brew "direnv"
@@ -30,16 +31,16 @@ brew "gdal"
 brew "git"
 brew "git-extras"
 brew "git-lfs"
+brew "gnupg"
 brew "go"
-brew "highlight"
 brew "htop"
 brew "httpie"
 brew "hub"
 brew "imagemagick"
 brew "node"
-brew "joplin", link: false
+brew "joplin"
 brew "jq"
-brew "mysql@5.7", restart_service: true, link: true
+brew "mysql@5.7", link: true
 brew "overmind"
 brew "postgresql@11", restart_service: true
 brew "qpdf"
@@ -60,6 +61,7 @@ brew "thoughtbot/formulae/parity"
 brew "thoughtbot/formulae/rcm"
 cask "1password"
 cask "a-better-finder-attributes"
+cask "a-better-finder-rename"
 cask "alfred"
 cask "anki"
 cask "appcleaner"
@@ -100,6 +102,7 @@ cask "hazel"
 cask "imageoptim"
 cask "istat-menus"
 cask "iterm2"
+cask "joplin"
 cask "keepingyouawake"
 cask "keybase"
 cask "keycue"
@@ -113,10 +116,10 @@ cask "monitorcontrol"
 cask "netnewswire"
 cask "ngrok"
 cask "nightowl"
-cask "nvalt"
 cask "omnifocus"
 cask "onyx"
 cask "paw"
+cask "polar-bookshelf"
 cask "qbserve"
 cask "qlcolorcode"
 cask "qlimagesize"
@@ -138,7 +141,6 @@ cask "steam"
 cask "sublime-text"
 cask "superduper"
 cask "the-unarchiver"
-cask "tower"
 cask "trailer"
 cask "transmission"
 cask "vagrant"
@@ -147,13 +149,13 @@ cask "visual-studio-code"
 cask "vlc"
 cask "waltr"
 cask "yacreader"
+cask "zotero"
 cask "zulip"
 mas "Amphetamine", id: 937984704
 mas "ASUS Device Discovery", id: 995124504
 mas "ASUS Firmware Restoration", id: 1020519014
 mas "Be Focused Pro", id: 961632517
 mas "Bear", id: 1091189122
-mas "Day One", id: 1055511498
 mas "Deliveries", id: 924726344
 mas "GarageBand", id: 682658836
 mas "Ghostery Lite", id: 1436953057
@@ -169,6 +171,4 @@ mas "Pocket", id: 568494494
 mas "Reeder", id: 880001334
 mas "Save to Pocket", id: 1477385213
 mas "Spark", id: 1176895641
-mas "Tomato One", id: 907364780
-mas "VOX", id: 461369673
 mas "Xcode", id: 497799835
