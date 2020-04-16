@@ -42,7 +42,8 @@ brew "joplin"
 brew "jq"
 brew "mysql@5.7", link: true
 brew "overmind"
-brew "postgresql@11", restart_service: true
+brew "postgresql", restart_service: true
+brew "postgresql@11"
 brew "qpdf"
 brew "redis", restart_service: true
 brew "shellcheck"
@@ -67,6 +68,7 @@ cask "anki"
 cask "appcleaner"
 cask "bartender"
 cask "bbedit"
+cask "bookmacster"
 cask "brave-browser"
 cask "calibre"
 cask "choosy"
