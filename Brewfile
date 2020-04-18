@@ -175,4 +175,5 @@ mas "Pocket", id: 568494494
 mas "Reeder", id: 880001334
 mas "Save to Pocket", id: 1477385213
 mas "Spark", id: 1176895641
+mas "StopTheMadness", id: 1376402589
 mas "Xcode", id: 497799835
