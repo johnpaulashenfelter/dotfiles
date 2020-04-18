@@ -50,7 +50,7 @@
 	last = log -1 HEAD
 
 [color]
-  ui = auto
+	ui = true
   # diff = auto
   # status = auto
   # branch = auto
@@ -58,27 +58,33 @@
   current = yellow reverse
   local = yellow
   remote = green
-[color "diff"]
-  commit = green
-  meta = yellow
-  frag = cyan
-  old = red
-  new = green
-  whitespace = red reverse
-#  meta = yellow bold
-#  frag = magenta bold
-#  old = red bold
-#  new = green bold
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
+[color "diff"]
+	commit = yellow bold
+	meta = 11
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+#  meta = yellow bold
+#  frag = magenta bold
+#  old = red bold
+#  new = green bold
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
 [core]
 	excludesfile = /Users/johnpaul/.gitignore
 	editor = code --wait
 	autocrlf = input
-# https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
-  pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  # https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
+  # pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+  page = "diff-so-fancy | less --tabs=4 -RFX"
 [github]
 	user = johnpaulashenfelter
 	token = ec96131711d34decfea9c883786071d1
@@ -125,3 +131,4 @@
 	recentrepo = /Users/johnpaul/work/kwnews/ors
 [credential]
 	helper = osxkeychain
+
