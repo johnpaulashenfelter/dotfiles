@@ -52,6 +52,10 @@ alias space="du -shc * .[^.]*"
 alias systail="tail -f /var/log/system.log"
 alias t="less +F"
 
+### Enhancements
+alias cat="bat"
+alias ls="exa"
+
 # OSX
 # Add tab completion for `defaults read|write NSGlobalDomain`
 # Could just use `-g` instead, but being explicit
