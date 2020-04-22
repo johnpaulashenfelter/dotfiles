@@ -28,10 +28,15 @@ fi
 alias ..="cd .."
 alias ...="cd ../.."
 
+### Enhancements
+alias cat="bat"
+alias find="fd"
+alias ls="exa"
+
 ### Easier listing
-alias ls="ls -GF" # always colorize and indicate type/executable
+#alias ls="ls -GF" # always colorize and indicate type/executable
 # List all files colorized in long format, including dot files with filesize suffixes
-alias la="ls -ahl"
+alias la="ls -ahql"
 alias l="clear && pwd && ls -FGl"
 alias u="cd .. && l"
 
@@ -39,7 +44,6 @@ alias u="cd .. && l"
 alias c="clear"
 alias df="df -h"
 alias ducks="du -cksh * | sort -rn|head -11" # Lists folders and files sizes in the current folder
-alias f="find . -iname"
 alias h?="history | grep"
 alias m="more"
 alias p="ps xa | grep "
@@ -51,10 +55,6 @@ alias rsync="rsync -avz"
 alias space="du -shc * .[^.]*"
 alias systail="tail -f /var/log/system.log"
 alias t="less +F"
-
-### Enhancements
-alias cat="bat"
-alias ls="exa"
 
 # OSX
 # Add tab completion for `defaults read|write NSGlobalDomain`
