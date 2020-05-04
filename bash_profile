@@ -95,6 +95,7 @@ if command -v brew >/dev/null 2>&1; then
 fi
 
 # Development
+alias g="git"
 alias h="heroku"
 alias s.="code ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
