@@ -156,3 +156,6 @@ fi
 
 alias run-staging="ssh -vvv socks -D 2001 -N"
 alias run-vastaging="ssh -vvv socks-va -D 2001 -N"
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+
