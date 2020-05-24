@@ -44,3 +44,8 @@ This should install all the key applications from homebrew and the Mac App Store
 * Create a new ssh key for GitHub/etc
   - ssh-keygen -t rsa -b 4096 -C "john@ashenfelter.com"
   - ssh-add -K ~/.ssh/id_rsa
+
+Preference Panes
+
+https://github.com/Lord-Kamina/SwiftDefaultApps/tree/v2.0.1
+https://www.bresink.com/osx/TinkerTool.html
