@@ -132,3 +132,5 @@
 [credential]
 	helper = osxkeychain
 
+[lfs]
+	fetchexclude = *
