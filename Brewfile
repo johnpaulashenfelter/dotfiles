@@ -16,10 +16,8 @@ brew "awscli"
 brew "bash"
 brew "bash-completion"
 brew "bat"
-brew "blueutil"
 brew "glib"
 brew "circleci"
-brew "clamav"
 brew "credstash"
 brew "diff-so-fancy"
 brew "direnv"
@@ -59,6 +57,7 @@ brew "magic-wormhole"
 brew "mosh"
 brew "mysql@5.7", link: true
 brew "ngrep"
+brew "node"
 brew "noti"
 brew "tmux"
 brew "overmind"
@@ -73,7 +72,6 @@ brew "redis", restart_service: true
 brew "ripgrep"
 brew "shellcheck"
 brew "ssh-copy-id"
-brew "sshrc"
 brew "starship"
 brew "terraform"
 brew "tig"
@@ -195,6 +193,7 @@ cask "suspicious-package"
 cask "the-unarchiver"
 cask "trailer"
 cask "transmission"
+cask "tuple"
 cask "vagrant"
 cask "vcv-rack"
 cask "visual-studio-code"
@@ -222,6 +221,7 @@ mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 880001334
+mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
