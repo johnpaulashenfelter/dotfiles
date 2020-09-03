@@ -145,17 +145,9 @@ if [ -d /usr/local/opt/mysql@5.7/bin ]; then
   export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 fi
 
-if [ -d /usr/local/opt/postgresql@11/bin ]; then
-  export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+if [ -d /usr/local/opt/postgresql/bin ]; then
+  export PATH="/usr/local/opt/postgresql/bin:$PATH"
 fi
-
-# ODDBALL
-if [ -f ~/.ssh/id_rsa_vagov ]; then
-  ssh-add -K ~/.ssh/id_rsa_vagov 2>/dev/null;
-fi
-
-alias run-staging="ssh -vvv socks -D 2001 -N"
-alias run-vastaging="ssh -vvv socks-va -D 2001 -N"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
