@@ -95,3 +95,7 @@ set -o vi
  fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+
+# export STARSHIP_CONFIG="~/.dotfiles/starship.toml"
+eval "$(starship init bash)"
