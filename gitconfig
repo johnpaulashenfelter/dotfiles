@@ -1,6 +1,6 @@
 [user]
 	name = John Paul Ashenfelter
-	email = johnpaul@transitionpoint.com
+	email = john@ashenfelter.com
 [alias]
   branches = branch -a
   ci = commit
