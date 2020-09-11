@@ -65,7 +65,7 @@ complete -W "NSGlobalDomain" defaults
 
 ## Common tasks
 
-alias br="brew update && echo $'\nOutdated\n' && brew outdated && echo $'\nCasks\n' && brew cask outdated"
+alias br="brew update && echo $'\nOutdated\n' && brew outdated && echo $'\nCasks\n' && brew outdated --cask"
 
 # Clear camera list for video calls
 alias camerafix='sudo killall VDCAssistant'
