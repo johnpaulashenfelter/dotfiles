@@ -130,7 +130,6 @@ cask "gpg-suite-no-mail"
 cask "graphql-playground"
 cask "hammerspoon"
 cask "hazel"
-cask "hermes"
 cask "iina"
 cask "imageoptim"
 cask "insomnia"
@@ -161,7 +160,6 @@ cask "paw"
 cask "polar-bookshelf"
 cask "powershell"
 cask "qbserve"
-cask "qlcolorcode"
 cask "qlimagesize"
 cask "qlmarkdown"
 cask "qlprettypatch"
@@ -205,6 +203,7 @@ mas "Focus Matrix", id: 1087284172
 mas "GarageBand", id: 682658836
 mas "Ghostery Lite", id: 1436953057
 mas "iMovie", id: 408981434
+mas "Ka-Block!", id: 1335413823
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
