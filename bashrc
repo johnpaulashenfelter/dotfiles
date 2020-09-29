@@ -66,7 +66,7 @@ export HISTCONTROL=ignoreboth
 export HISTSIZE=100000
 export HISTFILESIZE=1000000
 #export HISTTIMEFORMAT='%F %T '
-export HISTIGNORE="&:ls:z:exit:bg:fg:history:br:heroku *:h:s.:gem *:git ci*" #ls *: ignores all ls commands
+export HISTIGNORE="&:ls:z:exit:bg:fg:history:br:heroku *:h:s.:gem *:git ci*:gcloud auth login" #ls *: ignores all ls commands
 
 if [ -f $(brew --prefix)/bin/bash ]; then
   # https://zwischenzugs.com/2019/04/03/eight-obscure-bash-options-you-might-want-to-know-about/
