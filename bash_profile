@@ -121,6 +121,11 @@ alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
 # https://coderwall.com/p/vyl8zg
 alias tlog="less +F log/development.log"
 
+## Docker
+alias dc='docker-compose'
+alias dcl='docker-compose logs'
+alias dcr='docker-compose run'
+
 # Quickly find the big files in a rails app
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
