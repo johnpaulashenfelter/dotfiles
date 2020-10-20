@@ -1,6 +1,9 @@
 [user]
 	name = John Paul Ashenfelter
 	email = john@ashenfelter.com
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
 [alias]
   branches = branch -a
   ci = commit
@@ -109,7 +112,7 @@
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
+	path =
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
