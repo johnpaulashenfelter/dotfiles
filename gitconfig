@@ -85,6 +85,7 @@
   # https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
   # pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
   page = "diff-so-fancy | less --tabs=4 -RFX"
+	attributesfile = /Users/johnpaul/.gitattributes
 [github]
 	user = johnpaulashenfelter
 	token = ec96131711d34decfea9c883786071d1
@@ -108,7 +109,7 @@
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+	path = 
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
