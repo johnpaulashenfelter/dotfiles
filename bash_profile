@@ -82,8 +82,15 @@ alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 
 ## Homebrew
 alias brupdate='brew update && brew outdated'
+
 # EC2 tools
 # export JAVA_HOME="$(/usr/libexec/java_home)"
+
+# gcloud
+if [ -f $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk ]; then
+  . $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
+  . $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
+fi
 
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion

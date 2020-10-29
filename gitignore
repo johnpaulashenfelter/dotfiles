@@ -1,4 +1,7 @@
 # Ruby tools
+.tool-versions
+.env.*.local
+.env.local
 
 # Pow
 .powrc
