@@ -28,9 +28,7 @@ brew "fzf"
 brew "gh"
 brew "git"
 brew "git-extras"
-brew "git-filter-repo"
 brew "git-lfs"
-brew "git-sizer"
 brew "hexyl"
 brew "hr"
 brew "htop"
@@ -41,7 +39,6 @@ brew "hub"
 brew "hyperfine"
 brew "jq"
 brew "lnav"
-brew "lsd"
 brew "lynis"
 brew "mackup"
 brew "magic-wormhole"
@@ -50,7 +47,6 @@ brew "mosh"
 brew "mysql@5.7", link: true
 brew "ngrep"
 brew "node"
-brew "noti"
 brew "numpy"
 brew "tmux"
 brew "overmind"
@@ -66,6 +62,7 @@ brew "shellcheck"
 brew "ssh-copy-id", link: true
 brew "starship"
 brew "terraform"
+brew "tig"
 brew "tldr"
 brew "tokei"
 brew "tree"
@@ -99,6 +96,7 @@ cask "caldigit-docking-utility"
 cask "caldigit-thunderbolt-charging"
 cask "choosy"
 cask "chromedriver"
+cask "clipgrab"
 cask "daisydisk"
 cask "dash"
 cask "default-folder-x"
@@ -114,7 +112,6 @@ cask "expressvpn"
 cask "falcon-sql-client"
 cask "firefox"
 cask "fluid"
-cask "flux"
 cask "font-anonymous-pro"
 cask "font-bitstream-vera"
 cask "font-camingocode"
@@ -147,14 +144,11 @@ cask "keycue"
 cask "kitty"
 cask "licecap"
 cask "little-snitch"
-cask "lunar"
 cask "macbreakz"
 cask "macdown"
 cask "micro-snitch"
-cask "monitorcontrol"
 cask "muzzle"
 cask "ngrok"
-cask "nightowl"
 cask "omnifocus"
 cask "onyx"
 cask "pastebot"
@@ -196,8 +190,6 @@ cask "yacreader"
 cask "zotero"
 cask "zulip"
 mas "Amphetamine", id: 937984704
-mas "ASUS Device Discovery", id: 995124504
-mas "ASUS Firmware Restoration", id: 1020519014
 mas "Be Focused Pro", id: 961632517
 mas "Bear", id: 1091189122
 mas "Deliveries", id: 924726344
@@ -210,12 +202,10 @@ mas "Ka-Block!", id: 1335413823
 mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
-mas "myTuner Radio", id: 881415018
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
-mas "Reeder", id: 880001334
 mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
 mas "SomaFM", id: 449155338
