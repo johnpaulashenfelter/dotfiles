@@ -1,6 +1,7 @@
 [user]
 	name = John Paul Ashenfelter
 	email = john@ashenfelter.com
+	useConfigOnly = true
 [include]
   # For username / creds / etc
   path = ~/.gitconfig.local
