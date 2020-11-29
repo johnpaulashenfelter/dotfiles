@@ -57,6 +57,23 @@ file ".rspec", <<~CODE
   --require spec_helper
 CODE
 
+application do
+"
+  config.generators do |g|
+    g.javascripts     false
+    g.stylesheets     false
+    g.orm             :active_record
+    g.template_engine :erb
+    g.test_framework  :rspec,
+      fixtures:         false,
+      helper_specs:     false,
+      request_specs:    false,
+      routing_specs:    false,
+      view_specs:       false,
+  end
+"
+end
+
 file "spec/spec_helper.rb", <<~CODE
   if ENV.fetch("COVERAGE", false)
     require "simplecov"
@@ -86,7 +103,7 @@ file "spec/spec_helper.rb", <<~CODE
     end
 
     config.profile_examples = 10
-  
+
     config.order = :random
     Kernel.srand config.seed
   end
@@ -118,7 +135,7 @@ file "spec/rails_helper.rb", <<~'CODE'
     config.use_transactional_fixtures = true
 
     config.infer_spec_type_from_file_location!
-    
+
     config.filter_rails_from_backtrace!
     ## config.filter_gems_from_backtrace("gem name")
   end
