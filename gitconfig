@@ -53,6 +53,15 @@
 	unstage = reset HEAD --
 	last = log -1 HEAD
 	identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
+	stats = shortlog -sn --all --no-merges
+	praise = blame
+	recent = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format=\"%(refname:short)\"
+	overview = git log --all --oneline --no-merges
+	recap = log --all --oneline --no-merges --author=\"John Paul Ashenfelter\"
+	today = log --since=00:00:00 --all --no-merges --oneline --author=\"John Paul Ashenfelter\"
+	changelog = git log --oneline --no-merges
+	upstream = git log --oneline --no-merges HEAD
+	graph = " git log --graph --all --decorate --stat --date=iso"
 
 [color]
 	ui = true
