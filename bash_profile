@@ -164,3 +164,8 @@ fi
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+if [ -d $HOME/.local/include ]; then
+  for i in $HOME/.local/include/*;
+    do source $i
+  done
+fi
