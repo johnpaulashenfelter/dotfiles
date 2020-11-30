@@ -28,7 +28,10 @@ if defined?(PryByebug)
   Pry.commands.alias_command 'ww', 'whereami'
 end
 
-
+# Hit Enter to repeat last command
+Pry::Commands.command /^$/, "repeat last command" do
+  _pry_.run_command Pry.history.to_a.last
+end
 
 begin
   require 'awesome_print'
@@ -47,7 +50,7 @@ def more_help
   puts "hG : hist -G          Commands matching expression ever used"
   puts "hr : hist -r          hist -r <command number> to run a command"
   puts
-  
+
   puts "Samples variables"
   puts
   puts "helper   : Access Rails helpers"
@@ -71,7 +74,7 @@ def more_help
   puts 'dd  :  down'
   puts 'ff  :  frame'
   puts 'bb  :  break'
-  puts 'ww  :  whereami' 
+  puts 'ww  :  whereami'
   ""
  end
 
