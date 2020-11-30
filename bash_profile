@@ -87,7 +87,7 @@ alias brupdate='brew update && brew outdated'
 # export JAVA_HOME="$(/usr/libexec/java_home)"
 
 # gcloud
-if [ -f $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk ]; then
+if [ -d $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk ]; then
   . $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
   . $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
 fi
