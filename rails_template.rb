@@ -77,7 +77,9 @@ end
 file "spec/spec_helper.rb", <<~CODE
   if ENV.fetch("COVERAGE", false)
     require "simplecov"
-    SimpleCov.start "rails"
+    SimpleCov.start "rails" do
+      enable_coverage :branch
+    end
   end
 
   require "webmock/rspec"
