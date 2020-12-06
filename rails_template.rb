@@ -116,7 +116,7 @@ file "spec/rails_helper.rb", <<~'CODE'
   ENV["RAILS_ENV"] ||= "test"
 
   require File.expand_path("../config/environment"', __dir__)
-  abort("DATABASE_URL environment variable is set") if ENV["DATABASE_URL"]
+  abort("RSpec ABORTED: DATABASE_URL environment variable is set") if ENV["DATABASE_URL"]
 
   require "rspec/rails"
   require "shoulda/matchers"
