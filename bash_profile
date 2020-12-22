@@ -19,6 +19,7 @@ fi
 export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 
+# bash_profile for login shells (incl iTerm, Terminal on MacOS), bashrc for internative shells and GNU/Linux terminal emulators
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
