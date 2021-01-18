@@ -21,6 +21,7 @@
 	dc = diff --cached
 	diff = diff --word-diff
 	ds = diff --staged      # git ds - diff your staged changes == review before committing.
+	dz = diff --color-moved=dimmed_zebra # show only-moved text in dimmed stripes
 	ff = merge --ff-only
 	go = checkout
 	gob = checkout -b
