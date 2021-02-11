@@ -110,6 +110,9 @@ fi
 alias g="git"
 alias h="heroku"
 alias s.="code ."
+alias vsc="code ."
+alias k="kubectl"
+alias k8="kubectl"
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 alias dw="/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker"
 
