@@ -14,6 +14,7 @@
 	c = commit
 	changelog = git log --oneline --no-merges
 	cleanout = !git clean -df && git checkout -- .
+	config-search = config --show-scope --show-origin --get-regexp
 	conflicts = git diff --name-only | uniq | xargs code
 	cp = cherry-pick
 	d = diff
