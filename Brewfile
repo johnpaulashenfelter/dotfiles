@@ -50,6 +50,7 @@ brew "node"
 brew "numpy"
 brew "tmux"
 brew "overmind"
+brew "pinentry-mac"
 brew "pgcli"
 brew "postgresql", restart_service: true
 brew "prettyping"
@@ -57,6 +58,7 @@ brew "pv"
 brew "qpdf"
 brew "redis", restart_service: true
 brew "ripgrep"
+brew "ripgrep-all"
 brew "shellcheck"
 brew "ssh-copy-id", link: true
 brew "starship"
@@ -77,6 +79,7 @@ brew "puma/puma/puma-dev"
 brew "thoughtbot/formulae/parity"
 brew "thoughtbot/formulae/rcm"
 cask "1password"
+cask "1password-cli"
 cask "a-better-finder-attributes"
 cask "a-better-finder-rename"
 cask "alfred"
@@ -90,9 +93,9 @@ cask "bbedit"
 cask "beekeeper-studio"
 cask "bettertouchtool"
 cask "bookmacster"
-cask "calibre"
 cask "caldigit-docking-utility"
 cask "caldigit-thunderbolt-charging"
+cask "calibre"
 cask "choosy"
 cask "chromedriver"
 cask "clipgrab"
@@ -167,6 +170,7 @@ cask "rocket"
 cask "selfcontrol"
 cask "sequel-pro-nightly"
 cask "session-manager-plugin"
+cask "signal"
 cask "slack"
 cask "sonos-s1-controller"
 cask "sourcetree"
@@ -196,6 +200,7 @@ mas "DuckDuckGo Privacy Essentials", id: 1482920575
 mas "Focus Matrix", id: 1087284172
 mas "GarageBand", id: 682658836
 mas "Ghostery Lite", id: 1436953057
+mas "Hush", id: 1544743900
 mas "iMovie", id: 408981434
 mas "Ka-Block!", id: 1335413823
 mas "Keynote", id: 409183694
