@@ -12,7 +12,6 @@ tap "puma/puma"
 tap "thoughtbot/formulae"
 brew "asdf"
 brew "sqlite"
-brew "awscli"
 brew "bash"
 brew "bash-completion"
 brew "bat"
@@ -62,12 +61,8 @@ brew "ripgrep-all"
 brew "shellcheck"
 brew "ssh-copy-id", link: true
 brew "starship"
-brew "terraform"
-brew "tig"
 brew "tldr"
 brew "tokei"
-brew "tree"
-brew "watch"
 brew "wget"
 brew "wrk"
 brew "yarn"
@@ -116,7 +111,6 @@ cask "firefox"
 cask "fluid"
 cask "font-anonymous-pro"
 cask "font-bitstream-vera"
-cask "font-camingocode"
 cask "font-dejavu-sans"
 cask "font-fira-code"
 cask "font-fira-code-nerd-font"
@@ -194,7 +188,6 @@ cask "zotero"
 cask "zulip"
 mas "Amphetamine", id: 937984704
 mas "Be Focused Pro", id: 961632517
-mas "Bear", id: 1091189122
 mas "Deliveries", id: 924726344
 mas "DuckDuckGo Privacy Essentials", id: 1482920575
 mas "Focus Matrix", id: 1087284172
