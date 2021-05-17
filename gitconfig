@@ -66,6 +66,9 @@
 	unstage = reset HEAD -- # from the source https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 	upstream = git log --oneline --no-merges HEAD
 	wdiff = diff -w --word-diff=color
+  fuse = !git sync && git rebase main
+  main = !git checkout main && git pull --no-tags
+  sync = !git main && git switch -
 [color]
 	ui = true
   # diff = auto
