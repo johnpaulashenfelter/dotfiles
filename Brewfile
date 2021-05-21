@@ -142,6 +142,7 @@ cask "keyboard-maestro"
 cask "keycastr"
 cask "keycue"
 cask "kitty"
+cask "lens"
 cask "licecap"
 cask "little-snitch"
 cask "macbreakz"
@@ -204,6 +205,7 @@ mas "Hush", id: 1544743900
 mas "iMovie", id: 408981434
 mas "Ka-Block!", id: 1335413823
 mas "Keynote", id: 409183694
+mas "Magic Lasso", id: 1198047227
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
 mas "Numbers", id: 409203825
