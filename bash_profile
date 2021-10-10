@@ -115,6 +115,9 @@ alias k="kubectl"
 alias k8="kubectl"
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 alias dw="/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker"
+# from https://makandracards.com/makandra/505327-git-shortcut-to-fixup-a-recent-commit
+alias fixup='git log --oneline | fzf | awk '\''{print $1}'\'' | xargs -I '\''{}'\'' git commit --fixup {}'
+alias recent-branch="git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ |  fzf | sed 's/\* //g' | xargs -I '{}' git checkout {}"
 
 # Python/Anaconda/ML
 # export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
