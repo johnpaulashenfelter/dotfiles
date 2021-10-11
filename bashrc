@@ -1,6 +1,6 @@
 #http://tammersaleh.com/posts/a-better-rvm-bash-prompt
 function __git_dirty {
-  git diff --quiet HEAD &>/dev/null 
+  git diff --quiet HEAD &>/dev/null
   [ $? == 1 ] && echo "!"
 }
 
@@ -88,7 +88,7 @@ bind "set bell-style none" # no bell
 bind "set show-all-if-ambiguous On" # show list automatically, without double tab
 
 set -o vi
-
+eval "$(zoxide init bash)"
 # Add direnv
  if [ -f $(brew --prefix)/bin/direnv ]; then
   eval "$(direnv hook bash)"
