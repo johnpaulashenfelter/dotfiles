@@ -179,3 +179,5 @@ if [ -d $HOME/.local/include ]; then
     do source $i
   done
 fi
+
+source /Users/johnpaul/.config/broot/launcher/bash/br

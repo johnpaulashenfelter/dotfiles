@@ -99,3 +99,5 @@ set -o vi
 
 # export STARSHIP_CONFIG="~/.dotfiles/starship.toml"
 eval "$(starship init bash)"
+
+source /Users/johnpaul/.config/broot/launcher/bash/br
