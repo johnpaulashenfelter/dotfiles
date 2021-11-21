@@ -38,12 +38,15 @@ This should install all the key applications from homebrew and the Mac App Store
 * `mkdir craft me work`
 * Sign in to Dropbox and sync `family/apps settings tpoint/apps`
 * Open iTerm, Preferences > General > Load...from custom file `~/Dropbox/settings/com.googlecode.iterm2.plist`
-* Open 1Password and add `~/Dropbox/settings/1Password.opvault`
 * Open Alfred, Advanced > Sync `~/Dropbox/settings/Alfred`; Also add the licensefile from 1password
 * Open Dash, General > Syncing `~/Dropbox/settings/Dash`; Also add the licensefile from 1password
 * Create a new ssh key for GitHub/etc
   - ssh-keygen -t rsa -b 4096 -C "john@ashenfelter.com"
   - ssh-add -K ~/.ssh/id_rsa
+
+https://github.com/lemnos/theme.sh
+  sudo curl -o /usr/local/bin/theme.sh 'https://raw.githubusercontent.com/lemnos/theme.sh/master/theme.sh' && sudo chmod +x /usr/local/bin/theme.sh
+
 
 Preference Panes
 
