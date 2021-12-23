@@ -13,39 +13,39 @@
 	branches = branch -a
 	c = commit
 	changelog = git log --oneline --no-merges
-	cleanout = !git clean -df && git checkout -- .
-	config-search = config --show-scope --show-origin --get-regexp
-	conflicts = git diff --name-only | uniq | xargs code
+	# cleanout = !git clean -df && git checkout -- .
+	# config-search = config --show-scope --show-origin --get-regexp
+	# conflicts = git diff --name-only | uniq | xargs code
 	cp = cherry-pick
-	d = diff
+	# d = diff
 	daylog = log --since '1 day ago' --oneline --author <johnpaul@transitionpoint.com>  # I know what you did yesterday - great for follow-ups
-	dc = diff --cached
+	# dc = diff --cached
 	diff = diff --word-diff
-	ds = diff --staged      # git ds - diff your staged changes == review before committing.
-	dz = diff --color-moved=dimmed_zebra # show only-moved text in dimmed stripes
+	# ds = diff --staged      # git ds - diff your staged changes == review before committing.
+	# dz = diff --color-moved=dimmed_zebra # show only-moved text in dimmed stripes
 	ff = merge --ff-only
-	go = checkout
-	gob = checkout -b
-	graph = " git log --graph --all --decorate --stat --date=iso"
-	h = !git --no-pager log --graph -n 15
+	# go = checkout
+	# gob = checkout -b
+	# graph = " git log --graph --all --decorate --stat --date=iso"
+	# h = !git --no-pager log --graph -n 15
 	identity = "! git config user.name \"$(git config user.$1.name)\"; git config user.email \"$(git config user.$1.email)\"; git config user.signingkey \"$(git config user.$1.signingkey)\"; :"
 	l = log --pretty=oneline -n 20 --graph
-	la = !git lh --date-order --all 2> /dev/null
-	last = log -1 HEAD
-	lb = log --graph --simplify-by-decoration
-	lba = !git lb --all
-	lc = show --name-status
-	lg = log -p
-	lh = log --graph
-	lol = log --graph --decorate --pretty=oneline --abbrev-commit
-	lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
-	merge-diff  = "!git diff `git merge-span ... $1`"
-	merge-log   = "!git ls `git merge-span .. $1`"
-	merge-span  = "!f() { echo $(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f1)$1$(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f2); }; f"
-	mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
-	nm = branch --no-merged
-	overview = "!git log --all --oneline --no-merges"
-	p = push
+	# la = !git lh --date-order --all 2> /dev/null
+	# last = log -1 HEAD
+	# lb = log --graph --simplify-by-decoration
+	# lba = !git lb --all
+	# lc = show --name-status
+	# lg = log -p
+	# lh = log --graph
+	# lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	# lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	# merge-diff  = "!git diff `git merge-span ... $1`"
+	# merge-log   = "!git ls `git merge-span .. $1`"
+	# merge-span  = "!f() { echo $(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f1)$1$(git log -1 $2 --merges --pretty=format:%P | cut -d' ' -f2); }; f"
+	# mru = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+	# nm = branch --no-merged
+	# overview = "!git log --all --oneline --no-merges"
+	# p = push
 	pf = push --force-with-lease # https://robots.thoughtbot.com/git-push-force-with-lease
 	praise = blame
 	put = push origin HEAD
@@ -66,7 +66,7 @@
 	unstage = reset HEAD -- # from the source https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 	upstream = git log --oneline --no-merges HEAD
 	wdiff = diff -w --word-diff=color
-  fuse = !git sync && git rebase main
+  # fuse = !git sync && git rebase main
   main = !git checkout main && git pull --no-tags
   sync = !git main && git switch -
 [color]
