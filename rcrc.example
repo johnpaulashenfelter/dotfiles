@@ -1,3 +1,0 @@
-EXCLUDES="README.md Brewfile Brewfile.todo rails_template.rb rcrc.example"
-SYMLINK_DIRS="bin"
-UNDOTTED="bin settings"

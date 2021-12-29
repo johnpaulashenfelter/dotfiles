@@ -1,8 +1,0 @@
----
-BUNDLE_PATH: ".bundle"
-BUNDLE_JOBS: "3"
-BUNDLE_BUILD__EVENTMACHINE: "--with-cppflags=-I/usr/local/opt/openssl/include"
-BUNDLE_BUILD__PUMA: "--with-opt-dir=/usr/local/opt/openssl"
-BUNDLE_BUILD__RMAGICK: "--with-ldflags=-L/usr/local/opt/imagemagick@6/lib --with cppflags=-I/usr/local/opt/imagemagick@6/include"
-BUNDLE_BUILD__MYSQL2: "--with-mysql-dir=/usr/local/opt/mysql@5.7"
-BUNDLE_DISABLE_PLATFORM_WARNINGS: "true"
