@@ -1,0 +1,7 @@
+# top-most EditorConfig file
+root = true
+
+# Trim whitespace and add newline to all files
+[*]
+insert_final_newline = true
+trim_trailing_whitespace = true

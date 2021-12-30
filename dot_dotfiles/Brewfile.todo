@@ -1,0 +1,8 @@
+cask "agenda"
+cask "apptivate"
+cask "musescore"
+cask "slate"
+cask "sonic-pi"
+cask "soundnode"
+
+# brew "yarn", args: ["without-node"]
