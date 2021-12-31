@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
-# Cleanup any old update file
-rm -f ~/.dotfiles/Brewfile.tmp
-
 # Dump a new Brewfile
-brew bundle dump --file=~/.dotfiles/Brewfile.tmp
+brew bundle dump --describe --no-restart --force --file=Brewfile.tmp
 
 # Compare with Deltawalker
-/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker ~/.dotfiles/Brewfile ~/.dotfiles/Brewfile.tmp
+/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker Brewfile Brewfile.tmp
 
 # Cleanup temporary file
-rm ~/.dotfiles/Brewfile.tmp
+rm Brewfile.tmp
