@@ -35,25 +35,33 @@ brew "gh"
 brew "git"
 # Small git utilities
 brew "git-extras"
+# Command-line hex viewer
 brew "hexyl"
+# Process manager for Procfile-based applications
 brew "hivemind"
+# <hr />, for your terminal window
 brew "hr"
 # Improved top (interactive process viewer)
 brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Curl statistics made simple
 brew "httpstat"
 # Website copier/offline browser
 brew "httrack"
+# Command-line benchmarking tool
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Command-line note taker
 brew "jrnl"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
-brew "lsd"
+# Security and system auditing tool to harden systems
 brew "lynis"
 # Keep your Mac's application settings in sync
 brew "mackup"
+# Securely transfers data between computers
 brew "magic-wormhole"
 # Modern and intuitive terminal-based text editor
 brew "micro"
@@ -61,22 +69,29 @@ brew "micro"
 brew "moreutils"
 # Open source relational database management system
 brew "mysql@5.7"
+# Network grep
 brew "ngrep"
 # Process manager for Procfile-based applications and tmux
 brew "overmind"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
+# Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
 brew "postgresql"
+# Wrapper to colorize and simplify ping's output
 brew "prettyping"
+# Monitor data's progress through a pipe
 brew "pv"
+# Tools for and transforming and inspecting PDF files
 brew "qpdf"
+# Rsync for cloud storage
 brew "rclone"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Wrapper around ripgrep that adds multiple rich file types
 brew "ripgrep-all"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
@@ -86,6 +101,7 @@ brew "starship"
 brew "tldr"
 # Program that allows you to count code, quickly
 brew "tokei"
+# Process YAML documents from the CLI
 brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
@@ -99,6 +115,7 @@ brew "mas-cli/tap/mas"
 brew "puma/puma/puma-dev"
 brew "xwmx/taps/nb"
 cask "1password"
+# Command-line helper for the 1Password password manager
 cask "1password-cli"
 # File and photo tweaking tool
 cask "a-better-finder-attributes"
@@ -135,6 +152,7 @@ cask "cardhop"
 cask "choosy"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Downloads videos and audio from websites
 cask "clipgrab"
 # Disk space visualizer
 cask "daisydisk"
@@ -182,7 +200,9 @@ cask "font-meslo-lg-nerd-font"
 cask "font-open-sans"
 cask "font-public-sans"
 cask "font-sauce-code-pro-nerd-font"
+# YouTube player focusing on privacy
 cask "freetube"
+# Move playlists, tracks, and albums between music platforms
 cask "freeyourmusic"
 # Web browser
 cask "google-chrome"
@@ -210,6 +230,7 @@ cask "kaleidoscope"
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
+# File archiver
 cask "keka"
 # Automation software
 cask "keyboard-maestro"
@@ -227,6 +248,7 @@ cask "macbreakz"
 cask "macdown"
 # Email tracker, read receipt and spy pixel blocker plugin for Apple Mail
 cask "mailtrackerblocker"
+# Extensible two-pane file manager
 cask "marta"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
@@ -256,14 +278,15 @@ cask "qlstephen"
 cask "qlvideo"
 cask "quicklook-csv"
 cask "quicklook-json"
+# Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Emoji picker optimized for blind people
 cask "rocket"
 # Block your own access to distracting websites
 cask "selfcontrol"
 cask "sequel-pro-nightly"
+# Instant messaging application focusing on security
 cask "signal"
-cask "slack"
 cask "sonos-s1-controller"
 # Sound and audio controller
 cask "soundsource"
@@ -271,7 +294,9 @@ cask "soundsource"
 cask "sourcetree"
 # Music streaming service
 cask "spotify"
+# Video game digital distribution service
 cask "steam"
+# Break time reminder app
 cask "stretchly"
 # Backup, recovery and cloning software
 cask "superduper"
