@@ -11,8 +11,6 @@ tap "puma/puma"
 tap "xwmx/taps"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-brew "bash"
-brew "bash-completion"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # New way to see and navigate directory trees
@@ -69,12 +67,10 @@ brew "overmind"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 brew "pinentry-mac"
-brew "pgcli"
 # Object-relational database system
 brew "postgresql"
 brew "prettyping"
 brew "pv"
-brew "q"
 brew "qpdf"
 brew "rclone"
 # Persistent key-value database, with built-in net interface
@@ -110,7 +106,6 @@ cask "a-better-finder-attributes"
 cask "a-better-finder-rename"
 # Application launcher and productivity software
 cask "alfred"
-cask "anaconda"
 # Redis desktop manager
 cask "another-redis-desktop-manager"
 # Application uninstaller
