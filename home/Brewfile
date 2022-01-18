@@ -8,7 +8,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "mas-cli/tap"
 tap "puma/puma"
-tap "xwmx/taps"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -35,8 +34,6 @@ brew "gh"
 brew "git"
 # Small git utilities
 brew "git-extras"
-# Command-line hex viewer
-brew "hexyl"
 # Process manager for Procfile-based applications
 brew "hivemind"
 # <hr />, for your terminal window
@@ -53,8 +50,6 @@ brew "httrack"
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Command-line note taker
-brew "jrnl"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Security and system auditing tool to harden systems
@@ -63,8 +58,6 @@ brew "lynis"
 brew "mackup"
 # Securely transfers data between computers
 brew "magic-wormhole"
-# Modern and intuitive terminal-based text editor
-brew "micro"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Open source relational database management system
@@ -113,7 +106,6 @@ brew "heroku/brew/heroku"
 brew "mas-cli/tap/mas"
 # A tool to manage rack apps in development with puma
 brew "puma/puma/puma-dev"
-brew "xwmx/taps/nb"
 cask "1password"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
@@ -190,8 +182,6 @@ cask "firefox"
 cask "fluid"
 cask "font-anonymice-nerd-font"
 cask "font-bitstream-vera-sans-mono-nerd-font"
-cask "font-camingocode"
-cask "font-dejavu-sans"
 cask "font-fira-code-nerd-font"
 cask "font-hack-nerd-font"
 cask "font-inconsolata-nerd-font"
@@ -284,7 +274,6 @@ cask "rectangle"
 cask "rocket"
 # Block your own access to distracting websites
 cask "selfcontrol"
-cask "sequel-pro-nightly"
 # Instant messaging application focusing on security
 cask "signal"
 cask "sonos-s1-controller"
