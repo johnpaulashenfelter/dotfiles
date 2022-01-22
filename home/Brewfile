@@ -16,6 +16,8 @@ brew "bat"
 brew "broot"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
+# Programmatically minimize files to isolate features of interest
+brew "delta"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Load/unload environment variables based on $PWD
@@ -106,6 +108,7 @@ brew "heroku/brew/heroku"
 brew "mas-cli/tap/mas"
 # A tool to manage rack apps in development with puma
 brew "puma/puma/puma-dev"
+# Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line helper for the 1Password password manager
 cask "1password-cli"
@@ -258,6 +261,8 @@ cask "path-finder"
 cask "paw"
 # Integrated reading environment
 cask "polar-bookshelf"
+# Flexible software sketchbook and a language for learning how to code
+cask "processing"
 cask "qbserve"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
