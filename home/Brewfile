@@ -135,8 +135,6 @@ cask "beekeeper-studio"
 cask "bettertouchtool"
 # Bookmarks manager
 cask "bookmacster"
-cask "caldigit-docking-utility"
-cask "caldigit-thunderbolt-charging"
 # E-books management software
 cask "calibre"
 # Use your phone as a high-quality webcam with image tuning controls
@@ -190,7 +188,6 @@ cask "font-hack-nerd-font"
 cask "font-inconsolata-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
-cask "font-open-sans"
 cask "font-public-sans"
 cask "font-sauce-code-pro-nerd-font"
 # YouTube player focusing on privacy
@@ -215,8 +212,6 @@ cask "imageoptim"
 cask "insomnia"
 # System monitoring app
 cask "istat-menus"
-# Note taking and to-do application with synchronization capabilities
-cask "joplin"
 # Spot and merge differences in text and image files or folders
 cask "kaleidoscope"
 # Keyboard customizer
@@ -315,14 +310,8 @@ cask "zulip"
 mas "Be Focused Pro", id: 961632517
 mas "Deliveries", id: 924726344
 mas "Focus Matrix", id: 1087284172
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
 mas "myTuner Radio", id: 881415018
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1449412482
@@ -330,4 +319,3 @@ mas "Save to Pocket", id: 1477385213
 mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
-mas "Xcode", id: 497799835
