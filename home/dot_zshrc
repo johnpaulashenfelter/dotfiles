@@ -1,9 +1,21 @@
 # Setup
+if [ -f /opt/homebrew/bin/brew ]
+then
+  export PATH="/opt/homebrew/bin:$PATH"
+elif [ -f /usr/local/bin/brew ]
+then
+  export PATH="/usr/local/bin:$PATH"
+else
+  echo "Homebrew isn't installed"
+fi
+
 ## Tools
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-eval "$(zoxide init zsh)"
+if [ -f $(brew --prefix)/bin/zoxide ]; then    
+  eval "$(zoxide init zsh)"
+fi
 
 if [ -f $(brew --prefix)/bin/direnv ]; then
   eval "$(direnv hook zsh)"
@@ -14,16 +26,16 @@ fi
 # export STARSHIP_CONFIG="~/.dotfiles/starship.toml"
 eval "$(starship init zsh)"
 
-. /usr/local/opt/asdf/libexec/asdf.sh
+. $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 ## PATH additions
 
-if [ -d /usr/local/opt/mysql@5.7/bin ]; then
-  export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
+if [ -d $(brew --prefix)/opt/mysql@5.7/bin ]; then
+  export PATH="$(brew --prefix)/opt/mysql@5.7/bin:$PATH"
 fi
 
-if [ -d /usr/local/opt/postgresql/bin ]; then
-  export PATH="/usr/local/opt/postgresql/bin:$PATH"
+if [ -d $(brew --prefix)/opt/postgresql/bin ]; then
+  export PATH="$(brew --prefix)/opt/postgresql/bin:$PATH"
 fi
 
 if [ -d $HOME/.local/include ]; then
