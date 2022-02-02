@@ -311,7 +311,7 @@ cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 mas "Be Focused Pro", id: 961632517
-mas "Deliveries", id: 924726344
+mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "Monosnap", id: 540348655
 mas "myTuner Radio", id: 881415018
