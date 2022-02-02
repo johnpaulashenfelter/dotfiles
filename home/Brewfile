@@ -7,6 +7,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "mas-cli/tap"
+tap "microsoft/git"
 tap "puma/puma"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
@@ -194,6 +195,7 @@ cask "font-sauce-code-pro-nerd-font"
 cask "freetube"
 # Move playlists, tracks, and albums between music platforms
 cask "freeyourmusic"
+cask "git-credential-manager-core"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
