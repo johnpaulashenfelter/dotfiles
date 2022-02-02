@@ -278,6 +278,7 @@ cask "rocket"
 cask "selfcontrol"
 # Instant messaging application focusing on security
 cask "signal"
+# Controller for Gen 1 Sonos products
 cask "sonos-s1-controller"
 # Sound and audio controller
 cask "soundsource"
