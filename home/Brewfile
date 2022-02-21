@@ -64,7 +64,7 @@ brew "magic-wormhole"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Open source relational database management system
-brew "mysql@5.7"
+brew "mysql"
 # Network grep
 brew "ngrep"
 # Process manager for Procfile-based applications and tmux
@@ -214,6 +214,8 @@ cask "imageoptim"
 cask "insomnia"
 # System monitoring app
 cask "istat-menus"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
 # Spot and merge differences in text and image files or folders
 cask "kaleidoscope"
 # Keyboard customizer
