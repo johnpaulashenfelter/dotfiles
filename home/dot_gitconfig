@@ -155,6 +155,7 @@
 	recentrepo = /Users/johnpaul/work/kwnews/ors
 [credential]
 	helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager-core
 
 [lfs]
 	fetchexclude = *
