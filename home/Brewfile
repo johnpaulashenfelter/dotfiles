@@ -125,6 +125,7 @@ cask "another-redis-desktop-manager"
 cask "appcleaner"
 # Multi-cloud backup application
 cask "arq"
+# Audio Utility
 cask "background-music"
 # Menu bar icon organizer
 cask "bartender"
@@ -262,6 +263,10 @@ cask "paw"
 cask "polar-bookshelf"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
+# Bridges ProtonMail to email clients supporting IMAP and SMTP protocols
+cask "protonmail-bridge"
+# VPN client focusing on security
+cask "protonvpn"
 cask "qbserve"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
@@ -313,7 +318,7 @@ cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 mas "Be Focused Pro", id: 961632517
-mas "Deliveries", id: 290986013
+mas "Deliveries", id: 924726344
 mas "Focus Matrix", id: 1087284172
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
