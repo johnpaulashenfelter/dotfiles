@@ -12,9 +12,10 @@
 {{-   $github_user = promptString "GitHub Username" $github_user -}}
 {{- end }}
 
-data:
-  name: {{ $name | quote }}
-  email: {{ $email | quote }}
-  github_user: {{ $github_user | quote }}
-  computer_name: {{ $computer_name | quote }}
-  hostname: {{ $hostname | quote }}
+["data"]
+  name = {{ $name | quote }}
+  email = {{ $email | quote }}
+  github_user = {{ $github_user | quote }}
+  computer_name = {{ $computer_name | quote }}
+  hostname = {{ $hostname | quote }}
+  
