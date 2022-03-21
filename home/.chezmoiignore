@@ -1,0 +1,11 @@
+{{ if ne .chezmoi.os "darwin" }}
+
+{{ end }}
+
+{{ if ne .chezmoi.os "linux" }}
+
+{{ end }}
+
+{{ if ne .chezmoi.os "windows" }}
+
+{{ end }}

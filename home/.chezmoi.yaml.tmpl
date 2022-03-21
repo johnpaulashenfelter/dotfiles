@@ -1,0 +1,20 @@
+{{- $name := "John Paul Ashenfelter" -}}
+{{- $email := "john@ashenfelter.com" -}}
+{{- $github_user := "johnpaulashenfelter" -}}
+{{- $computer_name := default "jp-computer-name" (env "CM_computer_name") -}}
+{{- $hostname := default "jp" (env "CM_hostname") -}}
+
+{{- if (env "ASK") }}
+{{-   $computer_name = promptString "Computer Name" $computer_name -}}
+{{-   $hostname = promptString "Hostname" $hostname -}}
+{{-   $name = promptString "Full Name" $name -}}
+{{-   $email = promptString "Email" $email -}}
+{{-   $github_user = promptString "GitHub Username" $github_user -}}
+{{- end }}
+
+data:
+  name: {{ $name | quote }}
+  email: {{ $email | quote }}
+  github_user: {{ $github_user | quote }}
+  computer_name: {{ $computer_name | quote }}
+  hostname: {{ $hostname | quote }}
