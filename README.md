@@ -1,7 +1,5 @@
 # John Paul Ashenfelter dotfiles
 
-> WORK IN PROGRESS 2021/2022 holiday break migrating to chezmoi
-
 These are config files to set up an OSX system the way I like it. Sources and inspiration in a somewhat historical order:
 
 * the inestimable Ryan Bates dotfiles (https://github.com/ryanb/dotfiles)
@@ -28,11 +26,9 @@ Some of the features include
 Assuming a recent OSX machine, `git`, `ruby`, and `curl` should be installed and ready. Much of this will also work for Linux with the clear exception of homebrew.
 
 ## Installation
-
-* ~`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`~
-* `git clone https://github.com/johnpaulashenfelter/dotfiles.git .dotfiles`
-* `brew bundle --file=.dotfiles/Brewfile`
-* ~`rcup -v`~ `chezmoi apply`
+```
+sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply johnpaulashenfelter
+```
 
 This should install all the key applications from homebrew and the Mac App Store as well as handle a lot of custom configuration.
 
