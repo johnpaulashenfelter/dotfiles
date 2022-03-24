@@ -125,8 +125,6 @@ cask "another-redis-desktop-manager"
 cask "appcleaner"
 # Multi-cloud backup application
 cask "arq"
-# Audio Utility
-cask "background-music"
 # Menu bar icon organizer
 cask "bartender"
 # Text, code, and markup editor
@@ -297,6 +295,8 @@ cask "spotify"
 cask "steam"
 # Break time reminder app
 cask "stretchly"
+# Text editor for code, markup and prose
+cask "sublime-text"
 # Backup, recovery and cloning software
 cask "superduper"
 # Application for inspecting installer packages
