@@ -100,7 +100,7 @@
 	newHighlight = green bold 22
 [core]
 	excludesfile = /Users/johnpaul/.gitignore
-	editor = code --wait
+	editor = subl --wait
 	autocrlf = input
   # https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
   # pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less

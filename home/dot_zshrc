@@ -102,7 +102,7 @@ alias brupdate='brew update && brew outdated'
 # Development
 alias g="git"
 alias h="heroku"
-alias s.="code ."
+alias s.="subl ."
 alias vsc="code ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 # from https://makandracards.com/makandra/505327-git-shortcut-to-fixup-a-recent-commit

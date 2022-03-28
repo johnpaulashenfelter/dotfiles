@@ -7,8 +7,8 @@ if [ -d $(brew --prefix)/opt/asdf ]; then
 fi
 
 ## Options
-export EDITOR="code -n -w"
-export VISUAL="code -n -w"
+export EDITOR="subl -w"
+export VISUAL="subl -w"
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
 # if i am a terminal
 if [ -t 0 ]; then
@@ -109,7 +109,7 @@ fi
 # Development
 alias g="git"
 alias h="heroku"
-alias s.="code ."
+alias s.="subl ."
 alias vsc="code ."
 alias k="kubectl"
 alias k8="kubectl"
