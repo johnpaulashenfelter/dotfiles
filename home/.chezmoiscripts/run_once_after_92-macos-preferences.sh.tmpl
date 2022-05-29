@@ -32,6 +32,10 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
+# Automatically quit printer app once the print jobs complete
+defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+
+
 # Use list view in all Finder windows by default
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
@@ -85,6 +89,15 @@ for dockItemLabel in \
 done
 
 killall Dock
+
+######################
+# Misc from web
+######################
+
+# Source: https://mmazzarolo.com/blog/2022-04-16-drag-window-by-clicking-anywhere-on-macos/
+# Effect: control+command_click to move with with mouse from anywhere in window
+
+defaults write -g NSWindowShouldDragOnGesture -bool true
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
