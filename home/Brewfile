@@ -65,6 +65,8 @@ brew "magic-wormhole"
 brew "moreutils"
 # Open source relational database management system
 brew "mysql"
+# Open source relational database management system
+brew "mysql@5.7"
 # Network grep
 brew "ngrep"
 # Process manager for Procfile-based applications and tmux
@@ -97,6 +99,8 @@ brew "starship"
 brew "tldr"
 # Program that allows you to count code, quickly
 brew "tokei"
+# Internet file retriever
+brew "wget"
 # Process YAML documents from the CLI
 brew "yq"
 # Shell extension to navigate your filesystem faster
@@ -155,6 +159,8 @@ cask "dash"
 cask "default-folder-x"
 # Tool to compare and synchronize files and folders
 cask "deltawalker"
+# Voice and text chat software
+cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
 # App to build and share containerized applications and microservices
@@ -283,6 +289,8 @@ cask "rocket"
 cask "selfcontrol"
 # Instant messaging application focusing on security
 cask "signal"
+# Team communication and collaboration software
+cask "slack"
 # Controller for Gen 1 Sonos products
 cask "sonos-s1-controller"
 # Sound and audio controller
@@ -305,6 +313,8 @@ cask "suspicious-package"
 cask "swiftdefaultappsprefpane"
 # Unpacks archive files
 cask "the-unarchiver"
+# Managing Pull Requests and Issues For GitHub & GitHub Enterprise
+cask "trailer"
 # Open-source BitTorrent client
 cask "transmission"
 # Open-source code editor
@@ -320,9 +330,15 @@ cask "zulip"
 mas "Be Focused Pro", id: 961632517
 mas "Deliveries", id: 924726344
 mas "Focus Matrix", id: 1087284172
+mas "GarageBand", id: 682658836
+mas "Horo", id: 1437226581
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
 mas "myTuner Radio", id: 881415018
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1449412482
@@ -330,3 +346,4 @@ mas "Save to Pocket", id: 1477385213
 mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
+mas "Xcode", id: 497799835
