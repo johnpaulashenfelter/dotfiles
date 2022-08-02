@@ -95,6 +95,8 @@ brew "ripgrep-all"
 brew "shellcheck"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Easiest, most secure way to use WireGuard and 2FA
+brew "tailscale"
 # Simplified and community-driven man pages
 brew "tldr"
 # Program that allows you to count code, quickly
@@ -271,6 +273,7 @@ cask "processing"
 cask "protonmail-bridge"
 # VPN client focusing on security
 cask "protonvpn"
+# Automatic time tracker
 cask "qbserve"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
@@ -279,7 +282,9 @@ cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
 cask "qlvideo"
+# QuickLook plugin for CSV files
 cask "quicklook-csv"
+# QuickLook plugin for JSON files
 cask "quicklook-json"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
@@ -303,6 +308,8 @@ cask "spotify"
 cask "steam"
 # Break time reminder app
 cask "stretchly"
+# Git client
+cask "sublime-merge"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Backup, recovery and cloning software
@@ -327,6 +334,7 @@ cask "yacreader"
 cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
+mas "Apple Configurator", id: 1037126344
 mas "Be Focused Pro", id: 961632517
 mas "Deliveries", id: 924726344
 mas "Focus Matrix", id: 1087284172
