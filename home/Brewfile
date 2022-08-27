@@ -17,8 +17,6 @@ brew "bat"
 brew "broot"
 # Manage your dotfiles across multiple diverse machines, securely
 brew "chezmoi"
-# Programmatically minimize files to isolate features of interest
-brew "delta"
 # Good-lookin' diffs with diff-highlight and more
 brew "diff-so-fancy"
 # Load/unload environment variables based on $PWD
@@ -269,7 +267,7 @@ cask "paw"
 cask "polar-bookshelf"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
-# Bridges ProtonMail to email clients supporting IMAP and SMTP protocols
+# Bridges Proton Mail to email clients supporting IMAP and SMTP protocols
 cask "protonmail-bridge"
 # VPN client focusing on security
 cask "protonvpn"
@@ -320,6 +318,8 @@ cask "suspicious-package"
 cask "swiftdefaultappsprefpane"
 # Unpacks archive files
 cask "the-unarchiver"
+# Web browser focusing on security
+cask "tor-browser"
 # Managing Pull Requests and Issues For GitHub & GitHub Enterprise
 cask "trailer"
 # Open-source BitTorrent client
@@ -334,9 +334,9 @@ cask "yacreader"
 cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
-mas "Apple Configurator", id: 1037126344
+mas "1Password for Safari", id: 1569813296
 mas "Be Focused Pro", id: 961632517
-mas "Deliveries", id: 924726344
+mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "GarageBand", id: 682658836
 mas "Horo", id: 1437226581
