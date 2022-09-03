@@ -1,21 +1,11 @@
 {{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/sh
 
-# if [[ "$(uname)" == "Linux" ]]; then
-# elif [[ "$(uname)" == "Darwin" ]]; then
-# fi
-
-# Install Homebrew
-{{ if or (lt 0 (atoi (env "SCRIPTS_START_AT"))) (env "SKIP_HOMEBREW_SETUP") -}}
-echo "Skip installing Homebrew"
-exit 0
-{{ else }}
-echo "Install Homebrew"
-{{- end }}
-
 if command -v brew >/dev/null 2>&1; then
   echo "Homebrew already installed, skipping."
   exit 0
+elif
+
 fi
 
 echo "Installing Homebrew..."
