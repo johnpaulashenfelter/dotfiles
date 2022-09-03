@@ -31,6 +31,30 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 # Automatically quit printer app once the print jobs complete
 defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 
+# Cleanup preinstalled Dock icons
+for dockItemLabel in \
+  Launchpad \
+#  Safari \
+  Mail \
+  FaceTime \
+  Messages \
+  Maps \
+  Photos \
+  Contacts \
+#  Calendar \
+  Reminders \
+  Notes \
+  Music \
+  Podcasts \
+  TV \
+  News \
+  Numbers \
+  Keynote \
+  Pages \
+  "App Store" \
+  "System Preferences" ; do
+  dockutil --find "$dockItemLabel" >/dev/null && dockutil --no-restart --remove "$dockItemLabel"
+done
 
-
+killall Dock
 echo "Done. Note that some of these changes require a logout/restart to take effect."
