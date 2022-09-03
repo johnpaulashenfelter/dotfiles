@@ -3,13 +3,6 @@
 
 # Install Rosetta 2"
 
-{{- if or (lt 01 (atoi (env "SCRIPTS_START_AT"))) (env "SKIP_ROSETTA2_INSTALL") }}
-echo "Skip installing Rosetta 2"
-exit 0
-{{ else }}
-echo "Install Rosetta 2"
-{{- end }}
-
 set -eufo pipefail
 
 sudo softwareupdate --install-rosetta
