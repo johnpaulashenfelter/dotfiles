@@ -34,14 +34,12 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # Cleanup preinstalled Dock icons
 for dockItemLabel in \
   Launchpad \
-#  Safari \
   Mail \
   FaceTime \
   Messages \
   Maps \
   Photos \
   Contacts \
-#  Calendar \
   Reminders \
   Notes \
   Music \
