@@ -23,7 +23,8 @@ Some of the features include
 
 ## Prereqs
 
-Assuming a recent OSX machine, `git`, `ruby`, and `curl` should be installed and ready. Much of this will also work for Linux with the clear exception of homebrew.
+- Sign into App Store *before* starting `chezmoi` so `mas` can install App Store software properly
+
 
 ## Installation
 ```
@@ -34,12 +35,10 @@ This should install all the key applications from homebrew and the Mac App Store
 
 ## Post-installation reminders
 
-* `mkdir craft me work`
+* Open Alfred, Advanced > Sync 
+* Open Dash, General > Syncing 
+
 * Sign in to Dropbox and sync
-* ~Open iTerm, Preferences > General > Load...from custom file `~/Dropbox/settings/com.googlecode.iterm2.plist`~
-* Open Terminal and import the preferences from `iCloud Drive/TBD`
-* Open Alfred, Advanced > Sync ~`~/Dropbox/settings/Alfred`~`iCloud Drive/TBD`; Also add the licensefile from 1password
-* Open Dash, General > Syncing ~`~/Dropbox/settings/Dash`~`iCloud Drive/TBD`; Also add the licensefile from 1password
 * Create a new ssh key for GitHub/etc
   - ssh-keygen -t rsa -b 4096 -C "john@ashenfelter.com"
   - ssh-add -K ~/.ssh/id_rsa
