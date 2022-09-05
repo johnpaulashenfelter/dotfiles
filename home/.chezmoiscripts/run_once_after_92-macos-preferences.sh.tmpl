@@ -1,3 +1,4 @@
+{{- if (eq .chezmoi.os "darwin") -}}
 #!/usr/bin/env bash
 
 # ~/.macos — https://mths.be/macos
@@ -53,3 +54,5 @@ done
 
 killall Dock
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+
+{{ end -}}

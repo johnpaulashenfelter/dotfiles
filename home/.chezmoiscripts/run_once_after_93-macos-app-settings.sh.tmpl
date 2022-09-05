@@ -1,3 +1,4 @@
+{{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/bash
 
 CHEZMOI_SOURCE=$(chezmoi source-path)
@@ -39,3 +40,5 @@ tell application "Terminal"
   end repeat
 end tell
 EOD
+
+{{ end -}}
