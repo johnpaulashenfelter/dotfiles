@@ -46,9 +46,6 @@ for dockItemLabel in \
   Podcasts \
   TV \
   News \
-  Numbers \
-  Keynote \
-  Pages \
   "App Store" \
   "System Preferences" ; do
   dockutil --find "$dockItemLabel" >/dev/null && dockutil --no-restart --remove "$dockItemLabel"
