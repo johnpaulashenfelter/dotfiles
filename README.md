@@ -19,7 +19,11 @@ sh -c "$(curl -fsLS chezmoi.io/get)" -- init --apply johnpaulashenfelter
 
 This should install all the key applications from homebrew and the Mac App Store as well as handle a lot of custom configuration.
 
-## Post-installation reminders
+## Post-installation security setup
+- https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+- https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+
+## Post-installation application setup
 
 * Open Alfred, Advanced > Sync 
 * Open Dash, General > Syncing 
