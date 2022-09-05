@@ -7,21 +7,7 @@ These are config files to set up an OSX system the way I like it. Sources and in
 * ThoughtBot's `rcm` https://thoughtbot.com/blog/rcm-for-rc-files-in-dotfiles-repos
 * The new, sexy `chezmoi` which replaces `rcm` for 2022
 
-Some of the features include
-
-* custom prompt using rbenv/asdf and git to display details
-* common rails aliases
-* ssh config file
-* development defaults
-* Tab completion is  added to `git`, `rake` and `cap` commands:
-
-```
-  rake db:mi<tab>
-  cap de<tab>
-  git co feature<tab>
-```
-
-## Prereqs
+## Pre-installation reminders
 
 - Sign into App Store *before* starting `chezmoi` so `mas` can install App Store software properly
 
@@ -37,13 +23,5 @@ This should install all the key applications from homebrew and the Mac App Store
 
 * Open Alfred, Advanced > Sync 
 * Open Dash, General > Syncing 
-
 * Sign in to Dropbox and sync
-* Create a new ssh key for GitHub/etc
-  - ssh-keygen -t rsa -b 4096 -C "john@ashenfelter.com"
-  - ssh-add -K ~/.ssh/id_rsa
 
-Preference Panes
-
-https://github.com/Lord-Kamina/SwiftDefaultApps/tree/v2.0.1
-https://www.bresink.com/osx/TinkerTool.html
