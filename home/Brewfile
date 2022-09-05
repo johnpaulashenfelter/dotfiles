@@ -150,17 +150,6 @@ cask "default-folder-x"
 cask "deltawalker"
 # Application window manager focusing on simplicity
 cask "divvy"
-<<<<<<< Updated upstream
-=======
-# App to build and share containerized applications and microservices
-cask "docker"
-# Command-line utility for managing macOS dock items
-cask "dockutil"
-# Fork of the DOSBox project
-cask "dosbox-x"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
->>>>>>> Stashed changes
 # Finds duplicate files in a computer system
 cask "dupeguru"
 # Control your Elgato Key Lights
