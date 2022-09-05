@@ -1,0 +1,38 @@
+# <hr />, for your terminal window
+brew "hr"
+# Website copier/offline browser
+brew "httrack"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Securely transfers data between computers
+brew "magic-wormhole"
+# Open source relational database management system
+brew "mysql"
+# Open source relational database management system
+brew "mysql@5.7"
+# Network grep
+brew "ngrep"
+# Process manager for Procfile-based applications and tmux
+brew "overmind"
+# Wrapper to colorize and simplify ping's output
+brew "prettyping"
+# Monitor data's progress through a pipe
+brew "pv"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerized applications and microservices
+cask "docker"
+# Fork of the DOSBox project
+cask "dosbox-x"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
+# Free, open-source SQL client
+cask "falcon-sql-client"
+# VPN client for secure internet access and private browsing
+cask "expressvpn"
+# Tool to turn a website into a desktop app
+cask "fluid"
+# YouTube player focusing on privacy
+cask "freetube"
+# Move playlists, tracks, and albums between music platforms
+cask "freeyourmusic"

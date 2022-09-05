@@ -37,48 +37,28 @@ brew "git"
 brew "git-extras"
 # Process manager for Procfile-based applications
 brew "hivemind"
-# <hr />, for your terminal window
-brew "hr"
 # Improved top (interactive process viewer)
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Curl statistics made simple
 brew "httpstat"
-# Website copier/offline browser
-brew "httrack"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Curses-based tool for viewing and analyzing log files
-brew "lnav"
 # Security and system auditing tool to harden systems
 brew "lynis"
 # Keep your Mac's application settings in sync
 brew "mackup"
-# Securely transfers data between computers
-brew "magic-wormhole"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
-# Open source relational database management system
-brew "mysql"
-# Open source relational database management system
-brew "mysql@5.7"
-# Network grep
-brew "ngrep"
-# Process manager for Procfile-based applications and tmux
-brew "overmind"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
 brew "postgresql"
-# Wrapper to colorize and simplify ping's output
-brew "prettyping"
-# Monitor data's progress through a pipe
-brew "pv"
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Rsync for cloud storage
@@ -159,16 +139,8 @@ cask "dash"
 cask "default-folder-x"
 # Tool to compare and synchronize files and folders
 cask "deltawalker"
-# Voice and text chat software
-cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
-# App to build and share containerized applications and microservices
-cask "docker"
-# Fork of the DOSBox project
-cask "dosbox-x"
-# Client for the Dropbox cloud storage service
-cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
 # Control your Elgato Key Lights
@@ -177,16 +149,10 @@ cask "elgato-control-center"
 cask "elgato-stream-deck"
 # Network drive and browser for cloud storage
 cask "expandrive"
-# VPN client for secure internet access and private browsing
-cask "expressvpn"
-# Free, open-source SQL client
-cask "falcon-sql-client"
 # Calendar software
 cask "fantastical"
 # Web browser
 cask "firefox"
-# Tool to turn a website into a desktop app
-cask "fluid"
 cask "font-anonymice-nerd-font"
 cask "font-bitstream-vera-sans-mono-nerd-font"
 cask "font-fira-code-nerd-font"
@@ -196,37 +162,23 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-public-sans"
 cask "font-sauce-code-pro-nerd-font"
-# YouTube player focusing on privacy
-cask "freetube"
-# Move playlists, tracks, and albums between music platforms
-cask "freeyourmusic"
 cask "git-credential-manager-core"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
-# GraphQL IDE for better development workflows
-cask "graphql-playground"
 # Desktop automation application
 cask "hammerspoon"
 # Automated organization
 cask "hazel"
 # Workaround for 'dockutil' on macOS >= 12.3, See https://github.com/kcrawford/dockutil/issues/127
 cask 'hpedrorodrigues/tools/dockutil'
-# Free and open-source media player
-cask "iina"
-# Tool to optimize images to a smaller size
-cask "imageoptim"
-# HTTP and GraphQL Client
-cask "insomnia"
 # System monitoring app
 cask "istat-menus"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
-# Spot and merge differences in text and image files or folders
-cask "kaleidoscope"
 # Keyboard customizer
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
@@ -241,8 +193,6 @@ cask "keycastr"
 cask "keycue"
 # Animated screen capture application
 cask "licecap"
-# Host-based application firewall
-cask "little-snitch"
 # Ergonomic Assistant to prevent health problems
 cask "macbreakz"
 # Open-source Markdown editor
@@ -267,12 +217,6 @@ cask "onyx"
 cask "path-finder"
 # HTTP client that helps testing and describing APIs
 cask "paw"
-# Integrated reading environment
-cask "polar-bookshelf"
-# Flexible software sketchbook and a language for learning how to code
-cask "processing"
-# Bridges Proton Mail to email clients supporting IMAP and SMTP protocols
-cask "protonmail-bridge"
 # VPN client focusing on security
 cask "protonvpn"
 # Automatic time tracker
@@ -294,20 +238,12 @@ cask "rectangle"
 cask "rocket"
 # Block your own access to distracting websites
 cask "selfcontrol"
-# Instant messaging application focusing on security
-cask "signal"
 # Team communication and collaboration software
 cask "slack"
-# Controller for Gen 1 Sonos products
-cask "sonos-s1-controller"
 # Sound and audio controller
 cask "soundsource"
 # Graphical client for Git version control
 cask "sourcetree"
-# Music streaming service
-cask "spotify"
-# Video game digital distribution service
-cask "steam"
 # Break time reminder app
 cask "stretchly"
 # Git client
@@ -322,35 +258,19 @@ cask "suspicious-package"
 cask "swiftdefaultappsprefpane"
 # Unpacks archive files
 cask "the-unarchiver"
-# Web browser focusing on security
-cask "tor-browser"
 # Managing Pull Requests and Issues For GitHub & GitHub Enterprise
 cask "trailer"
-# Open-source BitTorrent client
-cask "transmission"
-# Open-source code editor
-cask "visual-studio-code"
-# Media direct transfer tool for Apple devices
-cask "waltr"
-# Comic reader
-cask "yacreader"
 # Flash tool for ZSA keyboards
 cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
-mas "1Password for Safari", id: 1569813296
 mas "Be Focused Pro", id: 961632517
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
-mas "GarageBand", id: 682658836
 mas "Horo", id: 1437226581
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "Monosnap", id: 540348655
 mas "myTuner Radio", id: 881415018
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1449412482
@@ -358,4 +278,3 @@ mas "Save to Pocket", id: 1477385213
 mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
-mas "Xcode", id: 497799835
