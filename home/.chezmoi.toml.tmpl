@@ -2,11 +2,9 @@
 {{- $email := "john@ashenfelter.com" -}}
 {{- $github_user := "johnpaulashenfelter" -}}
 {{- $hostname := "jp-computer" -}}
-{{- $work := false -}}
 
 {{ if stdinIsATTY }}
   {{- $hostname = promptString "hostname" -}}
-  {{- $work = promptBool "work" -}}
 {{ end }}
 
 ["data"]
@@ -15,5 +13,3 @@
   github_user = {{ $github_user | quote }}
   computer_name = {{ $hostname | quote }}
   hostname = {{ $hostname | quote }}
-  work = {{ $work }}
-  
