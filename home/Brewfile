@@ -59,15 +59,10 @@ brew "pgcli"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
-<<<<<<< Updated upstream
-brew "postgresql"
-=======
 brew "postgresql@14"
 # Wrapper to colorize and simplify ping's output
 brew "prettyping"
 # Monitor data's progress through a pipe
-brew "pv"
->>>>>>> Stashed changes
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Rsync for cloud storage
