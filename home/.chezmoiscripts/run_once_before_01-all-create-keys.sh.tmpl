@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# Create SSH key
+ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -C {{ .email | quote }}
+ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+
+# Create gpg key
+ gpg --full-generate-key
