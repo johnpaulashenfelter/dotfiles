@@ -17,6 +17,9 @@ while true; do
   kill -0 "$$" || exit
 done 2>/dev/null &
 
+# https://macos-defaults.com/
+
+# FINDER
 
 # Expand save panel by default
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
@@ -29,8 +32,37 @@ defaults write NSGlobalDomain PMPrintingExpandedStateForPrint2 -bool true
 # Save to disk (not to iCloud) by default
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
-# Automatically quit printer app once the print jobs complete
-defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
+# Use list view in all Finder windows by default
+# Four-letter codes for the other view modes: `icnv`, `clmv`, `glyv`
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+
+# Small Finder sidebar
+defaults write NSGlobalDomain "NSTableViewDefaultSizeMode" -int "1" 
+
+# Show path bar
+defaults write com.apple.finder "ShowPathbar" -bool "true"
+
+# Keep folders on top
+defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
+
+# Show the ~/Library folder
+chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+
+# DESKTOP
+# Folders first
+defaults write com.apple.finder "_FXSortFoldersFirstOnDesktop" -bool "true
+# Show hard disk
+defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
+
+# SAFARI
+defaults write com.apple.safari "ShowFullURLInSmartSearchField" -bool "true"
+
+# DOCK
+# Automatically hide and show the Dock
+defaults write com.apple.dock autohide -bool true
+
+# Don’t show recent applications in Dock
+defaults write com.apple.dock show-recents -bool false
 
 # Cleanup preinstalled Dock icons
 for dockItemLabel in \
@@ -53,6 +85,7 @@ for dockItemLabel in \
 done
 
 killall Dock
+
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
 {{ end -}}
