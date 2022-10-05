@@ -109,7 +109,8 @@
 
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
-
+[push]
+	autoSetupRemote = true
 [github]
 	user = johnpaulashenfelter
 [merge]
@@ -165,3 +166,6 @@
 	prune = true
 [init]
 	defaultBranch = main
+
+
+push.autoSetupRemote
