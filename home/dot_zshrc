@@ -53,6 +53,14 @@ fi
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
+## Fixes
+# https://blog.akatz.org/fixing-macos-zsh-terminal-history-settings/
+alias history="history 1"
+HISTSIZE=99999  
+SAVEHIST=$HISTSIZE
+# https://unix.stackexchange.com/questions/599641/why-do-i-have-duplicates-in-my-zsh-history
+setopt HIST_IGNORE_ALL_DUPS
+
 ## Aliases
 ### Easier navigation
 alias ..="cd .."
@@ -67,7 +75,7 @@ alias ls="exa"
 alias c="clear"
 alias df="df -h"
 alias ducks="du -cksh * | sort -rn|head -11" # Lists folders and files sizes in the current folder
-alias hist="history | grep"
+alias hist="history 1 | grep"
 alias m="more"
 alias p="ps xa | grep "
 # Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
