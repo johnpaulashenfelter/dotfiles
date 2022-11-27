@@ -143,6 +143,8 @@ cask "dash"
 cask "default-folder-x"
 # Tool to compare and synchronize files and folders
 cask "deltawalker"
+# Voice and text chat software
+cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
 # Finds duplicate files in a computer system
@@ -158,11 +160,16 @@ cask "fantastical"
 # Web browser
 cask "firefox"
 cask "font-anonymice-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-bitstream-vera-sans-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 cask "font-inconsolata-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 cask "font-public-sans"
 cask "font-sauce-code-pro-nerd-font"
@@ -177,6 +184,8 @@ cask "hammerspoon"
 cask "hazel"
 # Workaround for 'dockutil' on macOS >= 12.3, See https://github.com/kcrawford/dockutil/issues/127
 cask 'hpedrorodrigues/tools/dockutil'
+# Free and open-source media player
+cask "iina"
 # System monitoring app
 cask "istat-menus"
 # JetBrains tools manager
@@ -230,7 +239,9 @@ cask "qlimagesize"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
 cask "qlprettypatch"
+# QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
+# QuickLook generator for video files
 cask "qlvideo"
 # QuickLook plugin for CSV files
 cask "quicklook-csv"
@@ -268,6 +279,7 @@ cask "trailer"
 cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
+mas "1Password for Safari", id: 1569813296
 mas "Be Focused Pro", id: 961632517
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
@@ -282,3 +294,5 @@ mas "Save to Pocket", id: 1477385213
 mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
+mas "Things", id: 904280696
+mas "Wayback Machine", id: 1472432422
