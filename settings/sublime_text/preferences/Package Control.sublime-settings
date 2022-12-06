@@ -1,0 +1,19 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"DashDoc",
+		"DocBlockr",
+		"Git",
+		"GitGutter",
+		"GitHubinator",
+		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-ruby",
+		"TrailingSpaces",
+	],
+}
