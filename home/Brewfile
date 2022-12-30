@@ -54,6 +54,8 @@ brew "lynis"
 brew "mackup"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
+# Network grep
+brew "ngrep"
 # CLI for Postgres with auto-completion and syntax highlighting
 brew "pgcli"
 # Pinentry for GPG on Mac
@@ -62,7 +64,6 @@ brew "pinentry-mac"
 brew "postgresql@14"
 # Wrapper to colorize and simplify ping's output
 brew "prettyping"
-# Monitor data's progress through a pipe
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Rsync for cloud storage
@@ -85,7 +86,7 @@ brew "tldr"
 brew "tokei"
 # Internet file retriever
 brew "wget"
-# Process YAML documents from the CLI
+# Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
@@ -147,6 +148,8 @@ cask "deltawalker"
 cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
 # Control your Elgato Key Lights
@@ -159,6 +162,9 @@ cask "expandrive"
 cask "fantastical"
 # Web browser
 cask "firefox"
+# Tool to turn a website into a desktop app
+cask "fluid"
+# Developer targeted fonts with a high number of glyphs
 cask "font-anonymice-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-bitstream-vera-sans-mono-nerd-font"
@@ -166,12 +172,14 @@ cask "font-bitstream-vera-sans-mono-nerd-font"
 cask "font-fira-code-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-inconsolata-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
 cask "font-public-sans"
+# Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
 cask "git-credential-manager-core"
 # Web browser
@@ -241,7 +249,7 @@ cask "qlmarkdown"
 cask "qlprettypatch"
 # QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
-# QuickLook generator for video files
+# Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
 # QuickLook plugin for CSV files
 cask "quicklook-csv"
@@ -251,6 +259,8 @@ cask "quicklook-json"
 cask "rectangle"
 # Emoji picker optimized for blind people
 cask "rocket"
+# Print driver for printing documents directly to a pdf file
+cask "rwts-pdfwriter"
 # Block your own access to distracting websites
 cask "selfcontrol"
 # Team communication and collaboration software
@@ -261,8 +271,6 @@ cask "soundsource"
 cask "sourcetree"
 # Break time reminder app
 cask "stretchly"
-# Git client
-cask "sublime-merge"
 # Text editor for code, markup and prose
 cask "sublime-text"
 # Backup, recovery and cloning software
