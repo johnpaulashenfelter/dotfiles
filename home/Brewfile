@@ -34,6 +34,8 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Small git utilities
 brew "git-extras"
 # Process manager for Procfile-based applications
@@ -84,6 +86,8 @@ brew "tailscale"
 brew "tldr"
 # Program that allows you to count code, quickly
 brew "tokei"
+# Modern watch command
+brew "viddy"
 # Internet file retriever
 brew "wget"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
@@ -148,6 +152,8 @@ cask "deltawalker"
 cask "discord"
 # Application window manager focusing on simplicity
 cask "divvy"
+# Command-line utility for managing macOS dock items
+cask "dockutil"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Finds duplicate files in a computer system
@@ -191,7 +197,7 @@ cask "hammerspoon"
 # Automated organization
 cask "hazel"
 # Workaround for 'dockutil' on macOS >= 12.3, See https://github.com/kcrawford/dockutil/issues/127
-cask 'hpedrorodrigues/tools/dockutil'
+# cask 'hpedrorodrigues/tools/dockutil'
 # Free and open-source media player
 cask "iina"
 # System monitoring app
@@ -214,6 +220,8 @@ cask "keycastr"
 cask "keycue"
 # Animated screen capture application
 cask "licecap"
+# Host-based application firewall
+cask "little-snitch"
 # Ergonomic Assistant to prevent health problems
 cask "macbreakz"
 # Open-source Markdown editor
@@ -265,6 +273,8 @@ cask "rwts-pdfwriter"
 cask "selfcontrol"
 # Team communication and collaboration software
 cask "slack"
+# Displays all open files and sockets in use by all running processes
+cask "sloth"
 # Sound and audio controller
 cask "soundsource"
 # Graphical client for Git version control
@@ -290,6 +300,7 @@ cask "zulip"
 mas "1Password for Safari", id: 1569813296
 mas "Be Focused Pro", id: 961632517
 mas "Deliveries", id: 290986013
+mas "Flow", id: 1423210932
 mas "Focus Matrix", id: 1087284172
 mas "Horo", id: 1437226581
 mas "Microsoft Remote Desktop", id: 1295203466
@@ -303,4 +314,5 @@ mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
 mas "Things", id: 904280696
+mas "Ulysses", id: 1225570693
 mas "Wayback Machine", id: 1472432422
