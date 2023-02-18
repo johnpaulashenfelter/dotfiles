@@ -1,3 +1,15 @@
+# Archives
+*.7z
+*.bzip
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.tar.gz
+*.zip
+
 # Ruby tools
 .tool-versions
 .env.*.local

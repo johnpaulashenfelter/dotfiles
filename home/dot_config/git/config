@@ -1,10 +1,5 @@
-[user]
-	name = John Paul Ashenfelter
-	email = john@ashenfelter.com
-	useConfigOnly = true
-[include]
-  # For username / creds / etc
-  path = ~/.gitconfig.local
+[advice]
+  detachedHead = false
 [alias]
 	ci = commit # DEPRECATED
 	co = checkout # DEPRECATED
@@ -16,7 +11,7 @@
 	# cleanout = !git clean -df && git checkout -- .
 	# config-search = config --show-scope --show-origin --get-regexp
 	# conflicts = git diff --name-only | uniq | xargs code
-	cp = cherry-pick
+	# cp = cherry-pick
 	# d = diff
 	daylog = log --since '1 day ago' --oneline --author <johnpaul@transitionpoint.com>  # I know what you did yesterday - great for follow-ups
 	# dc = diff --cached
@@ -46,6 +41,7 @@
 	# nm = branch --no-merged
 	# overview = "!git log --all --oneline --no-merges"
 	# p = push
+	new = switch -c
 	pf = push --force-with-lease # https://robots.thoughtbot.com/git-push-force-with-lease
 	praise = blame
 	put = push origin HEAD
@@ -69,103 +65,160 @@
   # fuse = !git sync && git rebase main
   main = !git checkout main && git pull --no-tags
   sync = !git main && git switch -
+	prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -d
+[branch]
+  autoSetupRebase = always
 [color]
-	ui = true
-  # diff = auto
-  # status = auto
-  # branch = auto
+  pager = true
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
   remote = green
+[color "diff"]
+  commit = 227 bold
+  frag = magenta bold
+  meta = 227
+  new = green bold
+  old = red bold
+  whitespace = red reverse
+[color "diff-highlight"]
+  newHighlight = green bold 22
+  newNormal = green bold
+  oldHighlight = red bold 52
+  oldNormal = red bold
 [color "status"]
   added = yellow
   changed = green
   untracked = cyan
-[color "diff"]
-	commit = yellow bold
-	meta = 11
-	frag = magenta bold
-	old = red bold
-	new = green bold
-	whitespace = red reverse
-#  meta = yellow bold
-#  frag = magenta bold
-#  old = red bold
-#  new = green bold
-[color "diff-highlight"]
-	oldNormal = red bold
-	oldHighlight = red bold 52
-	newNormal = green bold
-	newHighlight = green bold 22
+[commit]
+	gpgsign = true
+	template = ~/.gitmessage
 [core]
-	# excludesfile = /Users/johnpaul/.gitignore
-	editor = subl --wait
 	autocrlf = input
-  # https://viget.com/extend/dress-up-your-git-diffs-with-word-level-highlights
-  # pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
-  page = "diff-so-fancy | less --tabs=4 -RFX"
-	# attributesfile = /Users/johnpaul/.gitattributes
-
+	editor = subl --wait
+  fsmonitor = true
+  hooksPath = ~/.config/git/hooks
+  pager = delta
+  quotePath = false
+  untrackedCache = true
+  whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[credential]
+	helper = osxkeychain
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[delta]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  hunk-header-decoration-style = yellow box
+  line-numbers = true
+  minus-color = "#340001"
+  plus-color = "#012800"
+  side-by-side = true
+  whitespace-error-style = 22 reverse
+[diff]
+  algorithm = histogram
+  colorMoved = default
+  indentHeuristic = true
+  mnemonicPrefix = true
+  renames = copies
+  tool = Kaleidoscope
 [diff "rspec"]
   xfuncname = "^[ \t]*((RSpec|describe|context|it|before|after|around|feature|scenario)[ \t].*)$"
-[push]
-	autoSetupRemote = true
+[difftool "Kaleidoscope"]
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[fetch]
+  prune = true
+  pruneTags = true
+  writeCommitGraph = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge --skip -- %f
+	required = true
+	process = git-lfs filter-process --skip
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[gc]
+  cruftPacks = true
+[grep]
+  column = true
+  fullname = true
+  lineNumber = true
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [github]
 	user = johnpaulashenfelter
-[merge]
-	# Include summaries of merged commits in newly created merge commit messages
-	# log = true
-[push]
-  default = tracking
-#
-[commit]
-  template = ~/.gitmessage
-[branch]
-  # setup remote AND local branches for tracking
-#	autosetupmerge = always
-[rerere]
-	enabled = 1
+[gui]
+	recentrepo = /Users/johnpaul/work/kwnews/ors
 [heroku]
 	account = tpoint
 # from thoughtbot dotfiles
-[format]
-  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
+[init]
+	defaultBranch = main
+	# templateDir = ~/.config/git/template
+[lfs]
+	fetchexclude = *
+[interactive]
+  diffFilter = delta --color-only
+  singleKey = true
+[maintenance]
+  auto = false
+  strategy = incremental
+[merge]
+  conflictStyle = zdiff3
+  ff = only
+  tool = Kaleidoscope
+[mergetool "Kaleidoscope"]
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustExitCode = true
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-
+[pack]
+  writeReverseIndex = true
+[pull]
+	# ff = only
+  rebase = merges
+[push]
+  autoSetupRemote = true
+  default = simple
+  followTags = true
+  useForceIfIncludes = true
+[rebase]
+  abbreviateCommands = true
+  autoSquash = true
+  autoStash = true
+  updateRefs = true
+[rerere]
+	enabled = true
+	autoUpdate = true
+[revert]
+  reference = true
+[status]
+  showUntrackedFiles = all
+[tag]
+  gpgSign = true
+  sort = version:refname
+[transfer]
+  fsckObjects = true
 [url "git@github.com:"]
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
 	insteadOf = "github:"
-[filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge --skip -- %f
-	required = true
-	process = git-lfs filter-process --skip
-[gui]
-	recentrepo = /Users/johnpaul/work/kwnews/ors
-[credential]
-	helper = osxkeychain
-	helper = /usr/local/share/gcm-core/git-credential-manager-core
-
-[lfs]
-	fetchexclude = *
-[pull]
-	ff = only
-[fetch]
-	prune = true
-[init]
-	defaultBranch = main
-
-
-push.autoSetupRemote
+[url "https://github.com/johnpaulashenfelter/"]
+  insteadOf = me:
+[user]
+	email = jp@locushealth.com
+	name = John Paul Ashenfelter
+	signingkey = 0477A6CC566A09D3
+	useConfigOnly = true
+[include]
+  # For username / creds / etc
+  path = ~/.gitconfig.local
