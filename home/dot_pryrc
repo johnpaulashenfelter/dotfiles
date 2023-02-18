@@ -1,3 +1,6 @@
+irbrc = Dir.home.concat("/.irbrc")
+eval(File.open(irbrc).read)
+
 # Inspired by https://gist.github.com/justin808/1fe1dfbecc00a18e7f2a
 
 ## Benchmarking
