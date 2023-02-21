@@ -1,6 +1,11 @@
 irbrc = Dir.home.concat("/.irbrc")
 eval(File.open(irbrc).read)
 
+if $0 == "rails_console"
+  ActiveRecord::Base.logger.level = 1 if defined?(ActiveRecord)
+end
+
+
 # Inspired by https://gist.github.com/justin808/1fe1dfbecc00a18e7f2a
 
 ## Benchmarking
@@ -34,14 +39,6 @@ end
 # Hit Enter to repeat last command
 Pry::Commands.command /^$/, "repeat last command" do
   _pry_.run_command Pry.history.to_a.last
-end
-
-begin
-  require 'awesome_print'
-  # Pry.config.print = proc { |output, value| output.puts value.ai }
-  AwesomePrint.pry!
-rescue LoadError => err
-  puts "no awesome_print :("
 end
 
 puts "Loaded ~/.pryrc"

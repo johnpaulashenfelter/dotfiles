@@ -1,12 +1,34 @@
-puts "IRBRC CONFIG"
-
 require 'irb/completion'
 require 'rubygems'
 require 'irb/ext/save-history'
-require "amazing_print"
 
-ActiveRecord::Base.logger.level = 1 if defined?(ActiveRecord)
-IRB.conf[:SAVE_HISTORY] = 1000
+begin
+  require "amazing_print"
+  AmazingPrint.pry!
+  puts "Using amazing_print for ap"
+rescue LoadError
+  puts "AmazingPrint is not installed"
+end
+
+begin
+  unless defined?(AmazingPrint)
+    require "awesome_print"
+    AwesomePrint.pry!
+    puts "Using awesome_print for ap"
+  end
+rescue LoadError
+  puts "awesome_print is not installed, but consider upgrading to AmazingPrint"
+  puts "gem install amazing_print"
+end
+
+
+if $0 == "irb" # running in IRB console
+end
+
+unless $0 == "pry" # irbrc is included in pryrc
+  IRB.conf[:SAVE_HISTORY] = 1000
+  IRB.conf[:USE_AUTOCOMPLETE] = false
+end
 
 # Overriding Object class
 class Object
