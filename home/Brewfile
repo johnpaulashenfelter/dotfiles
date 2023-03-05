@@ -22,6 +22,8 @@ brew "chezmoi"
 brew "diff-so-fancy"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Modern replacement for 'ls'
 brew "exa"
 # Command-line tool to interact with exercism.io
@@ -48,12 +50,16 @@ brew "httpie"
 brew "httpstat"
 # Command-line benchmarking tool
 brew "hyperfine"
+# Convert JPG images to ASCII
+brew "jp2a"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Security and system auditing tool to harden systems
 brew "lynis"
 # Keep your Mac's application settings in sync
 brew "mackup"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Network grep
@@ -206,6 +212,8 @@ cask "istat-menus"
 cask "jetbrains-toolbox"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
+# Spot and merge differences in text and image files or folders
+cask "kaleidoscope"
 # Keyboard customizer
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
@@ -246,6 +254,9 @@ cask "onyx"
 cask "path-finder"
 # HTTP client that helps testing and describing APIs
 cask "paw"
+cask "phantomjs"
+# Flexible software sketchbook and a language for learning how to code
+cask "processing"
 # VPN client focusing on security
 cask "protonvpn"
 # Automatic time tracker
@@ -271,8 +282,6 @@ cask "rocket"
 cask "rwts-pdfwriter"
 # Block your own access to distracting websites
 cask "selfcontrol"
-# Team communication and collaboration software
-cask "slack"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
 # Sound and audio controller
@@ -299,6 +308,7 @@ cask "zsa-wally"
 cask "zulip"
 mas "1Password for Safari", id: 1569813296
 mas "Be Focused Pro", id: 961632517
+mas "Capital One Shopping", id: 1477110326
 mas "Deliveries", id: 290986013
 mas "Flow", id: 1423210932
 mas "Focus Matrix", id: 1087284172
@@ -310,6 +320,7 @@ mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
+mas "Slack", id: 803453959
 mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
