@@ -162,7 +162,7 @@ end
 
 if defined? Rails
   project_name = File.basename(Dir.pwd)
-  prompt       = "#{project_name.cyan}[#{ENV['RAILS_ENV'].red}]"
+  prompt       = "#{project_name.cyan}[#{ENV['RAILS_ENV'].red}]" rescue nil
 
   IRB.conf[:PROMPT] ||= {}
   IRB.conf[:PROMPT][:RAILS] = {
