@@ -1,3 +1,18 @@
+# https://scriptingosx.com/2019/06/moving-to-zsh-part-2-configuration-files/
+
+setopt NO_CASE_GLOB # case-insensitive globbing
+setopt AUTO_CD # Replaces .. and ..., can skip cd in many cases
+# Autocorrect cli
+setopt CORRECT
+setopt CORRECT_ALL
+
+# Bindings
+# up-line-or-search # up arrow bindkey
+# down-line-or-search # down arrow
+
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 # Setup
 if [ -f /opt/homebrew/bin/brew ]
 then
@@ -13,7 +28,7 @@ fi
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
-if [ -f $(brew --prefix)/bin/zoxide ]; then    
+if [ -f $(brew --prefix)/bin/zoxide ]; then
   eval "$(zoxide init zsh)"
 fi
 
@@ -29,10 +44,6 @@ eval "$(starship init zsh)"
 . $(brew --prefix)/opt/asdf/libexec/asdf.sh
 
 ## PATH additions
-
-if [ -d $(brew --prefix)/opt/mysql@5.7/bin ]; then
-  export PATH="$(brew --prefix)/opt/mysql@5.7/bin:$PATH"
-fi
 
 if [ -d $(brew --prefix)/opt/postgresql/bin ]; then
   export PATH="$(brew --prefix)/opt/postgresql/bin:$PATH"
@@ -54,17 +65,41 @@ fi
 export PATH=".git/safe/../../bin:$PATH"
 
 ## Fixes
+### Tab completion
+# case insensitive path-completion
+zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
+# partial completion suggestions
+zstyle ':completion:*' list-suffixes
+zstyle ':completion:*' expand prefix suffix
+autoload -Uz compinit && compinit
+
+### History
+
 # https://blog.akatz.org/fixing-macos-zsh-terminal-history-settings/
-alias history="history 1"
-HISTSIZE=99999  
-SAVEHIST=$HISTSIZE
+HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history
+HISTSIZE=5000 # file
+SAVEHIST=2000 # session
+# share history across multiple zsh sessions
+setopt SHARE_HISTORY
+# append to history
+setopt APPEND_HISTORY
+# expire duplicates first
 # https://unix.stackexchange.com/questions/599641/why-do-i-have-duplicates-in-my-zsh-history
 setopt HIST_IGNORE_ALL_DUPS
+# setopt HIST_EXPIRE_DUPS_FIRST
+# do not store duplications
+setopt HIST_IGNORE_DUPS
+#ignore duplicates when searching
+setopt HIST_FIND_NO_DUPS
+# removes blank lines from history
+setopt HIST_REDUCE_BLANKS
+# Add timestamps, etc
+setopt EXTENDED_HISTORY
 
 ## Aliases
-### Easier navigation
-alias ..="cd .."
-alias ...="cd ../.."
+
+# Use alias -g foo='bar' for global aliases that work anywhere on line
+# Can use which to figure out definitions, \which for globals
 
 ### Enhancements to Unix commands
 alias cat="bat"
@@ -85,6 +120,10 @@ alias rsync="rsync -avz"
 alias space="du -shc * .[^.]*"
 alias systail="tail -f /var/log/system.log"
 alias t="less +F"
+
+### Suffix aliases
+alias -s log="tail -f"
+alias -s sh="vi"
 
 ## Common tasks
 
