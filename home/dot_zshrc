@@ -4,14 +4,6 @@ setopt NO_CASE_GLOB # case-insensitive globbing
 setopt AUTO_CD # Replaces .. and ..., can skip cd in many cases
 # Autocorrect cli
 setopt CORRECT
-setopt CORRECT_ALL
-
-# Bindings
-# up-line-or-search # up arrow bindkey
-# down-line-or-search # down arrow
-
-bindkey "^[[A" history-beginning-search-backward
-bindkey "^[[B" history-beginning-search-forward
 
 # Setup
 if [ -f /opt/homebrew/bin/brew ]
@@ -69,8 +61,6 @@ export PATH=".git/safe/../../bin:$PATH"
 # case insensitive path-completion
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]} l:|=* r:|=*'
 # partial completion suggestions
-zstyle ':completion:*' list-suffixes
-zstyle ':completion:*' expand prefix suffix
 autoload -Uz compinit && compinit
 
 ### History
