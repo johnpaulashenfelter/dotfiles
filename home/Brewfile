@@ -1,10 +1,8 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "homebrew/core"
 tap "homebrew/services"
 tap "hpedrorodrigues/tools"
 tap "mas-cli/tap"
@@ -12,6 +10,8 @@ tap "microsoft/git"
 tap "puma/puma"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
+# Improved shell history for zsh and bash
+brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # New way to see and navigate directory trees
@@ -48,6 +48,8 @@ brew "htop"
 brew "httpie"
 # Curl statistics made simple
 brew "httpstat"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Convert JPG images to ASCII
@@ -118,6 +120,8 @@ cask "a-better-finder-attributes"
 cask "a-better-finder-rename"
 # Application launcher and productivity software
 cask "alfred"
+# Enable Windows-like alt-tab
+cask "alt-tab"
 # Redis desktop manager
 cask "another-redis-desktop-manager"
 # Application uninstaller
@@ -146,6 +150,8 @@ cask "choosy"
 cask "chromedriver"
 # Downloads videos and audio from websites
 cask "clipgrab"
+# Two-panel file manager
+cask "commander-one"
 # Disk space visualizer
 cask "daisydisk"
 # API documentation browser and code snippet manager
@@ -164,7 +170,7 @@ cask "dockutil"
 cask "dropbox"
 # Finds duplicate files in a computer system
 cask "dupeguru"
-# Control your Elgato Key Lights
+# Control your Elgato key lights
 cask "elgato-control-center"
 # Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
@@ -202,8 +208,6 @@ cask "gpg-suite-no-mail"
 cask "hammerspoon"
 # Automated organization
 cask "hazel"
-# Workaround for 'dockutil' on macOS >= 12.3, See https://github.com/kcrawford/dockutil/issues/127
-# cask 'hpedrorodrigues/tools/dockutil'
 # Free and open-source media player
 cask "iina"
 # System monitoring app
@@ -254,6 +258,7 @@ cask "onyx"
 cask "path-finder"
 # HTTP client that helps testing and describing APIs
 cask "paw"
+# Headless web browser
 cask "phantomjs"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
@@ -282,6 +287,8 @@ cask "rocket"
 cask "rwts-pdfwriter"
 # Block your own access to distracting websites
 cask "selfcontrol"
+# Screenshot measurement and annotation tool
+cask "shottr"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
 # Sound and audio controller
