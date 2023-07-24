@@ -5,6 +5,10 @@ setopt AUTO_CD # Replaces .. and ..., can skip cd in many cases
 # Autocorrect cli
 setopt CORRECT
 
+# https://www.techrepublic.com/article/using-vi-key-bindings-in-bash-and-zsh/
+# bindkey -v
+setopt vi
+
 # Setup
 if [ -f /opt/homebrew/bin/brew ]
 then
