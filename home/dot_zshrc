@@ -113,7 +113,6 @@ alias t="less +F"
 
 ### Suffix aliases
 alias -s log="tail -f"
-alias -s sh="vi"
 
 ## Common tasks
 
