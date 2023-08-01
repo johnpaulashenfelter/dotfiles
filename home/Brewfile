@@ -1,6 +1,5 @@
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
@@ -130,14 +129,14 @@ cask "appcleaner"
 cask "arq"
 # Menu bar icon organizer
 cask "bartender"
-# Text, code, and markup editor
-cask "bbedit"
 # Cross platform SQL editor and database management app
 cask "beekeeper-studio"
 # Tool to customize input devices and automate computer systems
 cask "bettertouchtool"
 # Bookmarks manager
 cask "bookmacster"
+# Scriptable scratchpad for developers
+cask "boop"
 # E-books management software
 cask "calibre"
 # Use your phone as a high-quality webcam with image tuning controls
@@ -270,6 +269,7 @@ cask "qbserve"
 cask "qlimagesize"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
+# QuickLook plugin to view patch files
 cask "qlprettypatch"
 # QuickLook plugin for plaintext files without an extension
 cask "qlstephen"
@@ -314,6 +314,7 @@ cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 mas "1Password for Safari", id: 1569813296
+mas "Actions for Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
 mas "Capital One Shopping", id: 1477110326
 mas "Deliveries", id: 290986013
@@ -333,4 +334,15 @@ mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
 mas "Things", id: 904280696
 mas "Ulysses", id: 1225570693
+mas "Velja", id: 1607635845
 mas "Wayback Machine", id: 1472432422
+mas "Xcode", id: 497799835
+vscode "github.vscode-github-actions"
+vscode "GitHub.vscode-pull-request-github"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.remote-repositories"
+vscode "mtxr.sqltools"
+vscode "mtxr.sqltools-driver-mysql"
+vscode "Postman.postman-for-vscode"
+vscode "Shopify.ruby-lsp"
