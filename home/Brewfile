@@ -7,6 +7,8 @@ tap "hpedrorodrigues/tools"
 tap "mas-cli/tap"
 tap "microsoft/git"
 tap "puma/puma"
+# Download with resuming and segmented downloading
+brew "aria2"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
 # Improved shell history for zsh and bash
@@ -55,6 +57,8 @@ brew "hyperfine"
 brew "jp2a"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Linux virtual machines
+brew "lima"
 # Security and system auditing tool to harden systems
 brew "lynis"
 # Keep your Mac's application settings in sync
@@ -121,6 +125,8 @@ cask "a-better-finder-rename"
 cask "alfred"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+# Automatic tiling window manager similar to xmonad
+cask "amethyst"
 # Redis desktop manager
 cask "another-redis-desktop-manager"
 # Application uninstaller
@@ -173,6 +179,8 @@ cask "dupeguru"
 cask "elgato-control-center"
 # Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
+# Cross-platform Text Expander written in Rust
+cask "espanso"
 # Network drive and browser for cloud storage
 cask "expandrive"
 # Calendar software
@@ -305,6 +313,8 @@ cask "superduper"
 cask "suspicious-package"
 # Replacement for RCDefaultApps, written in Swift
 cask "swiftdefaultappsprefpane"
+# Real time file synchronization software
+cask "syncthing"
 # Unpacks archive files
 cask "the-unarchiver"
 # Managing Pull Requests and Issues For GitHub & GitHub Enterprise
