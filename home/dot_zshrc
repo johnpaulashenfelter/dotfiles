@@ -96,7 +96,7 @@ setopt EXTENDED_HISTORY
 # Can use which to figure out definitions, \which for globals
 
 ### Enhancements to Unix commands
-alias cat="bat"
+alias cat="bat --theme DarkNeon" # --list-themes to show all options
 alias find="fd"
 alias ls="exa"
 
