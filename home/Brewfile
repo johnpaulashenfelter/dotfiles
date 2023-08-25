@@ -265,8 +265,6 @@ cask "onyx"
 cask "path-finder"
 # HTTP client that helps testing and describing APIs
 cask "paw"
-# Headless web browser
-cask "phantomjs"
 # Flexible software sketchbook and a language for learning how to code
 cask "processing"
 # VPN client focusing on security
