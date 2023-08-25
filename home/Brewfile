@@ -299,8 +299,6 @@ cask "selfcontrol"
 cask "shottr"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
-# Sound and audio controller
-cask "soundsource"
 # Graphical client for Git version control
 cask "sourcetree"
 # Break time reminder app
@@ -347,6 +345,7 @@ mas "Ulysses", id: 1225570693
 mas "Velja", id: 1607635845
 mas "Wayback Machine", id: 1472432422
 mas "Xcode", id: 497799835
+vscode "bierner.markdown-mermaid"
 vscode "github.vscode-github-actions"
 vscode "GitHub.vscode-pull-request-github"
 vscode "ms-azuretools.vscode-docker"
