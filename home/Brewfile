@@ -49,8 +49,8 @@ brew "htop"
 brew "httpie"
 # Curl statistics made simple
 brew "httpstat"
-# Run and Test HTTP Requests with plain text and curl
-brew "hurl"
+# Website copier/offline browser
+brew "httrack"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Convert JPG images to ASCII
@@ -59,12 +59,14 @@ brew "jp2a"
 brew "jq"
 # Linux virtual machines
 brew "lima"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
 # Security and system auditing tool to harden systems
 brew "lynis"
 # Keep your Mac's application settings in sync
 brew "mackup"
-# Simple tool to make locally trusted development certificates
-brew "mkcert"
+# Securely transfers data between computers
+brew "magic-wormhole"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Network grep
@@ -133,6 +135,8 @@ cask "another-redis-desktop-manager"
 cask "appcleaner"
 # Multi-cloud backup application
 cask "arq"
+# Audio utility
+cask "background-music"
 # Menu bar icon organizer
 cask "bartender"
 # Cross platform SQL editor and database management app
@@ -243,8 +247,6 @@ cask "licecap"
 cask "little-snitch"
 # Ergonomic Assistant to prevent health problems
 cask "macbreakz"
-# Open-source Markdown editor
-cask "macdown"
 # Email tracker, read receipt and spy pixel blocker plugin for Apple Mail
 cask "mailtrackerblocker"
 # Extensible two-pane file manager
@@ -322,6 +324,12 @@ cask "zulip"
 mas "1Password for Safari", id: 1569813296
 mas "Actions for Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
+<<<<<<< HEAD
+||||||| parent of 714af80 (Update brewfile from giles)
+mas "Capital One Shopping", id: 1477110326
+=======
+mas "com.kirsteins.chords-and-scales-mac", id: 1435473426
+>>>>>>> 714af80 (Update brewfile from giles)
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "Microsoft Remote Desktop", id: 1295203466
@@ -329,9 +337,10 @@ mas "Monosnap", id: 540348655
 mas "myTuner Radio", id: 881415018
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
+mas "PolyNome", id: 488165644
 mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
-mas "Slack", id: 803453959
+mas "Simple Metronome", id: 1604183938
 mas "SomaFM", id: 449155338
 mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
