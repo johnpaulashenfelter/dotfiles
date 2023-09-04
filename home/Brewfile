@@ -324,12 +324,7 @@ cask "zulip"
 mas "1Password for Safari", id: 1569813296
 mas "Actions for Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
-<<<<<<< HEAD
-||||||| parent of 714af80 (Update brewfile from giles)
-mas "Capital One Shopping", id: 1477110326
-=======
-mas "com.kirsteins.chords-and-scales-mac", id: 1435473426
->>>>>>> 714af80 (Update brewfile from giles)
+steins.chords-and-scales-mac", id: 1435473426
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "Microsoft Remote Desktop", id: 1295203466
