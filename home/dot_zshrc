@@ -32,6 +32,10 @@ if [ -f $(brew --prefix)/bin/direnv ]; then
   eval "$(direnv hook zsh)"
 fi
 
+if [ -f $(brew --prefix)/bin/atuin ]; then
+  eval "$(atuin init zsh)"
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export STARSHIP_CONFIG="~/.dotfiles/starship.toml"
@@ -94,6 +98,10 @@ setopt EXTENDED_HISTORY
 
 # Use alias -g foo='bar' for global aliases that work anywhere on line
 # Can use which to figure out definitions, \which for globals
+
+# Fix AUTOCORRECT option for annoying matches
+alias rspec="nocorrect rspec"
+alias rubocop="nocorrect rubocop"
 
 ### Enhancements to Unix commands
 alias cat="bat --theme DarkNeon" # --list-themes to show all options
