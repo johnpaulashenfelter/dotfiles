@@ -11,28 +11,31 @@
 *.zip
 
 # Ruby tools
-.tool-versions
+.byebug_history
 .env.*.local
 .env.local
+rerun.txt
 
 # Pow
-.powrc
 .powenv
+.powrc
 
 # Rails app defaults
 /.bundle
 /db/*.sqlite3*
 /log/*.log
+/node_modules
 /tmp# log
 /vendor/bundle
 
 # Development tools
-.idea
-.eclipse
 *.swp
 *~
-.svn/
+.eclipse
 .envrc
+.idea
+.svn/
+.tool-versions
 
 # Mac
 .DS_Store
