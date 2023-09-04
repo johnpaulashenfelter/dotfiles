@@ -324,7 +324,7 @@ cask "zulip"
 mas "1Password for Safari", id: 1569813296
 mas "Actions for Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
-steins.chords-and-scales-mac", id: 1435473426
+mas "com.kirsteins.chords-and-scales-mac", id: 1435473426
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "Microsoft Remote Desktop", id: 1295203466
