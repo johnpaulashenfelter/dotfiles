@@ -1,2 +1,14 @@
 add_newline = false
-command_timeout = 1000
+
+# Increase timeouts
+scan_timeout = 80
+command_timeout = 2500
+
+# Do not truncate the directory listing
+[directory]
+truncation_length = 0
+
+# Show even very fast command executions in terminal (in ms)
+[cmd_duration]
+min_time = 5
+show_milliseconds = true
