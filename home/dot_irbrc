@@ -1,6 +1,6 @@
 require 'irb/completion'
-require 'rubygems'
 require 'irb/ext/save-history'
+require 'rubygems'
 
 begin
   require "amazing_print"
@@ -173,7 +173,11 @@ if defined? Rails
   }
 
   IRB.conf[:PROMPT_MODE] = :RAILS
+else
+  IRB.conf[:PROMPT_MODE] = :SIMPLE
 end
+
+IRB.conf[:AUTO_INDENT] = true
 
 # credit: https://github.com/crivotz/dot_files/blob/master/linux/irbrc
 # credit: https://gist.github.com/mehdi-farsi/ad0f80a62add80498f34adde706ef898
