@@ -2,6 +2,8 @@ amazing_print
 bundler
 pry
 
+# active_record_doctor
+# bundleup # from https://ruby.social/@olivierlacan/110783728072255855
 # gem_dating # from testdouble article
 # libyear_bundler # from gem_dating article reference
-# active_record_doctor
+# rubocop-magic_numbers
