@@ -106,7 +106,7 @@ alias rubocop="nocorrect rubocop"
 ### Enhancements to Unix commands
 alias cat="bat --theme DarkNeon" # --list-themes to show all options
 alias find="fd"
-alias ls="exa"
+alias ls="eza"
 
 ### Shorthand
 alias c="clear"
