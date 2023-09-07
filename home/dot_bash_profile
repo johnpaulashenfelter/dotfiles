@@ -36,7 +36,7 @@ alias ...="cd ../.."
 ### Enhancements
 alias cat="bat"
 alias find="fd"
-alias ls="exa"
+alias ls="eza"
 
 ### Easier listing
 #alias ls="ls -GF" # always colorize and indicate type/executable
