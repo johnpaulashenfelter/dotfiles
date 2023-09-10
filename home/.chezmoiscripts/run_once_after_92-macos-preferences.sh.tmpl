@@ -73,6 +73,7 @@ for dockItemLabel in \
   Launchpad \
   Mail \
   FaceTime \
+  Freeform \
   Messages \
   Maps \
   Photos \
@@ -84,7 +85,7 @@ for dockItemLabel in \
   TV \
   News \
   "App Store" \
-  "System Preferences" ; do
+  "System Settings" ; do
   dockutil --find "$dockItemLabel" >/dev/null && dockutil --no-restart --remove "$dockItemLabel"
 done
 
