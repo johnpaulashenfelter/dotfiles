@@ -96,6 +96,7 @@
 [commit]
 	gpgsign = true
 	template = ~/.gitmessage
+#  verbose = true
 [core]
 	autocrlf = input
 	editor = subl --wait
@@ -212,6 +213,7 @@
 	insteadOf = "gh:"
 	pushInsteadOf = "github:"
 	pushInsteadOf = "git://github.com/"
+  pushInsteadOf = "https://github.com/"
 [url "git://github.com/"]
 	insteadOf = "github:"
 [url "https://github.com/johnpaulashenfelter/"]
@@ -224,3 +226,6 @@
 [include]
   # For username / creds / etc
   path = ~/.gitconfig.local
+# Conditional work includes
+#[includeIf "hasconfig:remote.*.url:https://github.com/WORK_ORGANIZATION/**"]
+#  path = ~/work/.config/git-WORK_ORGANIZATION
