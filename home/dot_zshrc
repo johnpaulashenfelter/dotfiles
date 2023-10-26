@@ -1,4 +1,4 @@
-zmodload zsh/zprof
+# zmodload zsh/zprof
 # https://scriptingosx.com/2019/06/moving-to-zsh-part-2-configuration-files/
 
 setopt NO_CASE_GLOB # case-insensitive globbing
@@ -171,4 +171,4 @@ alias tlog="less +F log/development.log"
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
-zprof
+# zprof
