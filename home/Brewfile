@@ -11,7 +11,7 @@ tap "puma/puma"
 brew "aria2"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
 brew "asdf"
-# Improved shell history for zsh and bash
+# Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
@@ -79,6 +79,8 @@ brew "pinentry-mac"
 brew "postgresql@14"
 # Wrapper to colorize and simplify ping's output
 brew "prettyping"
+# Monitor data's progress through a pipe
+brew "pv"
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Rsync for cloud storage
@@ -89,6 +91,8 @@ brew "redis"
 brew "ripgrep"
 # Wrapper around ripgrep that adds multiple rich file types
 brew "ripgrep-all"
+# Command-line tool for the Amazon S3 service
+brew "s3cmd"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-shell prompt for astronauts
@@ -99,6 +103,8 @@ brew "tailscale"
 brew "tldr"
 # Program that allows you to count code, quickly
 brew "tokei"
+# Anonymizing overlay network for TCP
+brew "tor"
 # Modern watch command
 brew "viddy"
 # Internet file retriever
@@ -117,7 +123,7 @@ brew "mas-cli/tap/mas"
 brew "puma/puma/puma-dev"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
-# Command-line helper for the 1Password password manager
+# Command-line interface for 1Password
 cask "1password-cli"
 # File and photo tweaking tool
 cask "a-better-finder-attributes"
@@ -159,14 +165,8 @@ cask "choosy"
 cask "chromedriver"
 # Downloads videos and audio from websites
 cask "clipgrab"
-# Two-panel file manager
-cask "commander-one"
 # Disk space visualizer
 cask "daisydisk"
-# API documentation browser and code snippet manager
-cask "dash"
-# Utility to enhance the Open and Save dialogs in applications
-cask "default-folder-x"
 # Tool to compare and synchronize files and folders
 cask "deltawalker"
 # Voice and text chat software
@@ -210,7 +210,8 @@ cask "font-meslo-lg-nerd-font"
 cask "font-public-sans"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
-cask "git-credential-manager-core"
+# Cross-platform Git credential storage for multiple hosting providers
+cask "git-credential-manager"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
@@ -263,12 +264,8 @@ cask "obsidian"
 cask "omnifocus"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
-# File manager
-cask "path-finder"
 # HTTP client that helps testing and describing APIs
 cask "paw"
-# Flexible software sketchbook and a language for learning how to code
-cask "processing"
 # VPN client focusing on security
 cask "protonvpn"
 # Automatic time tracker
@@ -295,8 +292,8 @@ cask "rocket"
 cask "rwts-pdfwriter"
 # Block your own access to distracting websites
 cask "selfcontrol"
-# Screenshot measurement and annotation tool
-cask "shottr"
+# Collection of apps available by subscription
+cask "setapp"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
 # Graphical client for Git version control
@@ -337,18 +334,18 @@ mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
 mas "Simple Metronome", id: 1604183938
 mas "SomaFM", id: 449155338
-mas "Spark", id: 1176895641
 mas "StopTheMadness", id: 1376402589
 mas "Things", id: 904280696
-mas "Ulysses", id: 1225570693
 mas "Velja", id: 1607635845
 mas "Wayback Machine", id: 1472432422
 mas "Xcode", id: 497799835
 vscode "bierner.markdown-mermaid"
+vscode "GitHub.remotehub"
 vscode "github.vscode-github-actions"
 vscode "GitHub.vscode-pull-request-github"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.azure-repos"
 vscode "ms-vscode.remote-repositories"
 vscode "mtxr.sqltools"
 vscode "mtxr.sqltools-driver-mysql"
