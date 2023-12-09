@@ -12,3 +12,6 @@ truncation_length = 0
 [cmd_duration]
 min_time = 5
 show_milliseconds = true
+
+[battery]
+disabled: true
