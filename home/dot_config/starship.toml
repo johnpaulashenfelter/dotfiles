@@ -1,17 +1,30 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
 add_newline = false
 
-# Increase timeouts
+# Increase timeouts, analyze with following two commands
+# env STARSHIP_LOG=trace starship module MODULE_NAME
+# env STARSHIP_LOG=trace starship timings
 scan_timeout = 80
 command_timeout = 2500
 
-# Do not truncate the directory listing
-[directory]
-truncation_length = 0
 
 # Show even very fast command executions in terminal (in ms)
 [cmd_duration]
 min_time = 5
 show_milliseconds = true
 
+# MODULES
+
 [battery]
-disabled: true
+disabled = true
+
+[character]
+# Replace the '❯' symbol in the prompt with '➜'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[directory]
+# Do not truncate the directory listing
+truncation_length = 0
