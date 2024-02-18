@@ -225,7 +225,7 @@
 	useConfigOnly = true
 [include]
   # For username / creds / etc
-  path = ~/.gitconfig.local
+  path = ~/.local/config/git
 # Conditional work includes
 #[includeIf "hasconfig:remote.*.url:https://github.com/WORK_ORGANIZATION/**"]
 #  path = ~/work/.config/git-WORK_ORGANIZATION
