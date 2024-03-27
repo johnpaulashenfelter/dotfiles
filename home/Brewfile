@@ -1,3 +1,4 @@
+tap "axllent/apps"
 tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
@@ -7,6 +8,10 @@ tap "hpedrorodrigues/tools"
 tap "mas-cli/tap"
 tap "microsoft/git"
 tap "puma/puma"
+# Thoughtbot unused code finder
+# tap "unused-code/formulae"
+# Run your GitHub Actions locally
+brew "act"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -51,12 +56,18 @@ brew "httpie"
 brew "httpstat"
 # Website copier/offline browser
 brew "httrack"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
 # Command-line benchmarking tool
 brew "hyperfine"
 # Convert JPG images to ASCII
 brew "jp2a"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Linux virtual machines
 brew "lima"
 # Curses-based tool for viewing and analyzing log files
@@ -67,12 +78,14 @@ brew "lynis"
 brew "mackup"
 # Securely transfers data between computers
 brew "magic-wormhole"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Network grep
 brew "ngrep"
-# CLI for Postgres with auto-completion and syntax highlighting
-brew "pgcli"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
@@ -97,6 +110,8 @@ brew "s3cmd"
 brew "shellcheck"
 # Cross-shell prompt for astronauts
 brew "starship"
+# CLI for extracting streams from various websites to a video player
+brew "streamlink"
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale"
 # Simplified and community-driven man pages
@@ -115,12 +130,16 @@ brew "yq"
 brew "zoxide"
 # Next-generation plugin manager for zsh
 brew "zplug"
+# An email and SMTP testing tool with API for developers
+brew "axllent/apps/mailpit"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # A tool to manage rack apps in development with puma
 brew "puma/puma/puma-dev"
+# Identify potentially unused code
+# brew "unused-code/formulae/unused"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -153,6 +172,8 @@ cask "bettertouchtool"
 cask "bookmacster"
 # Scriptable scratchpad for developers
 cask "boop"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
 # E-books management software
 cask "calibre"
 # Use your phone as a high-quality webcam with image tuning controls
@@ -197,28 +218,33 @@ cask "fluid"
 cask "font-anonymice-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-bitstream-vera-sans-mono-nerd-font"
+# Neutral programming typeface
+cask "font-commit-mono"
 # Developer targeted fonts with a high number of glyphs
 cask "font-fira-code-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-inconsolata-nerd-font"
+# Variable font designed for display
+cask "font-inter"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-meslo-lg-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-monaspace-nerd-font"
 cask "font-public-sans"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
-# Cross-platform Git credential storage for multiple hosting providers
-cask "git-credential-manager"
+cask "git-credential-manager-core"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
 # Desktop automation application
 cask "hammerspoon"
-# Automated organization
+# Automated organisation
 cask "hazel"
 # Free and open-source media player
 cask "iina"
@@ -226,11 +252,11 @@ cask "iina"
 cask "istat-menus"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
-# Note taking and to-do application with synchronization capabilities
+# Note taking and to-do application with synchronisation capabilities
 cask "joplin"
 # Spot and merge differences in text and image files or folders
 cask "kaleidoscope"
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
@@ -238,55 +264,67 @@ cask "keepingyouawake"
 cask "keka"
 # Automation software
 cask "keyboard-maestro"
-# Open-source keystroke visualizer
+# Open-source keystroke visualiser
 cask "keycastr"
 # Finds, learns and remembers keyboard shortcuts
 cask "keycue"
+# ZSA keyboard firmware flasher
+cask "keymapp"
 # Animated screen capture application
 cask "licecap"
 # Host-based application firewall
 cask "little-snitch"
+# Software for Logitech devices
+cask "logi-options-plus"
 # Ergonomic Assistant to prevent health problems
 cask "macbreakz"
+# Open-source Markdown editor
+cask "macdown"
 # Email tracker, read receipt and spy pixel blocker plugin for Apple Mail
 cask "mailtrackerblocker"
 # Extensible two-pane file manager
 cask "marta"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
 # Silence embarrassing notifications while screensharing
 cask "muzzle"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Scheduling application focusing on organization
+# Scheduling application focusing on organisation
 cask "omnifocus"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
-# HTTP client that helps testing and describing APIs
-cask "paw"
+# Replacement for Docker Desktop
+cask "orbstack"
+# WebKit based web browser
+cask "orion"
+# Client for Proton Drive
+cask "proton-drive"
 # VPN client focusing on security
 cask "protonvpn"
 # Automatic time tracker
 cask "qbserve"
 # Display image info and preview unsupported formats in QuickLook
 cask "qlimagesize"
-# QuickLook generator for Markdown files
+# Quick Look generator for Markdown files
 cask "qlmarkdown"
-# QuickLook plugin to view patch files
+# Quick Look plugin to view patch files
 cask "qlprettypatch"
-# QuickLook plugin for plaintext files without an extension
+# Quick Look plugin for plaintext files without an extension
 cask "qlstephen"
 # Thumbnails, static previews, cover art and metadata for video files
 cask "qlvideo"
-# QuickLook plugin for CSV files
+# Quick Look plugin for CSV files
 cask "quicklook-csv"
-# QuickLook plugin for JSON files
+# Quick Look plugin for JSON files
 cask "quicklook-json"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Emoji picker optimized for blind people
+# Emoji picker optimised for blind people
 cask "rocket"
 # Print driver for printing documents directly to a pdf file
 cask "rwts-pdfwriter"
@@ -294,10 +332,22 @@ cask "rwts-pdfwriter"
 cask "selfcontrol"
 # Collection of apps available by subscription
 cask "setapp"
+# Traditional roguelike dungeon crawler with randomised levels, enemies and items
+cask "shattered-pixel-dungeon"
+# App that enables mouse-free UI interaction
+cask "shortcat"
+# PDF reader and note-taking application
+cask "skim"
 # Displays all open files and sockets in use by all running processes
 cask "sloth"
+# Control your Sonos system
+cask "sonos"
+# Controller for Gen 1 Sonos products
+cask "sonos-s1-controller"
 # Graphical client for Git version control
 cask "sourcetree"
+# Music streaming service
+cask "spotify"
 # Break time reminder app
 cask "stretchly"
 # Text editor for code, markup and prose
@@ -308,46 +358,43 @@ cask "superduper"
 cask "suspicious-package"
 # Replacement for RCDefaultApps, written in Swift
 cask "swiftdefaultappsprefpane"
-# Real time file synchronization software
+# Real time file synchronisation software
 cask "syncthing"
+# Open-source BitTorrent client
+cask "transmission"
+# Virtual machines UI using QEMU
+cask "utm"
+# Open-source code editor
+cask "visual-studio-code"
 # Unpacks archive files
 cask "the-unarchiver"
 # Managing Pull Requests and Issues For GitHub & GitHub Enterprise
 cask "trailer"
-# Flash tool for ZSA keyboards
-cask "zsa-wally"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 mas "1Password for Safari", id: 1569813296
-mas "Actions for Obsidian", id: 1659667937
+mas "Actions For Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
 mas "com.kirsteins.chords-and-scales-mac", id: 1435473426
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
+mas "Goodnotes", id: 1444383602
+mas "Hush", id: 1544743900
 mas "Microsoft Remote Desktop", id: 1295203466
-mas "Monosnap", id: 540348655
 mas "myTuner Radio", id: 881415018
+mas "Omnivore", id: 1564031042
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "PolyNome", id: 488165644
+mas "ReadKit", id: 1615798039
 mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
 mas "Simple Metronome", id: 1604183938
+mas "Slack", id: 803453959
 mas "SomaFM", id: 449155338
-mas "StopTheMadness", id: 1376402589
+mas "StopTheMadness Pro", id: 6471380298
 mas "Things", id: 904280696
 mas "Velja", id: 1607635845
 mas "Wayback Machine", id: 1472432422
 mas "Xcode", id: 497799835
-vscode "bierner.markdown-mermaid"
-vscode "GitHub.remotehub"
-vscode "github.vscode-github-actions"
-vscode "GitHub.vscode-pull-request-github"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.azure-repos"
-vscode "ms-vscode.remote-repositories"
-vscode "mtxr.sqltools"
-vscode "mtxr.sqltools-driver-mysql"
-vscode "Postman.postman-for-vscode"
-vscode "Shopify.ruby-lsp"
+
