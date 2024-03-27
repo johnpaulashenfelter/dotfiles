@@ -1,0 +1,57 @@
+// sourced from Thomas Cannon
+// Settings in here override those in "LSP/LSP.sublime-settings"
+{
+  "nodejs_runtime": [
+    "/Users/johnpaul/.local/bin/mise",
+    "exec",
+    "--",
+    "node"
+  ],
+  "clients": {
+    "ruby-lsp": {
+      "enabled": true,
+      "command": [
+        "/Users/johnpaul/.local/bin/mise",
+        "exec",
+        "--",
+        "ruby-lsp"
+      ],
+      "selector": "source.ruby",
+      "initializationOptions": {
+        "enabledFeatures": {
+          "diagnostics": true,
+        },
+        "experimentalFeaturesEnabled": true
+      }
+    },
+    "herb": {
+      "enabled": true,
+      "command": [
+        "herb-language-server",
+        "--stdio"
+      ],
+      "selector": "text.html.ruby | text.html.rails",
+      "settings": {
+        "languageServerHerb.linter": {
+          "enabled": true
+        }
+      },
+      "initializationOptions": {
+        "enabledFeatures": {
+          "diagnostics": true,
+        },
+        "experimentalFeaturesEnabled": true
+      }
+    }
+  },
+  "show_inlay_hints": true,
+  // "lsp_format_on_save": true,
+  // "show_code_lens": "phantom",
+  "show_code_actions": "bulb",
+  "default_clients": {},
+  "lsp_code_actions_on_save": {
+    // "source.fixAll": true,
+    "source.organizeImports": true,
+  },
+  // "show_diagnostics_count_in_view_status": true,
+}

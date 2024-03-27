@@ -1,21 +1,13 @@
 {
-  "auto_complete": true,
-  "auto_complete_commit_on_tab": true,
-  "copy_with_empty_selection": true,
-  "ensure_newline_at_eof_on_save": true,
-  "font_size": 18,
-  "goto_anything_exclude_gitignore": true,
-  "ignored_packages":
-    [
-      "Vintage",
-  ],
-  "index_files": true,
-  "rulers":
-  [
-    79
-  ],
-  "tab_size": 2,
-  "theme": "auto",
-  "translate_tabs_to_spaces": true,
-  "trim_trailing_white_space_on_save": true,
+	"ignored_packages":
+	[
+		"LSP-eslint",
+		"Vintage",
+	],
+	"folder_exclude_patterns": ["node_modules", ".bundle", "vendor/bundle", ".idea"],
+	"font_size": 18,
+	"index_files": false,
+	"theme": "Default Dark.sublime-theme",
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"font_face": "MonaspiceNe Nerd Font",
 }
