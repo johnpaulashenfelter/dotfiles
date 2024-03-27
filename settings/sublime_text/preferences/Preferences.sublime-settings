@@ -3,11 +3,11 @@
   "auto_complete_commit_on_tab": true,
   "copy_with_empty_selection": true,
   "ensure_newline_at_eof_on_save": true,
-  "font_size": 18,
+  "font_size": 21,
   "goto_anything_exclude_gitignore": true,
   "ignored_packages":
     [
-      "Vintage",
+    "Vintage",
   ],
   "index_files": true,
   "rulers":
