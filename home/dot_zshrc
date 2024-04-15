@@ -177,4 +177,9 @@ alias tlog="less +F log/development.log"
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
+
+r () {
+    cd "$(git rev-parse --show-toplevel 2>/dev/null)"
+}
+
 # zprof
