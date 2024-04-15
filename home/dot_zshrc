@@ -1,10 +1,10 @@
 # zmodload zsh/zprof
 # https://scriptingosx.com/2019/06/moving-to-zsh-part-2-configuration-files/
-
-setopt NO_CASE_GLOB # case-insensitive globbing
+# https://blog.meain.io/2023/navigating-around-in-shell/
+# REFERENCE: https://zsh.sourceforge.io/Doc/Release/Options.html
 setopt AUTO_CD # Replaces .. and ..., can skip cd in many cases
-# Autocorrect cli
-setopt CORRECT
+setopt CORRECT # Autocorrect cli
+setopt NO_CASE_GLOB # case-insensitive globbing
 
 # https://www.techrepublic.com/article/using-vi-key-bindings-in-bash-and-zsh/
 # bindkey -v
