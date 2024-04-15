@@ -71,6 +71,9 @@ fi
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
 
+# Add automatic search path to cd command
+export CDPATH=$HOME/.config:$HOME/.local/share
+
 ## Fixes
 ### Tab completion
 # case insensitive path-completion
