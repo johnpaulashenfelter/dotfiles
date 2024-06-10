@@ -1,3 +1,4 @@
+tap "amalshaji/taps"
 tap "axllent/apps"
 tap "heroku/brew"
 tap "homebrew/bundle"
@@ -5,8 +6,10 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
 tap "hpedrorodrigues/tools"
+tap "k1low/tap"
 tap "mas-cli/tap"
 tap "microsoft/git"
+tap "nikitabobko/tap"
 tap "puma/puma"
 # Thoughtbot unused code finder
 # tap "unused-code/formulae"
@@ -20,6 +23,8 @@ brew "asdf"
 brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
 # New way to see and navigate directory trees
 brew "broot"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -60,24 +65,36 @@ brew "httrack"
 brew "hurl"
 # Command-line benchmarking tool
 brew "hyperfine"
+# Database of common MIME types
+brew "shared-mime-info"
+# Serializes the output of command-line tools to structured JSON output
+brew "jc"
 # Convert JPG images to ASCII
 brew "jp2a"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Terminal file manager
+brew "lf"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Linux virtual machines
 brew "lima"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
+# Shows thumbnails in terminal using sixel graphics
+brew "lsix"
 # Security and system auditing tool to harden systems
 brew "lynis"
 # Keep your Mac's application settings in sync
 brew "mackup"
 # Securely transfers data between computers
 brew "magic-wormhole"
+# Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
+brew "marp-cli"
+# Fly through your shell history
+brew "mcfly"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
@@ -86,12 +103,20 @@ brew "moreutils"
 brew "ngrep"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
+# Process manager for Procfile-based applications and tmux
+brew "overmind"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
+# CLI for Postgres with auto-completion and syntax highlighting
+brew "pgcli"
+# Data loading tool for PostgreSQL
+brew "pgloader"
 # Object-relational database system
-brew "postgresql@14"
+brew "postgresql@16"
 # Wrapper to colorize and simplify ping's output
 brew "prettyping"
+# Modern replacement for ps written by Rust
+brew "procs"
 # Monitor data's progress through a pipe
 brew "pv"
 # Tools for and transforming and inspecting PDF files
@@ -112,6 +137,8 @@ brew "shellcheck"
 brew "starship"
 # CLI for extracting streams from various websites to a video player
 brew "streamlink"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # Easiest, most secure way to use WireGuard and 2FA
 brew "tailscale"
 # Simplified and community-driven man pages
@@ -120,6 +147,10 @@ brew "tldr"
 brew "tokei"
 # Anonymizing overlay network for TCP
 brew "tor"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Ultra fast grep with query UI, fuzzy search, archive search, and more
+brew "ugrep"
 # Modern watch command
 brew "viddy"
 # Internet file retriever
@@ -130,10 +161,13 @@ brew "yq"
 brew "zoxide"
 # Next-generation plugin manager for zsh
 brew "zplug"
+brew "amalshaji/taps/portr"
 # An email and SMTP testing tool with API for developers
 brew "axllent/apps/mailpit"
 # Everything you need to get started with Heroku
 brew "heroku/brew/heroku"
+# tbls is a CI-Friendly tool for document a database, written in Go.
+brew "k1low/tap/tbls"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
 # A tool to manage rack apps in development with puma
@@ -148,6 +182,8 @@ cask "1password-cli"
 cask "a-better-finder-attributes"
 # Renamer for files, music and photos
 cask "a-better-finder-rename"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
 # Application launcher and productivity software
 cask "alfred"
 # Enable Windows-like alt-tab
@@ -158,15 +194,15 @@ cask "amethyst"
 cask "another-redis-desktop-manager"
 # Application uninstaller
 cask "appcleaner"
+# Chromium based browser
+cask "arc"
 # Multi-cloud backup application
 cask "arq"
 # Audio utility
 cask "background-music"
-# Menu bar icon organizer
-cask "bartender"
 # Cross platform SQL editor and database management app
 cask "beekeeper-studio"
-# Tool to customize input devices and automate computer systems
+# Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
 # Bookmarks manager
 cask "bookmacster"
@@ -186,9 +222,11 @@ cask "choosy"
 cask "chromedriver"
 # Downloads videos and audio from websites
 cask "clipgrab"
-# Disk space visualizer
+# Disk space visualiser
 cask "daisydisk"
-# Tool to compare and synchronize files and folders
+# Universal database tool and SQL client
+cask "dbeaver-community"
+# Tool to compare and synchronise files and folders
 cask "deltawalker"
 # Voice and text chat software
 cask "discord"
@@ -242,6 +280,8 @@ cask "git-credential-manager-core"
 cask "google-chrome"
 # Tools to protect your files
 cask "gpg-suite-no-mail"
+# Graphically shows disk usage within a file system
+cask "grandperspective"
 # Desktop automation application
 cask "hammerspoon"
 # Automated organisation
@@ -274,8 +314,6 @@ cask "keymapp"
 cask "licecap"
 # Host-based application firewall
 cask "little-snitch"
-# Software for Logitech devices
-cask "logi-options-plus"
 # Ergonomic Assistant to prevent health problems
 cask "macbreakz"
 # Open-source Markdown editor
@@ -322,6 +360,8 @@ cask "qlvideo"
 cask "quicklook-csv"
 # Quick Look plugin for JSON files
 cask "quicklook-json"
+# QuickTime 7 style Apple Music controller
+cask "quicktune"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Emoji picker optimised for blind people
@@ -360,8 +400,20 @@ cask "suspicious-package"
 cask "swiftdefaultappsprefpane"
 # Real time file synchronisation software
 cask "syncthing"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Unpacks archive files
+cask "the-unarchiver"
+# Record screen and camera time lapses in a menu bar interface
+cask "timelapze"
+# Web browser focusing on security
+cask "tor-browser"
+# Managing Pull Requests and Issues For GitHub & GitHub Enterprise
+cask "trailer"
 # Open-source BitTorrent client
 cask "transmission"
+# Configurable document editor that supports Markdown
+cask "typora"
 # Virtual machines UI using QEMU
 cask "utm"
 # Open-source code editor
@@ -370,16 +422,23 @@ cask "visual-studio-code"
 cask "the-unarchiver"
 # Managing Pull Requests and Issues For GitHub & GitHub Enterprise
 cask "trailer"
+# Multimedia player
+cask "vlc"
+# Multiplayer code editor
+cask "zed"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 mas "1Password for Safari", id: 1569813296
+mas "Actions", id: 1586435171
 mas "Actions For Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
+mas "Bears", id: 6443609622
 mas "com.kirsteins.chords-and-scales-mac", id: 1435473426
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "Goodnotes", id: 1444383602
 mas "Hush", id: 1544743900
+mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "myTuner Radio", id: 881415018
 mas "Omnivore", id: 1564031042
