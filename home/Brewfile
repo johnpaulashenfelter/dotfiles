@@ -300,6 +300,8 @@ cask "istat-menus"
 cask "jetbrains-toolbox"
 # Note taking and to-do application with synchronisation capabilities
 cask "joplin"
+# Menu bar manager
+cask "jordanbaird-ice"
 # Spot and merge differences in text and image files or folders
 cask "kaleidoscope"
 # Keyboard customiser
