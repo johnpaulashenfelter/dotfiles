@@ -374,6 +374,8 @@ cask "rectangle"
 cask "rocket"
 # Print driver for printing documents directly to a pdf file
 cask "rwts-pdfwriter"
+# Tool to reverse the direction of scrolling
+cask "scroll-reverser"
 # Block your own access to distracting websites
 cask "selfcontrol"
 # Collection of apps available by subscription
