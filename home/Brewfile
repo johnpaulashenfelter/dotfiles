@@ -15,6 +15,8 @@ tap "puma/puma"
 # tap "unused-code/formulae"
 # Run your GitHub Actions locally
 brew "act"
+# All-in-one AI-Powered CLI Chat & Copilot
+brew "aichat"
 # Download with resuming and segmented downloading
 brew "aria2"
 # Extendable version manager with support for Ruby, Node.js, Erlang & more
@@ -51,6 +53,8 @@ brew "git"
 brew "git-delta"
 # Small git utilities
 brew "git-extras"
+# Render markdown on the CLI
+brew "glow"
 # Process manager for Procfile-based applications
 brew "hivemind"
 # Improved top (interactive process viewer)
@@ -170,6 +174,8 @@ brew "heroku/brew/heroku"
 brew "k1low/tap/tbls"
 # Mac App Store command-line interface
 brew "mas-cli/tap/mas"
+# PostgreSQL Extensions Manager
+brew "pgxman/tap/pgxman"
 # A tool to manage rack apps in development with puma
 brew "puma/puma/puma-dev"
 # Identify potentially unused code
@@ -222,10 +228,8 @@ cask "choosy"
 cask "chromedriver"
 # Downloads videos and audio from websites
 cask "clipgrab"
-# Disk space visualiser
-cask "daisydisk"
-# Universal database tool and SQL client
-cask "dbeaver-community"
+# Server and cloud storage browser
+cask "cyberduck"
 # Tool to compare and synchronise files and folders
 cask "deltawalker"
 # Voice and text chat software
@@ -250,6 +254,8 @@ cask "expandrive"
 cask "fantastical"
 # Web browser
 cask "firefox"
+# Screenshot software
+cask "flameshot"
 # Tool to turn a website into a desktop app
 cask "fluid"
 # Developer targeted fonts with a high number of glyphs
