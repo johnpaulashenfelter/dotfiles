@@ -115,6 +115,8 @@ brew "pinentry-mac"
 brew "pgcli"
 # Data loading tool for PostgreSQL
 brew "pgloader"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
 # Object-relational database system
 brew "postgresql@16"
 # Wrapper to colorize and simplify ping's output
@@ -230,7 +232,10 @@ cask "chromedriver"
 cask "clipgrab"
 # Server and cloud storage browser
 cask "cyberduck"
-# Tool to compare and synchronise files and folders
+# Disk space visualiser
+cask "daisydisk"
+# Universal database tool and SQL client
+cask "dbeaver-community"# Tool to compare and synchronise files and folders
 cask "deltawalker"
 # Voice and text chat software
 cask "discord"
@@ -443,10 +448,13 @@ mas "Actions", id: 1586435171
 mas "Actions For Obsidian", id: 1659667937
 mas "Be Focused Pro", id: 961632517
 mas "Bears", id: 6443609622
+mas "Capital One Shopping", id: 1477110326
 mas "com.kirsteins.chords-and-scales-mac", id: 1435473426
+mas "Crouton", id: 1461650987
 mas "Deliveries", id: 290986013
 mas "Focus Matrix", id: 1087284172
 mas "Goodnotes", id: 1444383602
+mas "HotwireDevTools", id: 6503706225
 mas "Hush", id: 1544743900
 mas "Magnet", id: 441258766
 mas "Microsoft Remote Desktop", id: 1295203466
@@ -455,11 +463,9 @@ mas "Omnivore", id: 1564031042
 mas "Pixelmator", id: 407963104
 mas "Pocket", id: 568494494
 mas "PolyNome", id: 488165644
-mas "ReadKit", id: 1615798039
 mas "Reeder", id: 1449412482
 mas "Save to Pocket", id: 1477385213
 mas "Simple Metronome", id: 1604183938
-mas "Slack", id: 803453959
 mas "SomaFM", id: 449155338
 mas "StopTheMadness Pro", id: 6471380298
 mas "Things", id: 904280696
