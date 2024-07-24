@@ -9,7 +9,9 @@ tap "hpedrorodrigues/tools"
 tap "k1low/tap"
 tap "mas-cli/tap"
 tap "microsoft/git"
+tap "ngrok/ngrok"
 tap "nikitabobko/tap"
+tap "pgxman/tap"
 tap "puma/puma"
 # Thoughtbot unused code finder
 # tap "unused-code/formulae"
@@ -235,7 +237,8 @@ cask "cyberduck"
 # Disk space visualiser
 cask "daisydisk"
 # Universal database tool and SQL client
-cask "dbeaver-community"# Tool to compare and synchronise files and folders
+cask "dbeaver-community"
+# Tool to compare and synchronise files and folders
 cask "deltawalker"
 # Voice and text chat software
 cask "discord"
