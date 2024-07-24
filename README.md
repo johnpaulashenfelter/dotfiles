@@ -29,3 +29,7 @@ This should install all the key applications from homebrew and the Mac App Store
 * Open Dash, General > Syncing 
 * Sign in to Dropbox and sync
 
+## Additional applications to install by hand
+
+* TinkerTool https://www.bresink.com/osx/TinkerTool.html
+
