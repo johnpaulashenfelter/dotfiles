@@ -356,6 +356,8 @@ cask "onyx"
 cask "orbstack"
 # WebKit based web browser
 cask "orion"
+# Status bar application to enable/disable Yubikey Nano
+cask "pallotron-yubiswitch"
 # Client for Proton Drive
 cask "proton-drive"
 # VPN client focusing on security
