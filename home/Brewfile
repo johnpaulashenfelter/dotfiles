@@ -23,6 +23,58 @@ brew "git-absorb"
 brew "git-delta"
 # Small git utilities
 brew "git-extras"
+# Render markdown on the CLI
+brew "glow"
+# Process manager for Procfile-based applications
+brew "hivemind"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Curl statistics made simple
+brew "httpstat"
+# Website copier/offline browser
+brew "httrack"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
+# Command-line benchmarking tool
+brew "hyperfine"
+# Database of common MIME types
+brew "shared-mime-info"
+# Serializes the output of command-line tools to structured JSON output
+brew "jc"
+# Convert JPG images to ASCII
+brew "jp2a"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Terminal file manager
+brew "lf"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Linux virtual machines
+brew "lima"
+# Access large language models from the command-line
+brew "llm"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Shows thumbnails in terminal using sixel graphics
+brew "lsix"
+# Security and system auditing tool to harden systems
+brew "lynis"
+# Keep your Mac's application settings in sync
+brew "mackup"
+# Securely transfers data between computers
+brew "magic-wormhole"
+# Easily convert Marp Markdown files into static HTML/CSS, PDF, PPT and images
+brew "marp-cli"
+# Fly through your shell history
+brew "mcfly"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
 # Collection of tools that nobody wrote when UNIX was young
 brew "moreutils"
 # Pinentry for GPG on Mac
@@ -31,6 +83,16 @@ brew "pinentry-mac"
 brew "pgcli"
 # Object-relational database system
 brew "postgresql@16"
+# Wrapper to colorize and simplify ping's output
+brew "prettyping"
+# Modern replacement for ps written by Rust
+brew "procs"
+# Monitor data's progress through a pipe
+brew "pv"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Rsync for cloud storage
+brew "rclone"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Search tool like grep and The Silver Searcher
@@ -63,7 +125,12 @@ cask "1password-cli"
 # File and photo tweaking tool
 cask "a-better-finder-attributes"
 # Renamer for files, music and photos
-cask "a-better-finder-rename"# Application launcher and productivity software
+cask "a-better-finder-rename"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
+# GPU-accelerated terminal emulator
+cask "alacritty"
+# Application launcher and productivity software
 cask "alfred"
 # Application uninstaller
 cask "appcleaner"
@@ -79,6 +146,28 @@ cask "bruno"
 cask "calibre"
 # Automated testing of webapps for Google Chrome
 cask "chromedriver"
+# Downloads videos and audio from websites
+cask "clipgrab"
+# Write, edit, and chat about your code with AI
+cask "cursor"
+# Server and cloud storage browser
+cask "cyberduck"
+# Disk space visualiser
+cask "daisydisk"
+# Browser for SQLite databases
+cask "db-browser-for-sqlite"
+# Universal database tool and SQL client
+cask "dbeaver-community"
+# Tool to compare and synchronise files and folders
+cask "deltawalker"
+# Voice and text chat software
+cask "discord"
+# Application window manager focusing on simplicity
+cask "divvy"
+# App to build and share containerised applications and microservices
+cask "docker"
+# Command-line utility for managing macOS dock items
+cask "dockutil"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Control your Elgato key lights
@@ -87,6 +176,35 @@ cask "elgato-control-center"
 cask "elgato-stream-deck"
 # Cross-platform Text Expander written in Rust
 cask "espanso"
+# Network drive and browser for cloud storage
+cask "expandrive"
+# Calendar software
+cask "fantastical"
+# Web browser
+cask "firefox"
+# Screenshot software
+cask "flameshot"
+# Tool to turn a website into a desktop app
+cask "fluid"
+# Developer targeted fonts with a high number of glyphs
+cask "font-anonymice-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-bitstream-vera-sans-mono-nerd-font"
+cask "font-cascadia-code-nf"
+cask "font-cascadia-mono-nf"
+# Neutral programming typeface
+cask "font-commit-mono"
+cask "font-fira-code-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-inconsolata-nerd-font"
+# Variable font designed for display
+cask "font-inter"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-meslo-lg-nerd-font"
 # Developer targeted fonts with a high number of glyphs
 cask "font-monaspace-nerd-font"
 cask "git-credential-manager"
@@ -122,20 +240,36 @@ cask "keymapp"
 cask "licecap"
 # Host-based application firewall
 cask "little-snitch"
+# Open-source cross-platform alternative to AirDrop
+cask "localsend"
 # Ergonomic Assistant to prevent health problems
 cask "macbreakz"
 # Open-source Markdown editor
 cask "macdown"
 # Monitors and reports any microphone and camera activity
 cask "micro-snitch"
+# Tool to control external monitor brightness & volume
+cask "monitorcontrol"
+# Utility to move and zoom windows—on one display
+cask "moom"
 # Silence embarrassing notifications while screensharing
 cask "muzzle"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Replacement for Docker Desktop
+cask "orbstack"
+# WebKit based web browser
+cask "orion"
+# Status bar application to enable/disable Yubikey Nano
+cask "pallotron-yubiswitch"
+# Simple Gtk# Paint Program
+cask "pinta"
 # Client for Proton Drive
 cask "proton-drive"
+# Client for Proton Mail and Proton Calendar
+cask "proton-mail"
 # VPN client focusing on security
 cask "protonvpn"
 # Control your tools with a few keystrokes
@@ -160,6 +294,10 @@ cask "superduper"
 cask "transmission"
 # Multimedia player
 cask "vlc"
+# Handwriting notetaking software
+cask "xournal++"
+# Multiplayer code editor
+cask "zed"
 # Desktop client for the Zulip team chat platform
 cask "zulip"
 mas "1Password for Safari", id: 1569813296
