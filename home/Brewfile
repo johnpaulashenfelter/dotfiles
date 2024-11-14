@@ -31,6 +31,18 @@ brew "pinentry-mac"
 brew "pgcli"
 # Object-relational database system
 brew "postgresql@16"
+# Wrapper to colorize and simplify ping's output
+brew "prettyping"
+# Modern replacement for ps written by Rust
+brew "procs"
+# Monitor data's progress through a pipe
+brew "pv"
+# Generic machine emulator and virtualizer
+brew "qemu"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Rsync for cloud storage
+brew "rclone"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Search tool like grep and The Silver Searcher
@@ -71,6 +83,12 @@ cask "appcleaner"
 cask "arc"
 # Multi-cloud backup application
 cask "arq"
+# Audio utility
+cask "background-music"
+# Menu bar icon organiser
+cask "bartender"
+# Cross platform SQL editor and database management app
+cask "beekeeper-studio"
 # Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
 # Opensource IDE for exploring and testing api's
@@ -89,6 +107,14 @@ cask "elgato-stream-deck"
 cask "espanso"
 # Developer targeted fonts with a high number of glyphs
 cask "font-monaspace-nerd-font"
+cask "font-public-sans"
+# Developer targeted fonts with a high number of glyphs
+cask "font-sauce-code-pro-nerd-font"
+# YouTube player focusing on privacy
+cask "freetube"
+# Move playlists, tracks, and albums between music platforms
+cask "freeyourmusic"
+# Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
 # Web browser
 cask "google-chrome"
@@ -98,6 +124,10 @@ cask "hammerspoon"
 cask "hazel"
 # Free and open-source media player
 cask "iina"
+# Tool to optimise images to a smaller size
+cask "imageoptim"
+# System monitoring app
+cask "istat-menus"
 # JetBrains tools manager
 cask "jetbrains-toolbox"
 # Note taking and to-do application with synchronisation capabilities
