@@ -127,6 +127,8 @@ brew "prettyping"
 brew "procs"
 # Monitor data's progress through a pipe
 brew "pv"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Tools for and transforming and inspecting PDF files
 brew "qpdf"
 # Rsync for cloud storage
@@ -210,6 +212,8 @@ cask "arc"
 cask "arq"
 # Audio utility
 cask "background-music"
+# Menu bar icon organiser
+cask "bartender"
 # Cross platform SQL editor and database management app
 cask "beekeeper-studio"
 # Tool to customise input devices and automate computer systems
@@ -289,7 +293,14 @@ cask "font-monaspace-nerd-font"
 cask "font-public-sans"
 # Developer targeted fonts with a high number of glyphs
 cask "font-sauce-code-pro-nerd-font"
-cask "git-credential-manager-core"
+# YouTube player focusing on privacy
+cask "freetube"
+# Move playlists, tracks, and albums between music platforms
+cask "freeyourmusic"
+# Cross-platform Git credential storage for multiple hosting providers
+cask "git-credential-manager"
+# Cross-platform Git credential storage for multiple hosting providers
+cask "git-credential-manager"
 # Web browser
 cask "google-chrome"
 # Tools to protect your files
@@ -302,6 +313,8 @@ cask "hammerspoon"
 cask "hazel"
 # Free and open-source media player
 cask "iina"
+# Tool to optimise images to a smaller size
+cask "imageoptim"
 # System monitoring app
 cask "istat-menus"
 # JetBrains tools manager
