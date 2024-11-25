@@ -87,6 +87,8 @@ brew "lf"
 brew "qemu"
 # Linux virtual machines
 brew "lima"
+# Access large language models from the command-line
+brew "llm"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Shows thumbnails in terminal using sixel graphics
