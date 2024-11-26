@@ -1,10 +1,10 @@
 # zmodload zsh/zprof
 # https://scriptingosx.com/2019/06/moving-to-zsh-part-2-configuration-files/
-
-setopt NO_CASE_GLOB # case-insensitive globbing
+# https://blog.meain.io/2023/navigating-around-in-shell/
+# REFERENCE: https://zsh.sourceforge.io/Doc/Release/Options.html
 setopt AUTO_CD # Replaces .. and ..., can skip cd in many cases
-# Autocorrect cli
-setopt CORRECT
+setopt CORRECT # Autocorrect cli
+setopt NO_CASE_GLOB # case-insensitive globbing
 
 # https://www.techrepublic.com/article/using-vi-key-bindings-in-bash-and-zsh/
 # bindkey -v
@@ -64,6 +64,9 @@ fi
 # Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
 # mkdir .git/safe in the root of repositories you trust
 export PATH=".git/safe/../../bin:$PATH"
+
+# Add automatic search path to cd command
+export CDPATH=$HOME/.config:$HOME/.local/share
 
 ## Fixes
 ### Tab completion
@@ -168,4 +171,9 @@ alias tlog="less +F log/development.log"
 function heftiest {
   for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
 }
+
+r () {
+    cd "$(git rev-parse --show-toplevel 2>/dev/null)"
+}
+
 # zprof
