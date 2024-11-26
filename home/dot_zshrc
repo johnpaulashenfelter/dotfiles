@@ -37,6 +37,14 @@ if [ -f $(brew --prefix)/bin/atuin ]; then
   eval "$(atuin init zsh)"
 fi
 
+if [ -f $(brew --prefix)/opt/asdf/libexec/asdf.sh ]; then
+  . $(brew --prefix)/opt/asdf/libexec/asdf.sh
+fi
+
+if [ -f $(~/.local/bin/mise ]; then
+  eval "$(~/.local/bin/mise activate zsh)"
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # export STARSHIP_CONFIG="~/.dotfiles/starship.toml"
