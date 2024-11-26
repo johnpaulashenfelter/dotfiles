@@ -50,7 +50,7 @@ defaults write com.apple.finder "ShowPathbar" -bool "true"
 defaults write com.apple.finder "_FXSortFoldersFirst" -bool "true"
 
 # Show the ~/Library folder
-chflags nohidden ~/Library && xattr -d com.apple.FinderInfo ~/Library
+# chflags nohidden ~/Library
 
 # DESKTOP
 # Folders first
@@ -59,7 +59,7 @@ defaults write com.apple.finder "_FXSortFoldersFirstOnDesktop" -bool "true"
 defaults write com.apple.finder "ShowHardDrivesOnDesktop" -bool "true"
 
 # SAFARI
-defaults write com.apple.safari "ShowFullURLInSmartSearchField" -bool "true"
+# defaults write com.apple.safari "ShowFullURLInSmartSearchField" -bool "true"
 
 # DOCK
 # Automatically hide and show the Dock
@@ -74,6 +74,7 @@ for dockItemLabel in \
   Mail \
   FaceTime \
   Freeform \
+  "iPhone Mirroring" \
   Messages \
   Maps \
   Photos \
@@ -81,9 +82,11 @@ for dockItemLabel in \
   Reminders \
   Notes \
   Music \
-  Podcasts \
   TV \
   News \
+  Keynote \
+  Numbers \
+  Pages \
   "App Store" \
   "System Settings" ; do
   dockutil --find "$dockItemLabel" >/dev/null && dockutil --no-restart --remove "$dockItemLabel"
