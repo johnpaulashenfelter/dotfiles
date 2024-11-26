@@ -138,8 +138,6 @@ cask "onyx"
 cask "proton-drive"
 # VPN client focusing on security
 cask "protonvpn"
-# Automatic time tracker
-cask "qbserve"
 # Control your tools with a few keystrokes
 cask "raycast"
 # Collection of apps available by subscription
