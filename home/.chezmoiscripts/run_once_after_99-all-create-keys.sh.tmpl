@@ -25,11 +25,11 @@ else
 	gpgconf --kill gpg-agent
 	gpgconf --launch gpg-agent
 
-	GPG_KEY=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{print $2}' | cut -d'/' -f2
+	GPG_KEY=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{print $2}' | cut -d'/' -f2)
 	git config --global user.signingkey $GPG_KEY
 	gpg --armor --export $GPG_KEY
 fi
 
 
-GPG_KEY=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{print $2}' | cut -d'/' -f2
+GPG_KEY=$(gpg --list-secret-keys --keyid-format=long | awk '/sec/{print $2}' | cut -d'/' -f2)
 echo $GPG_KEY
