@@ -59,19 +59,19 @@
 		"yml",
 		"yml.dist"
 	],*/
-	"PHP":
+	/*"PHP":
 	[
 		"inc",
 		"php3",
 		"php4",
 		"php5",
 		"phtml"
-	],
-	"HAML":
+	],*/
+	/*"HAML":
 	[
 		"haml"
-	],
-	"Shell-Unix-Generic":
+	],*/
+	/*"Shell-Unix-Generic":
 	[
 		".profile",
 		"ash",
@@ -79,8 +79,8 @@
 		"bashrc",
 		"sh",
 		"zsh"
-	],
-	"Ruby":
+	],*/
+	/*"Ruby":
 	[
 		"jbuilder",
 		"podspec",
@@ -89,25 +89,25 @@
 		"rb",
 		"simplecov",
 		"thor"
-	],
-	"HTML (Rails)":
+	],*/
+	/*"HTML (Rails)":
 	[
 		"html.erb"
-	],
-	"YAML":
+	],*/
+	/*"YAML":
 	[
 		".gemrc",
 		"YAML-tmLanguage",
 		"yml",
 		"yml.dist"
-	],
-	"Python":
+	],*/
+	/*"Python":
 	[
 		"py3",
 		"pyw"
-	],
-	"XML":
+	],*/
+	/*"XML":
 	[
 		"xml.dist"
-	],
+	],*/
 }
