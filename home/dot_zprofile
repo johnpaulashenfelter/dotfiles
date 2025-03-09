@@ -1,63 +1,72 @@
-#
-# Executes commands at login pre-zshrc.
+# ----------------------------------------------------------------------
+# .zprofile
+# This file executes commands at login before the main zshrc.
 #
 # Authors:
 #   Sorin Ionescu <sorin.ionescu@gmail.com>
 #
 
-#
-# Browser
-#
+# ----------------------------------------------------------------------
+# Browser configuration
 
+# If on macOS, set the default browser command to 'open'.
 if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
 
-#
-# Editors
-#
+# ----------------------------------------------------------------------
+# Editors configuration
 
+# Set the default editor to Sublime Text in wait mode.
 export EDITOR='subl -w'
+
+# Set VISUAL to Sublime Text as well.
 export VISUAL='subl -w'
+
+# Set the default pager program to 'less'.
 export PAGER='less'
 
-#
-# Language
-#
+# ----------------------------------------------------------------------
+# Language configuration
 
+# Set the default system language if not already specified.
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
 
-#
-# Paths
-#
+# ----------------------------------------------------------------------
+# PATH and array cleanup
 
-# Ensure path arrays do not contain duplicates.
+# Ensure that path arrays do not contain duplicate entries.
 typeset -gU cdpath fpath mailpath path
 
-# Set the list of directories that cd searches.
+# Configure the cdpath array (commented out here as an example).
 # cdpath=(
 #   $cdpath
 # )
 
-# Set the list of directories that Zsh searches for programs.
+# Build the PATH with directories for user-installed programs.
 path=(
   /usr/local/{bin,sbin}
   $path
 )
 
-#
-# Less
-#
+# ----------------------------------------------------------------------
+# Less settings
 
-# Set the default Less options.
-# Mouse-wheel scrolling has been disabled by -X (disable screen clearing).
-# Remove -X to enable it.
+# Configure default options for the 'less' pager.
+# -g: highlight only the current search match.
+# -i: ignore case in searches.
+# -M: long prompt.
+# -R: output "raw" control characters.
+# -S: chop long lines instead of wrapping.
+# -w: highlight line numbers.
+# -X: do not clear the screen after exiting less (this disables mouse-wheel scrolling).
+# -z-4: set window size adjustment.
 export LESS='-g -i -M -R -S -w -X -z-4'
 
-# Set the Less input preprocessor.
-# Try both `lesspipe` and `lesspipe.sh` as either might exist on a system.
+# Set the input preprocessor for 'less'.
+# This attempts to use lesspipe or lesspipe.sh (whichever is available).
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi

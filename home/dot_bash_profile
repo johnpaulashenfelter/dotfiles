@@ -1,181 +1,240 @@
-# Bash
+# ----------------------------------------------------------------------
+# Bash configuration for sourcing and initial settings
+# ----------------------------------------------------------------------
 
-# source /usr/local/opt/asdf/asdf.sh
+# (Optional) Source the asdf version manager if installed via Homebrew.
+# This sources both the asdf main script and its bash completion.
 if [ -d $(brew --prefix)/opt/asdf ]; then
   . $(brew --prefix)/opt/asdf/asdf.sh
   . $(brew --prefix)/opt/asdf/etc/bash_completion.d/asdf.bash
 fi
 
-## Options
+# ----------------------------------------------------------------------
+# Environment Options
+# ----------------------------------------------------------------------
+
+# Set the default text editor to Sublime Text in wait mode.
 export EDITOR="subl -w"
+
+# Set the default visual editor to Sublime Text in wait mode.
 export VISUAL="subl -w"
+
+# Configure grep to always show colorized output.
 export GREP_OPTIONS="--color=auto" GREP_COLOR="1;32"
-# if i am a terminal
+
+# If this is an interactive terminal, set GPG_TTY to the current tty device.
 if [ -t 0 ]; then
   export GPG_TTY="$(tty)"
 fi
 
-# Prefer US English and use UTF-8
+# ----------------------------------------------------------------------
+# Locale Settings
+# ----------------------------------------------------------------------
+
+# Set the default language to US English and force UTF-8 character encoding.
 export LANG="en_US"
 export LC_ALL="en_US.UTF-8"
 
-# bash_profile for login shells (incl iTerm, Terminal on MacOS), bashrc for internative shells and GNU/Linux terminal emulators
+# ----------------------------------------------------------------------
+# Bash Shell Sourcing
+# ----------------------------------------------------------------------
+
+# For login shells, source the .bashrc file if it exists.
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
+# If a local bin directory exists in the home folder, add it to the PATH.
 if [ -d ~/bin ]; then
-  export PATH=~/bin:$PATH  # add your bin folder to the path, if you have it.  It"s a good place to add all your scripts
+  export PATH=~/bin:$PATH  # add your bin folder to the path, if you have it. It's a good place for your scripts.
 fi
 
-## Aliases
-### Easier navigation
+# ----------------------------------------------------------------------
+# Aliases Section
+# ----------------------------------------------------------------------
+## Easier navigation
+
+# Shortcut to go up one directory.
 alias ..="cd .."
+
+# Shortcut to go up two directories.
 alias ...="cd ../.."
 
-### Enhancements
+## Enhancements
+
+# Use 'bat' as an enhanced replacement for 'cat'.
 alias cat="bat"
+
+# Use 'fd' as a faster alternative to the 'find' command.
 alias find="fd"
+
+# Use 'eza' instead of 'ls' for improved file listing.
 alias ls="eza"
 
-### Easier listing
+## Easier listing
+
+# (Optional alternative for ls is commented out below.)
 #alias ls="ls -GF" # always colorize and indicate type/executable
-# List all files colorized in long format, including dot files with filesize suffixes
+
+# List all files (including hidden ones) in long format with file sizes.
 alias la="ls -ahql"
+
+# Clear the screen, show current working directory, then list files with indicators.
 alias l="clear && pwd && ls -FGl"
+
+# Go up one directory and execute the l alias.
 alias u="cd .. && l"
 
-### Shorthand
+## Shorthand commands
+
+# Clear the terminal screen.
 alias c="clear"
+
+# Display disk space usage in human-readable format.
 alias df="df -h"
-alias ducks="du -cksh * | sort -rn|head -11" # Lists folders and files sizes in the current folder
+
+# Show the sizes of folders and files in the current directory (top 11 results).
+alias ducks="du -cksh * | sort -rn|head -11"
+
+# Search through the command history with grep.
 alias h?="history | grep"
+
+# Use 'more' for paginated file viewing.
 alias m="more"
+
+# Filter process list output using grep.
 alias p="ps xa | grep "
-# Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
+
+# Display the most used commands from your history.
 alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
+
+# Alternative process search using ps aux.
 alias psgrep="ps aux | grep"
+
+# Reload the current bash profile.
 alias reload=". ~/.bash_profile"
+
+# Use rsync with archive mode, verbose output, and compression.
 alias rsync="rsync -avz"
+
+# Display disk space summary for files including hidden ones.
 alias space="du -shc * .[^.]*"
+
+# Follow the system log continuously.
 alias systail="tail -f /var/log/system.log"
+
+# Use 'less' in follow mode.
 alias t="less +F"
 
-# OSX
-# Add tab completion for `defaults read|write NSGlobalDomain`
-# Could just use `-g` instead, but being explicit
+# ----------------------------------------------------------------------
+# OSX Specific Completions
+# ----------------------------------------------------------------------
+
+# Add tab completion for the 'defaults' command to show "NSGlobalDomain".
 complete -W "NSGlobalDomain" defaults
-# Add tab completion for SSH hostnames based on ~/.ssh/config, ignoring wildcards
+
+# Provide tab completions for SSH-related commands (scp, sftp, ssh) based on the SSH config.
 [ -e "$HOME/.ssh/config" ] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2)" scp sftp ssh
 
-## Common tasks
+# ----------------------------------------------------------------------
+# Common Tasks
+# ----------------------------------------------------------------------
 
-# Clear camera list for video calls
+# Clear the camera list to fix issues with video calls.
 alias camerafix='sudo killall VDCAssistant'
 
-# Flush Directory Service cache
+# Flush the Directory Service cache (useful for troubleshooting on OSX 10.7 - 10.8).
 alias flush="sudo killall -HUP mDNSResponder" # OSX 10.7 - 10.8
 
-# Enhanced WHOIS lookups
+# Use an enhanced WHOIS command pointing to the appropriate WHOIS server.
 alias whois="whois -h whois-servers.net"
 
-## View HTTP traffic
+# ----------------------------------------------------------------------
+# View HTTP Traffic
+# ----------------------------------------------------------------------
+
+# Capture HTTP traffic on the 'en1' interface, filtering for Host headers or GET requests.
 alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
+
+# Capture HTTP GET or POST requests using ngrep on TCP port 80 through the 'en1' interface.
 alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 
-## Homebrew
+# ----------------------------------------------------------------------
+# Homebrew Commands
+# ----------------------------------------------------------------------
+
+# Update Homebrew and list outdated packages.
 alias brupdate='brew update && brew outdated'
 
-# EC2 tools
+# ----------------------------------------------------------------------
+# EC2 Tools (Placeholder)
+# ----------------------------------------------------------------------
+# The JAVA_HOME environment variable for EC2 tools is available below (currently commented out).
 # export JAVA_HOME="$(/usr/libexec/java_home)"
 
-# gcloud
+# ----------------------------------------------------------------------
+# Google Cloud SDK Configuration
+# ----------------------------------------------------------------------
+
+# If the Google Cloud SDK is installed via Homebrew Cask, source its path and completion scripts.
 if [ -d $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk ]; then
   . $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.bash.inc
   . $(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.bash.inc
 fi
 
+# ----------------------------------------------------------------------
+# Bash Completion (Homebrew)
+# ----------------------------------------------------------------------
+
+# Source Homebrew's bash completion if the file exists.
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
-# Load rupa's z if installed
+# ----------------------------------------------------------------------
+# Directory Navigation Tool ("z" by rupa)
+# ----------------------------------------------------------------------
+
+# If Homebrew is installed, source the 'z' script for easier directory navigation.
 if command -v brew >/dev/null 2>&1; then
   [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-# Development
+# ----------------------------------------------------------------------
+# Development Aliases
+# ----------------------------------------------------------------------
+
+# Short alias for Git commands.
 alias g="git"
+
+# Alias for the Heroku CLI.
 alias h="heroku"
+
+# Open the current directory in Sublime Text.
 alias s.="subl ."
+
+# Open the current directory in Visual Studio Code.
 alias vsc="code ."
+
+# Short aliases for kubectl.
 alias k="kubectl"
 alias k8="kubectl"
+
+# Clears the screen and shows recent commits (excluding merges) by a specific author within the last 2 days.
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
+
+# Open DeltaWalker application for file/directory comparison.
 alias dw="/Applications/DeltaWalker.app/Contents/MacOS/DeltaWalker"
-# from https://makandracards.com/makandra/505327-git-shortcut-to-fixup-a-recent-commit
+
+# Git shortcut: choose a commit to fix up using an interactive fuzzy finder.
 alias fixup='git log --oneline | fzf | awk '\''{print $1}'\'' | xargs -I '\''{}'\'' git commit --fixup {}'
+
+# Git shortcut: select a recent branch (sorted by most recent commit) using an interactive fuzzy finder and switch to it.
 alias recent-branch="git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ |  fzf | sed 's/\* //g' | xargs -I '{}' git checkout {}"
 
-# Python/Anaconda/ML
-# export PATH="/usr/local/anaconda3/bin:$PATH"  # commented out by conda initialize
-alias sa="source activate "
-alias jup="jupyter notebook"
+# ----------------------------------------------------------------------
+# Python/Anaconda/ML Setup
+# ----------------------------------------------------------------------
 
-# Cool trick from Thoughtbot Botcave, http://tinyletter.com/thoughtbot/letters/the-bot-cave-august-and-september-2013
-# Add only the current project's bin to our shell's PATH via export PATH=".git/safe/../../bin:$PATH" and mkdir .git/safe.
-# mkdir .git/safe in the root of repositories you trust
-export PATH=".git/safe/../../bin:$PATH"
-
-## Rails
-alias b="bundle exec"
-alias cov='/usr/bin/open -a "/Applications/Google Chrome.app" coverage/index.html'
-# http://geekystuff.net/2009/01/14/remove-all-ruby-gems/
-alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
-alias migrate="rails db:migrate && rake db:test:prepare"
-alias rst="touch tmp/restart.txt" #passenger/puma-dev restart
-# https://coderwall.com/p/vyl8zg
-alias tlog="less +F log/development.log"
-
-## Docker
-alias dc='docker-compose'
-alias dcl='docker-compose logs'
-alias dcr='docker-compose run'
-
-# Quickly find the big files in a rails app
-function heftiest {
-  for file in $(find app/$1/**/*.rb -type f); do wc -l $file ; done  | sort -r | head
-}
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/usr/local/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/usr/local/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/usr/local/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/usr/local/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-if [ -d /usr/local/opt/mysql@5.7/bin ]; then
-  export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
-fi
-
-if [ -d /usr/local/opt/postgresql/bin ]; then
-  export PATH="/usr/local/opt/postgresql/bin:$PATH"
-fi
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-if [ -d $HOME/.local/include ]; then
-  for i in $HOME/.local/include/*;
-    do source $i
-  done
-fi
-
-source /Users/johnpaul/.config/broot/launcher/bash/br
+# (Optional) Add Anaconda to PATH if needed (currently commented out).
+# export PATH="/usr/local/anaconda3/bin:$PATH"
