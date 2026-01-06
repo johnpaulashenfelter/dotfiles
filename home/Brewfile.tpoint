@@ -1,0 +1,29 @@
+tap "dart-lang/dart"
+tap "dokku/repo"
+tap "masaushi/tap"
+tap "puma/puma"
+tap "sass/sass"
+tap "skatkov/tap"
+# CLI for Postgres with auto-completion and syntax highlighting
+brew "pgcli"
+# Object-relational database system
+brew "postgresql@16"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
+# Automated testing of webapps for Google Chrome
+cask "chromedriver"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
+# Spot and merge differences in text and image files or folders
+cask "kaleidoscope"
+# Graphical client for Git version control
+cask "sourcetree"
+# Backup, recovery and cloning software
+cask "superduper"
+# Open-source BitTorrent client
+cask "transmission"
+mas "HotwireDevTools", id: 6503706225
+go "cmd/go"
+go "cmd/gofmt"

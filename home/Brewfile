@@ -18,6 +18,7 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Automatic git commit --fixup
 brew "git-absorb"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
@@ -27,12 +28,6 @@ brew "git-extras"
 brew "moreutils"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
-# CLI for Postgres with auto-completion and syntax highlighting
-brew "pgcli"
-# Object-relational database system
-brew "postgresql@16"
-# Persistent key-value database, with built-in net interface
-brew "redis"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Wrapper around ripgrep that adds multiple rich file types
@@ -60,70 +55,30 @@ brew "mas-cli/tap/mas"
 cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
-# File and photo tweaking tool
-cask "a-better-finder-attributes"
-# Renamer for files, music and photos
-cask "a-better-finder-rename"# Application launcher and productivity software
-cask "alfred"
 # Application uninstaller
 cask "appcleaner"
-# Chromium based browser
-cask "arc"
-# Multi-cloud backup application
-cask "arq"
 # Tool to customise input devices and automate computer systems
 cask "bettertouchtool"
-# Opensource IDE for exploring and testing api's
-cask "bruno"
-# E-books management software
-cask "calibre"
-# Automated testing of webapps for Google Chrome
-cask "chromedriver"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Control your Elgato key lights
 cask "elgato-control-center"
 # Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
-# Cross-platform Text Expander written in Rust
-cask "espanso"
 # Developer targeted fonts with a high number of glyphs
 cask "font-monaspace-nerd-font"
+# Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
 # Web browser
 cask "google-chrome"
 # Desktop automation application
 cask "hammerspoon"
-# Automated organisation
-cask "hazel"
 # Free and open-source media player
 cask "iina"
-# JetBrains tools manager
-cask "jetbrains-toolbox"
-# Note taking and to-do application with synchronisation capabilities
-cask "joplin"
-# Menu bar manager
-cask "jordanbaird-ice"
-# Spot and merge differences in text and image files or folders
-cask "kaleidoscope"
-# Keyboard customiser
-cask "karabiner-elements"
-# Tool to prevent the system from going into sleep mode
-cask "keepingyouawake"
-# Automation software
-cask "keyboard-maestro"
-# Open-source keystroke visualiser
-cask "keycastr"
-# Finds, learns and remembers keyboard shortcuts
-cask "keycue"
 # ZSA keyboard firmware flasher
 cask "keymapp"
 # Animated screen capture application
 cask "licecap"
-# Host-based application firewall
-cask "little-snitch"
-# Ergonomic Assistant to prevent health problems
-cask "macbreakz"
 # Open-source Markdown editor
 cask "macdown"
 # Monitors and reports any microphone and camera activity
@@ -132,51 +87,15 @@ cask "micro-snitch"
 cask "muzzle"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Verify system files structure, run miscellaneous maintenance and more
-cask "onyx"
-# Client for Proton Drive
-cask "proton-drive"
-# VPN client focusing on security
-cask "protonvpn"
 # Control your tools with a few keystrokes
 cask "raycast"
-# Collection of apps available by subscription
-cask "setapp"
 # App that enables mouse-free UI interaction
 cask "shortcat"
-# PDF reader and note-taking application
-cask "skim"
-# Control your Sonos system
-cask "sonos"
-# Graphical client for Git version control
-cask "sourcetree"
-# Music streaming service
-cask "spotify"
 # Text editor for code, markup and prose
 cask "sublime-text"
-# Backup, recovery and cloning software
-cask "superduper"
-# Open-source BitTorrent client
-cask "transmission"
-# Multimedia player
-cask "vlc"
-# Desktop client for the Zulip team chat platform
-cask "zulip"
 mas "1Password for Safari", id: 1569813296
 mas "Actions For Obsidian", id: 1659667937
-mas "Be Focused Pro", id: 961632517
-mas "Focus Matrix", id: 1087284172
-mas "Goodnotes", id: 1444383602
-mas "HotwireDevTools", id: 6503706225
 mas "Hush", id: 1544743900
-mas "myTuner Radio", id: 881415018
-mas "Pixelmator", id: 407963104
-mas "Pocket", id: 568494494
-mas "PolyNome", id: 488165644
 mas "Reeder", id: 1449412482
-mas "Save to Pocket", id: 1477385213
-mas "SomaFM", id: 449155338
 mas "StopTheMadness Pro", id: 6471380298
 mas "Velja", id: 1607635845
-mas "Wayback Machine", id: 1472432422
-

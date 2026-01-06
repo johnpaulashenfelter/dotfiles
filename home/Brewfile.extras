@@ -21,10 +21,6 @@ brew "act"
 brew "aichat"
 # Download with resuming and segmented downloading
 brew "aria2"
-# Extendable version manager with support for Ruby, Node.js, Erlang & more
-brew "asdf"
-# Improved shell history for zsh, bash, fish and nushell
-brew "atuin"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Yet another cross-platform graphical process/system monitor

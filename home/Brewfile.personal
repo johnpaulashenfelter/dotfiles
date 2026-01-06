@@ -1,0 +1,47 @@
+# File and photo tweaking tool
+cask "a-better-finder-attributes"
+# Renamer for files, music and photos
+cask "a-better-finder-rename"
+# Multi-cloud backup application
+cask "arq"
+# E-books management software
+cask "calibre"
+# Automated organisation
+cask "hazel"
+# Keyboard customiser
+cask "karabiner-elements"
+# Tool to prevent the system from going into sleep mode
+cask "keepingyouawake"
+# Automation software
+cask "keyboard-maestro"
+# Open-source keystroke visualiser
+cask "keycastr"
+# Finds, learns and remembers keyboard shortcuts
+cask "keycue"
+# Host-based application firewall
+cask "little-snitch"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
+# Client for Proton Drive
+cask "proton-drive"
+# VPN client focusing on security
+cask "protonvpn"
+# Collection of apps available by subscription
+cask "setapp"
+# PDF reader and note-taking application
+cask "skim"
+# Control your Sonos system
+cask "sonos"
+# Music streaming service
+cask "spotify"
+mas "Be Focused Pro", id: 961632517
+mas "Focus Matrix", id: 1087284172
+mas "Goodnotes", id: 1444383602
+mas "Hush", id: 1544743900
+mas "myTuner Radio", id: 881415018
+mas "PolyNome", id: 488165644
+mas "Reeder", id: 1449412482
+mas "SomaFM", id: 449155338
+mas "StopTheMadness Pro", id: 6471380298
+mas "Velja", id: 1607635845
+mas "Wayback Machine", id: 1472432422
