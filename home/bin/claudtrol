@@ -1,0 +1,90 @@
+#!/usr/bin/env bun
+
+const args = process.argv.slice(2);
+const command = args[0];
+
+if (!command || ["--help", "-h"].includes(command)) {
+  console.log(`Usage: claudtrol <command> [options]
+
+Available commands:
+  prune-session, prune     Run claude-prune (prefers live via bunx, falls back to global)
+  ccusage, usage           Run ccusage (same behavior)
+  update                   Force install latest versions globally (for offline use)
+  hello                    Test command
+`);
+  process.exit(0);
+}
+
+const normalized = {
+  "prune-session": "prune-session",
+  "prune": "prune-session",
+  "ccusage": "ccusage",
+  "usage": "ccusage",
+  "update": "update",
+  "hello": "hello",
+}[command];
+
+switch (normalized) {
+  case "hello":
+    console.log("Hello from claudtrol!");
+    break;
+
+  case "prune-session":
+    await runPreferred("claude-prune", args.slice(1));
+    break;
+
+  case "ccusage":
+    await runPreferred("ccusage", args.slice(1));
+    break;
+
+  case "update":
+    await forceGlobalInstall(["claude-prune@latest", "ccusage@latest"]);
+    break;
+
+  default:
+    console.error(`Unknown command: ${command}`);
+    process.exit(1);
+}
+
+// ---- Preferred strategy: try bunx, fallback to global ----
+
+async function runPreferred(pkg: string, restArgs: string[]) {
+  const tryBunx = Bun.spawnSync(["bunx", pkg, ...restArgs], {
+    stdout: "inherit",
+    stderr: "inherit",
+    stdin: "inherit",
+  });
+
+  if (tryBunx.exitCode === 0) return;
+
+  console.warn(`⚠️ bunx failed (maybe offline?), trying globally installed "${pkg}"...`);
+
+  const tryGlobal = Bun.spawnSync([pkg, ...restArgs], {
+    stdout: "inherit",
+    stderr: "inherit",
+    stdin: "inherit",
+  });
+
+  if (tryGlobal.exitCode !== 0) {
+    console.error(`❌ Failed to run "${pkg}" via bunx or global.`);
+    process.exit(tryGlobal.exitCode ?? 1);
+  }
+}
+
+// ---- Force install/update packages globally ----
+
+async function forceGlobalInstall(packages: string[]) {
+  console.log(`🔄 Installing globally for offline use: ${packages.join(", ")}`);
+  const proc = Bun.spawnSync(["bun", "add", "-g", ...packages], {
+    stdout: "inherit",
+    stderr: "inherit",
+    stdin: "inherit",
+  });
+
+  if (proc.exitCode !== 0) {
+    console.error("❌ Failed to install packages globally.");
+    process.exit(proc.exitCode ?? 1);
+  }
+
+  console.log("✅ Tools installed for offline use.");
+}
