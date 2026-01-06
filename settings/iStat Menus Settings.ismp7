@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>build</key>
-	<string>2250</string>
+	<string>2262</string>
 	<key>preferences</key>
 	<dict>
 		<key>Battery.Menu.State</key>
@@ -47,27 +47,31 @@
 		</array>
 		<key>Battery.Menubar.Mode.HorizontalGraph.Graph.Global.Value.Dark.Color</key>
 		<string>0 0.144432177986431 0.3018867969512939 1</string>
+		<key>Battery.Menubar.Mode.VerticalGraph.Graph.Global.Value.Dark.Color</key>
+		<string>0.6359399322670345 0.6188313852842295 0.6549019813537598 1</string>
 		<key>Combined.Menu.Items</key>
 		<array>
-			<string>cpu-load</string>
+			<string>time-cities</string>
 			<string>battery-combined</string>
+			<string>cpu-load</string>
 			<string>memory-memory</string>
 			<string>sensors-overview</string>
 			<string>network-addresses-public</string>
 			<string>disks-physical</string>
 			<string>weather-forecast</string>
-			<string>time-cities</string>
 		</array>
 		<key>Combined.Menubar.Items</key>
 		<array/>
 		<key>Device.Auth-Identifier</key>
-		<string>602E2975-B205-4C28-B194-F25004F235AA</string>
+		<string>5E727033-C2EC-41D9-AF72-F333109D2D08</string>
 		<key>Device.Device</key>
-		<string>12e94ef949d2c52d8ace98508751043068ed666e</string>
+		<string>670109caab0f0685913eff3e3718c6296ad1a27a</string>
 		<key>Device.Model</key>
-		<string>Mac16,5</string>
+		<string>Mac16,8</string>
 		<key>Menubar.Style</key>
 		<integer>1</integer>
+		<key>MenubarCurrentApperance</key>
+		<string>Dark</string>
 		<key>Migration.CombinedPowerItems</key>
 		<true/>
 		<key>Migration.Profiles</key>
@@ -176,15 +180,9 @@
 				<key>internal</key>
 				<true/>
 				<key>key</key>
-				<string>F8YHBN00H980000FWQ</string>
+				<string>F8YH9Z0002G0000FWL</string>
 				<key>name</key>
 				<string>Internal Battery</string>
-			</dict>
-			<dict>
-				<key>key</key>
-				<string>c0-95-6d-c3-24-99</string>
-				<key>name</key>
-				<string>AirPods Pro</string>
 			</dict>
 		</array>
 		<key>Profiles.Settings.default.Battery.Menubar.Enabled</key>
@@ -195,7 +193,7 @@
 				<key>source</key>
 				<integer>8</integer>
 				<key>type</key>
-				<integer>4</integer>
+				<integer>3</integer>
 			</dict>
 		</array>
 		<key>Profiles.Settings.default.CPU.Menubar.Enabled</key>
@@ -213,6 +211,10 @@
 				<integer>6</integer>
 				<key>type</key>
 				<integer>7</integer>
+			</dict>
+			<dict>
+				<key>source</key>
+				<integer>21</integer>
 			</dict>
 		</array>
 		<key>Profiles.Settings.default.Disks.Menubar.Enabled</key>
@@ -257,9 +259,11 @@
 		<key>Sensors.Global.DetailLevel</key>
 		<integer>1</integer>
 		<key>Status.Build.Last</key>
-		<real>2250</real>
+		<real>2262</real>
 		<key>Status.Version.Last</key>
-		<real>7.0999999046325684</real>
+		<real>7.1999998092651367</real>
+		<key>Time.Global.Events</key>
+		<integer>0</integer>
 		<key>Time.Menu.Cities.Format.1.Flags</key>
 		<false/>
 		<key>Time.Menu.Cities.Items</key>
@@ -286,43 +290,43 @@
 			</dict>
 			<dict>
 				<key>city</key>
-				<string>Salt Lake City</string>
+				<string>São Paulo</string>
 				<key>country</key>
-				<string>United States</string>
+				<string>Brazil</string>
 				<key>countrycode</key>
-				<string>US</string>
+				<string>BR</string>
 				<key>identifier</key>
-				<integer>5780993</integer>
+				<integer>3448439</integer>
 				<key>latitude</key>
-				<real>40.760779999999997</real>
+				<real>-23.547499999999999</real>
 				<key>longitude</key>
-				<real>-111.89105000000001</real>
+				<real>-46.636110000000002</real>
 				<key>region</key>
-				<string>Salt Lake County</string>
+				<string></string>
 				<key>state</key>
-				<string>Utah</string>
+				<string>São Paulo</string>
 				<key>timezone</key>
-				<string>America/Denver</string>
+				<string>America/Sao_Paulo</string>
 			</dict>
 			<dict>
 				<key>city</key>
-				<string>Page</string>
+				<string>Honolulu</string>
 				<key>country</key>
 				<string>United States</string>
 				<key>countrycode</key>
 				<string>US</string>
 				<key>identifier</key>
-				<integer>5307778</integer>
+				<integer>5856195</integer>
 				<key>latitude</key>
-				<real>36.914720000000003</real>
+				<real>21.306940000000001</real>
 				<key>longitude</key>
-				<real>-111.45583000000001</real>
+				<real>-157.85833</real>
 				<key>region</key>
-				<string>Coconino County</string>
+				<string>Honolulu County</string>
 				<key>state</key>
-				<string>Arizona</string>
+				<string>Hawaii</string>
 				<key>timezone</key>
-				<string>America/Phoenix</string>
+				<string>Pacific/Honolulu</string>
 			</dict>
 			<dict>
 				<key>city</key>
