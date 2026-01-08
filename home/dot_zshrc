@@ -22,6 +22,7 @@ else
 fi
 
 ## Tools
+export XDG_CONFIG_HOME="$HOME/.config"
 export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
@@ -52,8 +53,8 @@ eval "$(starship init zsh)"
 
 ## PATH additions
 
-if [ -d $(brew --prefix)/opt/postgresql/bin ]; then
-  export PATH="$(brew --prefix)/opt/postgresql/bin:$PATH"
+if [ -d $(brew --prefix)/opt/postgresql@18/bin ]; then
+  export PATH="$(brew --prefix)/opt/postgresql@18/bin:$PATH"
 fi
 
 if [ -d $HOME/.local/include ]; then
@@ -153,19 +154,23 @@ alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
 
 ## Homebrew
 alias brupdate='brew update && brew outdated'
+alias br="brew"
 
 # Development
 alias g="git"
 alias h="heroku"
+alias m="mise"
 alias s.="subl ."
 alias vsc="code ."
 alias standup="clear && git log --since '2 days ago' --no-merges --author 'johnpaul'"
 # from https://makandracards.com/makandra/505327-git-shortcut-to-fixup-a-recent-commit
 alias fixup='git log --oneline | fzf | awk '\''{print $1}'\'' | xargs -I '\''{}'\'' git commit --fixup {}'
 alias recent-branch="git for-each-ref --sort=-committerdate --format='%(refname:short)' refs/heads/ |  fzf | sed 's/\* //g' | xargs -I '{}' git checkout {}"
+alias dc="docker-compose"
 
 ## Rails
 alias b="bundle exec"
+export RAILS_EDITOR="rubymine" # sublime, macvim, vscode, cursor, zed, nova
 # http://geekystuff.net/2009/01/14/remove-all-ruby-gems/
 alias gemclear='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
 alias migrate="rails db:migrate && rake db:test:prepare"
@@ -183,3 +188,26 @@ r () {
 }
 
 # zprof
+# export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PATH="/opt/homebrew/opt/mysql@8.0/bin:$PATH"
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/johnpaul/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
+
+[ ! -f "$HOME/.x-cmd.root/X" ] || . "$HOME/.x-cmd.root/X" # boot up x-cmd.
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/johnpaul/.lmstudio/bin"
+# End of LM Studio CLI section
+
+# this file is read when starting new interactive shell
+# from https://monokai.pro/zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# override zsh-syntax-highlighting defaults
+ZSH_HIGHLIGHT_STYLES[path]=
+ZSH_HIGHLIGHT_STYLES[path_pathseparator]=bold
+ZSH_HIGHLIGHT_STYLES[path_prefix]=
