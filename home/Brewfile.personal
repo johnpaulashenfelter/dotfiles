@@ -1,11 +1,34 @@
+# Command-line tool to interact with exercism.io
+brew "exercism"
+# Port scanning utility for large networks
+brew "nmap"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
+
 # File and photo tweaking tool
 cask "a-better-finder-attributes"
 # Renamer for files, music and photos
 cask "a-better-finder-rename"
+# Image editing and design software
+cask "affinity"
 # Multi-cloud backup application
 cask "arq"
+# Tool to customise input devices and automate computer systems
+cask "bettertouchtool"
+# Bookmarks manager
+cask "bookmacster"
 # E-books management software
 cask "calibre"
+# Disk space visualiser
+cask "daisydisk"
+# Voice and text chat software
+cask "discord"
+# Client for the Dropbox cloud storage service
+cask "dropbox"
+# Email client
+cask "fastmail"
 # Automated organisation
 cask "hazel"
 # Keyboard customiser
@@ -22,6 +45,8 @@ cask "keycue"
 cask "little-snitch"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Android file transfer
+cask "openmtp"
 # Client for Proton Drive
 cask "proton-drive"
 # VPN client focusing on security
@@ -34,14 +59,24 @@ cask "skim"
 cask "sonos"
 # Music streaming service
 cask "spotify"
+# Backup, recovery and cloning software
+cask "superduper"
+# Mesh VPN based on WireGuard
+cask "tailscale-app"
+# Open-source BitTorrent client
+cask "transmission"
+# Rust-based terminal
+cask "warp"
+
 mas "Be Focused Pro", id: 961632517
 mas "Focus Matrix", id: 1087284172
 mas "Goodnotes", id: 1444383602
-mas "Hush", id: 1544743900
 mas "myTuner Radio", id: 881415018
 mas "PolyNome", id: 488165644
 mas "Reeder", id: 1449412482
 mas "SomaFM", id: 449155338
-mas "StopTheMadness Pro", id: 6471380298
+mas "Things", id: 904280696
 mas "Velja", id: 1607635845
 mas "Wayback Machine", id: 1472432422
+mas "Windows App", id: 1295203466
+mas "Yomu", id: 562211012
