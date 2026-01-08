@@ -104,6 +104,8 @@ cask "sublime-text"
 mas "1Password for Safari", id: 1569813296
 mas "Actions For Obsidian", id: 1659667937
 mas "Hush", id: 1544743900
+mas "Obsidian Web Clipper", id: 6720708363
+mas "Raycast Companion", id: 6738274497
 mas "Reeder", id: 1449412482
 mas "StopTheMadness Pro", id: 6471380298
 mas "Velja", id: 1607635845
