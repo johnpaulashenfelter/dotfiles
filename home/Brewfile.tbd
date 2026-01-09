@@ -1,0 +1,216 @@
+tap "bgreenwell/lstr"
+tap "johnpaulashenfelter/tools"
+# Run your GitHub Actions locally
+brew "act"
+# Command-line batch renaming tool
+brew "f2"
+# Render markdown on the CLI
+brew "glow"
+# Post-modern modal text editor
+brew "helix"
+# Improved top (interactive process viewer)
+brew "htop"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
+# Curl statistics made simple
+brew "httpstat"
+# Website copier/offline browser
+brew "httrack"
+# Run and Test HTTP Requests with plain text and curl
+brew "hurl"
+# Command-line benchmarking tool
+brew "hyperfine"
+# Serializes the output of command-line tools to structured JSON output
+brew "jc"
+# TUI for interacting with the Jujutsu version control system
+brew "jjui"
+# Convert JPG images to ASCII
+brew "jp2a"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Lazier way to manage everything docker
+brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
+# Linux virtual machines
+brew "lima"
+# Terminal file manager
+brew "lf"
+# Access large language models from the command-line
+brew "llm"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
+# Fast, minimalist directory tree viewer
+brew "lstr"
+# Security and system auditing tool to harden systems
+brew "lynis"
+# Keep your Mac's application settings in sync
+brew "mackup"
+# Securely transfers data between computers
+brew "magic-wormhole"
+# Data loading tool for PostgreSQL
+brew "pgloader"
+# Wrapper to colorize and simplify ping's output
+brew "prettyping"
+# Modern replacement for ps written by Rust
+brew "procs"
+# Monitor data's progress through a pipe
+brew "pv"
+# Tools for and transforming and inspecting PDF files
+brew "qpdf"
+# Rsync for cloud storage
+brew "rclone"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
+# Cross-platform application to monitor your network traffic
+brew "sniffnet"
+# Prettier way to inspect network connections
+brew "snitch"
+# CLI for extracting streams from various websites to a video player
+brew "streamlink"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
+# Modern watch command
+brew "viddy"
+
+
+brew "amalshaji/taps/portr"
+# An email and SMTP testing tool with API for developers
+brew "axllent/apps/mailpit"
+# Everything you need to get started with Heroku
+brew "heroku/brew/heroku"
+# tbls is a CI-Friendly tool for document a database, written in Go.
+brew "k1low/tap/tbls"
+# PostgreSQL Extensions Manager
+brew "pgxman/tap/pgxman"
+# A tool to manage rack apps in development with puma
+brew "puma/puma/puma-dev"
+# Identify potentially unused code
+brew "unused-code/formulae/unused"
+
+
+
+# Runbook editor for terminal workflows
+cask "atuin-desktop"
+# Scriptable scratchpad for developers
+cask "boop"
+# Screen recording software
+cask "cap"
+# Open links in any browser
+cask "choosy"
+# Downloads videos and audio from websites
+cask "clipgrab"
+# Customise mouse movements between multiple displays
+cask "cursr"
+# Command-line utility for managing macOS dock items
+cask "dockutil"
+# Finds duplicate files in a computer system
+cask "dupeguru"
+# Cross-platform Text Expander written in Rust
+cask "espanso"
+# System-wide audio equaliser
+cask "eqmac"
+# Network drive and browser for cloud storage
+cask "expandrive"
+# Screenshot software
+cask "flameshot"
+# Tool to turn a website into a desktop app
+cask "fluid"
+# Developer targeted fonts with a high number of glyphs
+cask "font-anonymice-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-bitstream-vera-sans-mono-nerd-font"
+# Neutral programming typeface
+cask "font-commit-mono"
+# Developer targeted fonts with a high number of glyphs
+cask "font-fira-code-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-hack-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-inconsolata-nerd-font"
+# Variable font designed for display
+cask "font-inter"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-meslo-lg-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-monaspace-nerd-font"
+cask "font-public-sans"
+# Developer targeted fonts with a high number of glyphs
+cask "font-sauce-code-pro-nerd-font"
+# Git client for simultaneous branches on top of your existing workflow
+cask "gitbutler"
+# Graphically shows disk usage within a file system
+cask "grandperspective"
+# Desktop automation application
+cask "hammerspoon"
+# Free and open-source media player
+cask "iina"
+# iPhone management application
+cask "imazing"
+# Note taking and to-do application with synchronisation capabilities
+cask "joplin"
+# Menu bar manager
+cask "jordanbaird-ice"
+# Graphically shows disk usage within a file system
+cask "grandperspective"
+# Animated screen capture application
+cask "licecap"
+# Discover, download, and run local LLMs
+cask "lm-studio"
+# Ergonomic Assistant to prevent health problems
+cask "macbreakz"
+# Clipboard manager
+cask "maccy"
+# Speech recognition tool
+cask "macwhisper"
+# Extensible two-pane file manager
+cask "marta"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
+# GUI app and toolkit for Claude Code
+cask "opcode"
+# Automatic time tracker
+cask "qbserve"
+# Block your own access to distracting websites
+cask "selfcontrol"
+# App that enables mouse-free UI interaction
+cask "shortcat"
+# Displays all open files and sockets in use by all running processes
+cask "sloth"
+# Audio device utility
+cask "soundanchor"
+# Break time reminder app
+cask "stretchly"
+# Dictation tool including LLM reformatting
+cask "superwhisper"
+# Real time file synchronisation software
+cask "syncthing"
+# Window and tab manager
+cask "tabtab"
+# Tool to display the local times of friends, teammates, cities or any time zone
+cask "there"
+# Managing Pull Requests and Issues For GitHub & GitHub Enterprise
+cask "trailer"
+# Configurable document editor that supports Markdown
+cask "typora"
+# Turn any browser into your terminal
+cask "vibetunnel"
+# Multimedia player
+cask "vlc"
+# Desktop client for the Zulip team chat platform
+cask "zulip"
+
+mas "Actions", id: 1586435171
+mas "Finalist", id: 6447014685
+mas "Focus for YouTube", id: 1514703160
+mas "Folder Quick Look", id: 6753110395
+mas "Kagi for Safari", id: 1622835804
+mas "Refined GitHub", id: 1519867270
+mas "sessiondock", id: 6753728022
+mas "Tot", id: 1491071483
+mas "Triode", id: 1450027401
+

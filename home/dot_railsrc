@@ -1,4 +1,0 @@
-# http://pixelatedworks.com/articles/configuring_new_rails_projects_with_railsrc_and_templates/
---database=postgresql
---skip-test
---template=~/.rails_template.rb

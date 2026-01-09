@@ -19,6 +19,7 @@ rerun.txt
 # Pow
 .powenv
 .powrc
+.pumaenv
 
 # Rails app defaults
 /.bundle
@@ -34,8 +35,14 @@ rerun.txt
 .eclipse
 .envrc
 .idea
+mise.local.toml
 .svn/
 .tool-versions
+.vscode/
 
 # Mac
 .DS_Store
+
+# AI
+**/.claude/settings.local.json
+.mcp.json

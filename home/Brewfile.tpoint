@@ -1,0 +1,106 @@
+tap "dart-lang/dart"
+tap "dokku/repo"
+tap "masaushi/tap"
+tap "puma/puma"
+tap "sass/sass"
+tap "skatkov/tap"
+
+# Claude workflow CLI multiplexer
+brew "johnpaulashenfelter/tools/claudtrol"
+brew "masaushi/tap/ecsplorer"
+# A tool to manage rack apps in development with puma
+brew "puma/puma/puma-dev"
+# Stylesheet Preprocessor
+brew "sass/sass/sass"
+# API documentation browser for developers.
+brew "skatkov/tap/poshtui"
+
+# Official Amazon AWS command-line interface
+brew "awscli"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
+# Anthropic's official Claude AI desktop app
+cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# Universal database tool and SQL client
+cask "dbeaver-community"
+# Docker CLI plugin for extended build capabilities with BuildKit
+brew "docker-buildx"
+# App to build and share containerised applications and microservices
+cask "docker-desktop"
+# Command-line tool for DigitalOcean
+brew "doctl"
+# Git client focusing on productivity
+cask "gitkraken"
+# CLI for GitKraken
+cask "gitkraken-cli"
+# Open-source GitLab command-line tool
+brew "glab"
+# AI-powered notepad for meetings
+cask "granola"
+# CLI for Heroku
+brew "heroku"
+# GNOME XML library
+brew "libxml2"
+# YAML Parser
+brew "libyaml"
+# High performance, distributed memory object caching system
+brew "memcached"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
+# Open source relational database management system
+brew "mysql@8.0"
+# Replacement for Docker Desktop
+cask "orbstack"
+# Process manager for Procfile-based applications and tmux
+brew "overmind"
+# CLI for Postgres with auto-completion and syntax highlighting
+brew "pgcli"
+# Adds support for geographic objects to PostgreSQL
+brew "postgis"
+# Object-relational database system
+brew "postgresql@18"
+# Persistent key-value database, with built-in net interface
+brew "redis"
+# Command-line tool for the Amazon S3 service
+brew "s3cmd"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
+# Image processing library
+brew "vips"
+# Internet file retriever
+brew "wget"
+# CSV CLI magician written in Rust
+brew "xan"
+# Find security issues in GitHub Actions setups
+brew "zizmor"
+
+# Redis desktop manager
+cask "another-redis-desktop-manager"
+# Cross platform SQL editor and database management app
+cask "beekeeper-studio"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
+# Automated testing of webapps for Google Chrome
+cask "chromedriver"
+# JetBrains tools manager
+cask "jetbrains-toolbox"
+# Spot and merge differences in text and image files or folders
+cask "kaleidoscope"
+# Email client
+cask "microsoft-outlook"
+# Meet, chat, call, and collaborate in just one place
+cask "microsoft-teams"
+# Native code editor
+cask "nova"
+# Graphical client for Git version control
+cask "sourcetree"
+# Backup, recovery and cloning software
+cask "superduper"
+# Open-source code editor
+cask "visual-studio-code"
+
+mas "HotwireDevTools", id: 6503706225
+go "cmd/go"
+go "cmd/gofmt"
