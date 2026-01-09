@@ -12,6 +12,8 @@ brew "coreutils"
 brew "diff-so-fancy"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Command-line utility for managing macOS dock items
+brew "dockutil"
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Run arbitrary commands when files change
@@ -78,7 +80,7 @@ cask "elgato-control-center"
 # Assign keys, and then decorate and label them
 cask "elgato-stream-deck"
 # Developer targeted fonts with a high number of glyphs
-cask "font-monaspace-nerd-font"
+cask "font-monaspice-nerd-font"
 cask "font-sauce-code-pro-nerd-font"
 # Cross-platform Git credential storage for multiple hosting providers
 cask "git-credential-manager"
@@ -106,6 +108,5 @@ mas "Actions For Obsidian", id: 1659667937
 mas "Hush", id: 1544743900
 mas "Obsidian Web Clipper", id: 6720708363
 mas "Raycast Companion", id: 6738274497
-mas "Reeder", id: 1449412482
 mas "StopTheMadness Pro", id: 6471380298
 mas "Velja", id: 1607635845
