@@ -188,9 +188,8 @@
 [url "https://github.com/johnpaulashenfelter/"]
   insteadOf = me:
 [user]
-	email = jp@locushealth.com
+	email = john@ashenfelter.com
 	name = John Paul Ashenfelter
-	signingkey = 0477A6CC566A09D3
 	useConfigOnly = true
 [include]
   # For username / creds / etc
