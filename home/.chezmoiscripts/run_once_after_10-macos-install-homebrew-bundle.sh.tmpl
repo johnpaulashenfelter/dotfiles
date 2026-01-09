@@ -1,5 +1,5 @@
 {{- if (eq .chezmoi.os "darwin") -}}
 #!/bin/sh
 # Brewfile hash: {{ include "./Brewfile" | sha256sum }}
-    /opt/homebrew/bin/brew bundle install --no-lock --file {{ joinPath .chezmoi.sourceDir "./Brewfile" | quote }}
+    /opt/homebrew/bin/brew bundle install --file {{ joinPath .chezmoi.sourceDir "./Brewfile" | quote }}
 {{ end -}}
