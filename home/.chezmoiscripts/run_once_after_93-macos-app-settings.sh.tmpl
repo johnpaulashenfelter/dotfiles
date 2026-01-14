@@ -5,6 +5,9 @@ set -euo pipefail
 THEME_NAME="Solarized Darcula"
 THEMES_DIR="$HOME/.local/share/settings/macos-terminal-themes"
 THEME_FILE="$THEMES_DIR/$THEME_NAME.terminal"
+SETTINGS=$(dirname $(chezmoi source-path))/settings
+echo $SETTINGS
+echo "Resolved theme path: $SETTINGS/macos-terminal-themes/Solarized Darcula.terminal"
 
 # Import the theme (safe to run multiple times)
 open "$THEME_FILE"
