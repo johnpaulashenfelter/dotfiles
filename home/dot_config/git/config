@@ -16,7 +16,7 @@
 	ff = merge --ff-only
   l = log --pretty=oneline -n 20 --graph --abbrev-commit
 	last = log -1 HEAD
-  nuke-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D
+  nuke = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D
 	new = switch -c
 	pf = push --force-with-lease # https://robots.thoughtbot.com/git-push-force-with-lease
 	praise = blame
